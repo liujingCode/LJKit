@@ -1,0 +1,22 @@
+{
+  "name": "LJKit",
+  "version": "0.1.0",
+  "summary": "A short description of LJKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/185704108@qq.com/LJKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "185704108@qq.com": "liujingguoke@163.com"
+  },
+  "source": {
+    "git": "https://github.com/185704108@qq.com/LJKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LJKit/Classes/**/*"
+}

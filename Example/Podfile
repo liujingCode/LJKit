@@ -5,9 +5,21 @@ platform :ios, '8.0'
 target 'LJKit_Example' do
   pod 'LJKit', :path => '../'
 
+#  pod 'Masonry',:inhibit_warnings => true
+#  pod 'SDWebImage',:inhibit_warnings => true
+#  pod 'AFNetworking'
+#  pod 'RealReachability'
+#  pod 'DZNEmptyDataSet',:inhibit_warnings => true
+#  pod 'MJRefresh',:inhibit_warnings => true
+#  pod 'MJExtension'
+#  pod 'IQKeyboardManager'
+#  pod 'SDCycleScrollView',:inhibit_warnings => true
+#  pod 'MBProgressHUD', '~> 1.1.0'
+#  
+#  pod 'TZImagePickerController'
+
   target 'LJKit_Tests' do
     inherit! :search_paths
 
-    
   end
 end

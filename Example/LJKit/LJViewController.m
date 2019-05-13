@@ -8,7 +8,11 @@
 
 #import "LJViewController.h"
 
+#import "LJKit.h"
+
 @interface LJViewController ()
+/** <#注释#> */
+@property (strong, nonatomic) LJLocationManager *locationManager;
 
 @end
 
@@ -17,7 +21,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.locationManager = [LJLocationManager sharedManager];
+    
+    [self.locationManager lj_startLoactionWithCallback:^(LJLocationModel * _Nonnull model) {
+        
+    }];
+//    [LJPermissionsManager lj_locationPermissionsWithCallback:^(BOOL isOpen) {
+//        NSLog(@"isOpen == %d",isOpen);
+//
+//    }];
+    
+    
+//    [LJPermissionsManager lj_cameraPermissionsWithCallback:^(BOOL isOpen) {
+//        NSLog(@"isOpen == %d",isOpen);
+//    }];
+    
 }
 
 - (void)didReceiveMemoryWarning

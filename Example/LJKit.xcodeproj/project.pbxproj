@@ -13,7 +13,6 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* LJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LJAppDelegate.m */; };
 		6003F5A7195388D20070C39A /* LJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LJViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
@@ -23,6 +22,14 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C5E0481F2289221000282C38 /* LJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0481E2289220F00282C38 /* LJAppDelegate.m */; };
+		C5E0482A22892A3E00282C38 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C5E0482822892A3E00282C38 /* .gitkeep */; };
+		C5E0483622892D5F00282C38 /* UIView+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0483422892D5E00282C38 /* UIView+LJKit.m */; };
+		C5E048392289355900282C38 /* UIImage+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E048382289355900282C38 /* UIImage+LJKit.m */; };
+		C5E0483C22894C7500282C38 /* NSString+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0483B22894C7500282C38 /* NSString+LJKit.m */; };
+		C5E0483F22894CFF00282C38 /* NSDate+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0483E22894CFF00282C38 /* NSDate+LJKit.m */; };
+		C5E04843228955BF00282C38 /* LJPermissionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E04842228955BF00282C38 /* LJPermissionsManager.m */; };
+		C5E04848228963FF00282C38 /* LJLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E04847228963FF00282C38 /* LJLocationManager.m */; };
 		D71509C90EC597059B2349C2 /* Pods_LJKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B0BD7AC5448F5558A57E46 /* Pods_LJKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +48,7 @@
 		09DAA036854CFC2576EC95F3 /* Pods-LJKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJKit_Tests/Pods-LJKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		23B0BD7AC5448F5558A57E46 /* Pods_LJKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28816E2AB9BD366FF68BF935 /* Pods-LJKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJKit_Tests/Pods-LJKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		440B178DD5FCAC85F94D01AE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		440B178DD5FCAC85F94D01AE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LJKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,8 +57,6 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* LJKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJKit-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* LJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* LJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* LJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* LJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -65,8 +70,26 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B45A2A1940A32C477FEE5A14 /* Pods-LJKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJKit_Example/Pods-LJKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B5949097FA9A44F98FFAA9C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D7D7E3229F3D3C8CDD3B8248 /* LJKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LJKit.podspec; path = ../LJKit.podspec; sourceTree = "<group>"; };
+		B5949097FA9A44F98FFAA9C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C5E0481D2289220F00282C38 /* LJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAppDelegate.h; sourceTree = "<group>"; };
+		C5E0481E2289220F00282C38 /* LJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJAppDelegate.m; sourceTree = "<group>"; };
+		C5E0482822892A3E00282C38 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C5E0483422892D5E00282C38 /* UIView+LJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJKit.m"; sourceTree = "<group>"; };
+		C5E0483522892D5E00282C38 /* UIView+LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJKit.h"; sourceTree = "<group>"; };
+		C5E048372289355900282C38 /* UIImage+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LJKit.h"; sourceTree = "<group>"; };
+		C5E048382289355900282C38 /* UIImage+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LJKit.m"; sourceTree = "<group>"; };
+		C5E0483A22894C7500282C38 /* NSString+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LJKit.h"; sourceTree = "<group>"; };
+		C5E0483B22894C7500282C38 /* NSString+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJKit.m"; sourceTree = "<group>"; };
+		C5E0483D22894CFF00282C38 /* NSDate+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+LJKit.h"; sourceTree = "<group>"; };
+		C5E0483E22894CFF00282C38 /* NSDate+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LJKit.m"; sourceTree = "<group>"; };
+		C5E04841228955BF00282C38 /* LJPermissionsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJPermissionsManager.h; sourceTree = "<group>"; };
+		C5E04842228955BF00282C38 /* LJPermissionsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJPermissionsManager.m; sourceTree = "<group>"; };
+		C5E0484422895F4300282C38 /* LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJKit.h; sourceTree = "<group>"; };
+		C5E0484522895F9C00282C38 /* LJCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCategory.h; sourceTree = "<group>"; };
+		C5E04846228963FF00282C38 /* LJLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJLocationManager.h; sourceTree = "<group>"; };
+		C5E04847228963FF00282C38 /* LJLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJLocationManager.m; sourceTree = "<group>"; };
+		C5E048492289693E00282C38 /* LJManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJManager.h; sourceTree = "<group>"; };
+		D7D7E3229F3D3C8CDD3B8248 /* LJKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LJKit.podspec; path = ../LJKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +166,10 @@
 		6003F593195388D20070C39A /* Example for LJKit */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* LJAppDelegate.h */,
-				6003F59D195388D20070C39A /* LJAppDelegate.m */,
+				C5E0482422892A3E00282C38 /* LJKit */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				C5E0481D2289220F00282C38 /* LJAppDelegate.h */,
+				C5E0481E2289220F00282C38 /* LJAppDelegate.m */,
 				6003F5A5195388D20070C39A /* LJViewController.h */,
 				6003F5A6195388D20070C39A /* LJViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -196,6 +220,78 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		C5E0482422892A3E00282C38 /* LJKit */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0482522892A3E00282C38 /* Classes */,
+				C5E0482722892A3E00282C38 /* Assets */,
+			);
+			name = LJKit;
+			path = ../../LJKit;
+			sourceTree = "<group>";
+		};
+		C5E0482522892A3E00282C38 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0484422895F4300282C38 /* LJKit.h */,
+				C5E048402289556300282C38 /* Manager */,
+				C5E0483122892AC500282C38 /* Category */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C5E0482722892A3E00282C38 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0482822892A3E00282C38 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C5E0483122892AC500282C38 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0484522895F9C00282C38 /* LJCategory.h */,
+				C5E0483322892D3B00282C38 /* Foundation */,
+				C5E0483222892AD700282C38 /* UIKit */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C5E0483222892AD700282C38 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0483522892D5E00282C38 /* UIView+LJKit.h */,
+				C5E0483422892D5E00282C38 /* UIView+LJKit.m */,
+				C5E048372289355900282C38 /* UIImage+LJKit.h */,
+				C5E048382289355900282C38 /* UIImage+LJKit.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C5E0483322892D3B00282C38 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0483A22894C7500282C38 /* NSString+LJKit.h */,
+				C5E0483B22894C7500282C38 /* NSString+LJKit.m */,
+				C5E0483D22894CFF00282C38 /* NSDate+LJKit.h */,
+				C5E0483E22894CFF00282C38 /* NSDate+LJKit.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		C5E048402289556300282C38 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C5E048492289693E00282C38 /* LJManager.h */,
+				C5E04841228955BF00282C38 /* LJPermissionsManager.h */,
+				C5E04842228955BF00282C38 /* LJPermissionsManager.m */,
+				C5E04846228963FF00282C38 /* LJLocationManager.h */,
+				C5E04847228963FF00282C38 /* LJLocationManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,7 +303,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				EAB2B7CCCBCB447E1954DFD1 /* [CP] Embed Pods Frameworks */,
+				502EC0042484EDD2588252E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +343,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "185704108@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 3SLHUVQHML;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -257,6 +356,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -278,6 +378,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				C5E0482A22892A3E00282C38 /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -312,7 +413,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EAB2B7CCCBCB447E1954DFD1 /* [CP] Embed Pods Frameworks */ = {
+		502EC0042484EDD2588252E1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,9 +456,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* LJAppDelegate.m in Sources */,
+				C5E0483C22894C7500282C38 /* NSString+LJKit.m in Sources */,
 				6003F5A7195388D20070C39A /* LJViewController.m in Sources */,
+				C5E04848228963FF00282C38 /* LJLocationManager.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C5E0481F2289221000282C38 /* LJAppDelegate.m in Sources */,
+				C5E0483622892D5F00282C38 /* UIView+LJKit.m in Sources */,
+				C5E0483F22894CFF00282C38 /* NSDate+LJKit.m in Sources */,
+				C5E04843228955BF00282C38 /* LJPermissionsManager.m in Sources */,
+				C5E048392289355900282C38 /* UIImage+LJKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +592,7 @@
 			baseConfigurationReference = B45A2A1940A32C477FEE5A14 /* Pods-LJKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3SLHUVQHML;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJKit/LJKit-Prefix.pch";
 				INFOPLIST_FILE = "LJKit/LJKit-Info.plist";
@@ -500,6 +608,7 @@
 			baseConfigurationReference = 64AB2533BEA4784402527DF4 /* Pods-LJKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3SLHUVQHML;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJKit/LJKit-Prefix.pch";
 				INFOPLIST_FILE = "LJKit/LJKit-Info.plist";
