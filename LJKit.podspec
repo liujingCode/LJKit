@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = 'LJKit'
-  spec.version      = '0.1.3'
+  spec.version      = '0.1.5'
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage     = 'https://github.com/liujingCode'
   spec.authors      = { 'liujing' => 'liujingguoke@163.com' }
@@ -9,12 +9,12 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/liujingCode/LJKit.git', :tag => spec.version.to_s }
   spec.ios.deployment_target = '9.0'
   
-  spec.source_files = 'LJKit/Classes/**/*'
+  spec.source_files = '../LJKit/LJKit/Classes/**/*'
   spec.framework    = 'UIKit'
   
   spec.subspec 'Category' do |category|
       category.framework    = 'UIKit','Fundation'
-      category.source_files = 'LJKit/Classes/Category/**/*'
+      category.source_files = '../LJKit/LJKit/Classes/Category/**/*'
   end
   
   spec.dependency 'AFNetworking'
