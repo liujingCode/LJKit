@@ -30,6 +30,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'LJKit/Classes/**/*'
+  category.public_header_files = 'LJKit/Classes/**/*'
   
   s.subspec 'Category' do |category|
       category.source_files = 'LJKit/Classes/Category/**/*'
