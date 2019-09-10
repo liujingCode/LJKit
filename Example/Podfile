@@ -3,7 +3,12 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'LJKit_Example' do
-  pod 'LJKit/Category', :path => '../'
+  
+#  pod 'LJKit', :git => 'https://github.com/liujingCode/LJKit.git', :branch => 'master'
+
+  pod 'LJKit', :path => '../'
+  
+#  pod 'LJKit/Category', :path => '../'
 
 #  pod 'Masonry',:inhibit_warnings => true
 #  pod 'SDWebImage',:inhibit_warnings => true

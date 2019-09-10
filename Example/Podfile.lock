@@ -15,7 +15,17 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - IQKeyboardManager (6.4.0)
-  - LJKit (0.1.1):
+  - LJKit (0.1.2):
+    - AFNetworking
+    - IQKeyboardManager
+    - LJKit/Category (= 0.1.2)
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SDCycleScrollView
+    - SDWebImage
+    - TZImagePickerController
+  - LJKit/Category (0.1.2):
     - AFNetworking
     - IQKeyboardManager
     - Masonry
@@ -55,7 +65,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
-  LJKit: 99239925aeefbf0de22aada0e69769a09f5ab2ae
+  LJKit: ac84daff7ea7ef715577e1ab86c65feea2135c71
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
@@ -63,6 +73,6 @@ SPEC CHECKSUMS:
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
 
-PODFILE CHECKSUM: c9c2d687a032e50c89e1ad51237b4f7c4152f8eb
+PODFILE CHECKSUM: 408444c6b9398cb98273630a60f5fc222cc25887
 
 COCOAPODS: 1.7.1

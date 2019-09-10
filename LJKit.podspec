@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
   s.source_files = 'LJKit/Classes/**/*'
   
   s.subspec 'Category' do |category|
-      core.source_files = 'LJKit/Classes/Category/**/*'
-      # core.public_header_files = 'LJKit/Classes/Category/**/*.h'
-      core.frameworks = 'UIKit'
+      category.source_files = 'LJKit/Classes/Category/**/*'
+      category.public_header_files = 'LJKit/Classes/Category/**/*.h'
+      category.frameworks = 'UIKit'
   end
   
   # s.resource_bundles = {

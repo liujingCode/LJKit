@@ -1,7 +1,7 @@
 {
   "name": "LJKit",
-  "version": "0.1.1",
-  "summary": "A short description of LJKit.",
+  "version": "0.1.2",
+  "summary": "方便自己以后开发的工具类",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/185704108@qq.com/LJKit",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/liujingCode/LJKit.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"
@@ -44,5 +44,13 @@
     "TZImagePickerController": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": "LJKit/Classes/Category/**/*",
+      "public_header_files": "LJKit/Classes/Category/**/*.h",
+      "frameworks": "UIKit"
+    }
+  ]
 }
