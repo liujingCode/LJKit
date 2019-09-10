@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/185704108@qq.com/LJKit'
+  s.homepage         = 'https://github.com/LJKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liujing' => 'liujingguoke@163.com' }
@@ -33,7 +33,6 @@ TODO: Add long description of the pod here.
   
   s.subspec 'Category' do |category|
       category.source_files = 'LJKit/Classes/Category/**/*'
-      category.public_header_files = 'LJKit/Classes/Category/**/*.h'
       category.frameworks = 'UIKit'
   end
   
