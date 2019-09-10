@@ -15,11 +15,14 @@
     "tag": "0.1.5"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "Example/LJKit/LJKit/Classes/**/*",
+  "source_files": "../LJKit/LJKit/Classes/**/*",
   "frameworks": "UIKit",
   "dependencies": {
+    "AFNetworking": [
+
+    ],
     "SDWebImage": [
 
     ],
@@ -47,54 +50,9 @@
       "name": "Category",
       "frameworks": [
         "UIKit",
-        "Foundation"
+        "Fundation"
       ],
-      "source_files": "LJKit/Classes/Category/**/*"
-    },
-    {
-      "name": "CustomUI",
-      "frameworks": "UIKit",
-      "source_files": "LJKit/Classes/customUI/**/*"
-    },
-    {
-      "name": "Debug",
-      "frameworks": [
-        "UIKit",
-        "Foundation"
-      ],
-      "source_files": "LJKit/Classes/Debug/**/*"
-    },
-    {
-      "name": "Utils",
-      "source_files": "LJKit/Classes/Utils/**/*",
-      "subspecs": [
-        {
-          "name": "HttpManager",
-          "source_files": "LJKit/Classes/Utils/LJHttpManager/**/*",
-          "dependencies": {
-            "AFNetworking": [
-
-            ]
-          }
-        },
-        {
-          "name": "ImagePickerManager",
-          "source_files": "LJKit/Classes/Utils/LJImagePickerManager/**/*",
-          "dependencies": {
-            "TZImagePickerController": [
-
-            ]
-          }
-        },
-        {
-          "name": "LocationManager",
-          "source_files": "LJKit/Classes/Utils/LJLocationManager/**/*"
-        },
-        {
-          "name": "ThemeManager",
-          "source_files": "LJKit/Classes/Utils/LJThemeManager/**/*"
-        }
-      ]
+      "source_files": "../LJKit/LJKit/Classes/Category/**/*"
     }
   ]
 }
