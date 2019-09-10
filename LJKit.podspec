@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LJKit'
-  s.version          = '0.1.2'
+  s.version          = '0.1.1'
   s.summary          = '方便自己以后开发的工具类'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'LJKit/Classes/**/*'
-  category.public_header_files = 'LJKit/Classes/**/*'
   
   s.subspec 'Category' do |category|
       category.source_files = 'LJKit/Classes/Category/**/*'
