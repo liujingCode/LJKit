@@ -1,6 +1,6 @@
 {
   "name": "LJKit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of LJKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/185704108@qq.com/LJKit",
@@ -9,14 +9,40 @@
     "file": "LICENSE"
   },
   "authors": {
-    "185704108@qq.com": "liujingguoke@163.com"
+    "liujing": "liujingguoke@163.com"
   },
   "source": {
-    "git": "https://github.com/185704108@qq.com/LJKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/liujingCode/LJKit.git",
+    "tag": "0.1.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "LJKit/Classes/**/*"
+  "source_files": "LJKit/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "IQKeyboardManager": [
+
+    ],
+    "SDCycleScrollView": [
+
+    ],
+    "TZImagePickerController": [
+
+    ]
+  }
 }

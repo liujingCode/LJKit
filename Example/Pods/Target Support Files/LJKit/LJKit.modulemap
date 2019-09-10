@@ -1,6 +1,0 @@
-framework module LJKit {
-  umbrella header "LJKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

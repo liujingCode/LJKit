@@ -1,16 +1,68 @@
 PODS:
-  - LJKit (0.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.4.0)
+  - LJKit (0.1.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SDCycleScrollView
+    - SDWebImage
+    - TZImagePickerController
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.2.0)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - TZImagePickerController (3.2.1)
 
 DEPENDENCIES:
   - LJKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SDCycleScrollView
+    - SDWebImage
+    - TZImagePickerController
 
 EXTERNAL SOURCES:
   LJKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LJKit: fa57db79d3a711be3b5ce26cd7430f59a88b4108
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
+  LJKit: 99239925aeefbf0de22aada0e69769a09f5ab2ae
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
 
-PODFILE CHECKSUM: 02e5cd440c62e600f3a1514f8f4cd089becff59a
+PODFILE CHECKSUM: c9c2d687a032e50c89e1ad51237b4f7c4152f8eb
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.7.1

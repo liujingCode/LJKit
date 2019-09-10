@@ -22,7 +22,7 @@ pod 'LJKit'
 
 ## Author
 
-185704108@qq.com, liujingguoke@163.com
+liujingguoke@163.com
 
 ## License
 
