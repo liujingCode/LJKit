@@ -6,22 +6,19 @@ target 'LJKit_Example' do
   
 #  pod 'LJKit', :git => 'https://github.com/liujingCode/LJKit.git', :branch => 'master'
 
-  pod 'LJKit', :path => '../'
 
 #  pod 'LJKit', :path => '../'
 
-#  pod 'Masonry',:inhibit_warnings => true
-#  pod 'SDWebImage',:inhibit_warnings => true
-#  pod 'AFNetworking'
-#  pod 'RealReachability'
-#  pod 'DZNEmptyDataSet',:inhibit_warnings => true
-#  pod 'MJRefresh',:inhibit_warnings => true
-#  pod 'MJExtension'
-#  pod 'IQKeyboardManager'
-#  pod 'SDCycleScrollView',:inhibit_warnings => true
-#  pod 'MBProgressHUD', '~> 1.1.0'
-#  
-#  pod 'TZImagePickerController'
+  pod 'Masonry',:inhibit_warnings => true
+  pod 'SDWebImage',:inhibit_warnings => true
+  pod 'AFNetworking'
+  pod 'MJRefresh',:inhibit_warnings => true
+  pod 'MJExtension'
+  pod 'IQKeyboardManager'
+  pod 'SDCycleScrollView',:inhibit_warnings => true
+  pod 'MBProgressHUD', '~> 1.1.0'
+  
+  pod 'TZImagePickerController'
 
   target 'LJKit_Tests' do
     inherit! :search_paths

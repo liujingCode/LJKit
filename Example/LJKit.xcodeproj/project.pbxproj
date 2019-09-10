@@ -20,26 +20,25 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		8B2C826B22DD672C0026EBF7 /* LJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C826A22DD672C0026EBF7 /* LJBaseViewController.m */; };
-		8B2C826E22DD67760026EBF7 /* UIViewController+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C826D22DD67760026EBF7 /* UIViewController+LJKit.m */; };
-		8B2C827422DD685B0026EBF7 /* LJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C827322DD685B0026EBF7 /* LJTabBarController.m */; };
-		8B2C827722DD689C0026EBF7 /* LJRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C827622DD689C0026EBF7 /* LJRootViewController.m */; };
-		8B2C828722DD6B750026EBF7 /* LJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C828622DD6B750026EBF7 /* LJHomeViewController.m */; };
-		8B2C828A22DD6B990026EBF7 /* LJDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C828922DD6B990026EBF7 /* LJDiscoverViewController.m */; };
-		8B2C829622DD76C00026EBF7 /* LJMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C829522DD76C00026EBF7 /* LJMineViewController.m */; };
-		8B2C829922DD77300026EBF7 /* LJTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C829822DD77300026EBF7 /* LJTabBarItem.m */; };
-		8B2C82A122DD9B2B0026EBF7 /* UIBarButtonItem+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C82A022DD9B2B0026EBF7 /* UIBarButtonItem+LJKit.m */; };
-		8B2C82A722DDAE7D0026EBF7 /* LJNavigationBarContnetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C82A622DDAE7D0026EBF7 /* LJNavigationBarContnetView.m */; };
-		8BFA508023273B450014F6E0 /* LJSandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA507F23273B450014F6E0 /* LJSandboxViewController.m */; };
+		8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */; };
 		8BFA508423273D010014F6E0 /* LJDemoDebugController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA508323273D010014F6E0 /* LJDemoDebugController.m */; };
 		8BFA509623274BB30014F6E0 /* LJDemoBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA509523274BB30014F6E0 /* LJDemoBaseController.m */; };
 		8BFA509923274D3D0014F6E0 /* LJDemoHttpManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA509823274D3D0014F6E0 /* LJDemoHttpManagerController.m */; };
-		C5E0481F2289221000282C38 /* LJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0481E2289220F00282C38 /* LJAppDelegate.m */; };
-		C5E0482A22892A3E00282C38 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C5E0482822892A3E00282C38 /* .gitkeep */; };
-		C5E0483622892D5F00282C38 /* UIView+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0483422892D5E00282C38 /* UIView+LJKit.m */; };
-		C5E048392289355900282C38 /* UIImage+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E048382289355900282C38 /* UIImage+LJKit.m */; };
-		C5E0483C22894C7500282C38 /* NSString+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0483B22894C7500282C38 /* NSString+LJKit.m */; };
-		C5E0483F22894CFF00282C38 /* NSDate+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E0483E22894CFF00282C38 /* NSDate+LJKit.m */; };
+		8BFA50E42327881E0014F6E0 /* UIBarButtonItem+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50CC2327881E0014F6E0 /* UIBarButtonItem+LJKit.m */; };
+		8BFA50E52327881E0014F6E0 /* UIView+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50CD2327881E0014F6E0 /* UIView+LJKit.m */; };
+		8BFA50E62327881E0014F6E0 /* UIViewController+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50D22327881E0014F6E0 /* UIViewController+LJKit.m */; };
+		8BFA50E72327881E0014F6E0 /* UIImage+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50D32327881E0014F6E0 /* UIImage+LJKit.m */; };
+		8BFA50E82327881E0014F6E0 /* NSString+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50D72327881E0014F6E0 /* NSString+LJKit.m */; };
+		8BFA50E92327881E0014F6E0 /* NSDate+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50D82327881E0014F6E0 /* NSDate+LJKit.m */; };
+		8BFA50EB2327881E0014F6E0 /* LJSandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50DF2327881E0014F6E0 /* LJSandboxViewController.m */; };
+		8BFA50EC2327881E0014F6E0 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8BFA50E32327881E0014F6E0 /* .gitkeep */; };
+		8BFA50EF23278A090014F6E0 /* LJClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50EE23278A090014F6E0 /* LJClassViewController.m */; };
+		8BFA50F223278A380014F6E0 /* LJLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50F123278A380014F6E0 /* LJLocationManager.m */; };
+		8BFA50F723278A770014F6E0 /* LJAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50F623278A770014F6E0 /* LJAlertViewController.m */; };
+		8BFA50FC23278B080014F6E0 /* LJThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50FB23278B080014F6E0 /* LJThemeManager.m */; };
+		8BFA50FF23278C800014F6E0 /* LJHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50FE23278C800014F6E0 /* LJHttpManager.m */; };
+		8BFA510323278D7A0014F6E0 /* LJImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA510223278D7A0014F6E0 /* LJImagePickerManager.m */; };
+		8BFA5108232795160014F6E0 /* UIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA5107232795160014F6E0 /* UIAppDelegate.m */; };
 		D71509C90EC597059B2349C2 /* Pods_LJKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B0BD7AC5448F5558A57E46 /* Pods_LJKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,55 +75,51 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		64AB2533BEA4784402527DF4 /* Pods-LJKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJKit_Example/Pods-LJKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8B2C825F22DD656D0026EBF7 /* LJCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCustom.h; sourceTree = "<group>"; };
-		8B2C826922DD672C0026EBF7 /* LJBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJBaseViewController.h; sourceTree = "<group>"; };
-		8B2C826A22DD672C0026EBF7 /* LJBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJBaseViewController.m; sourceTree = "<group>"; };
-		8B2C826C22DD67760026EBF7 /* UIViewController+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LJKit.h"; sourceTree = "<group>"; };
-		8B2C826D22DD67760026EBF7 /* UIViewController+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LJKit.m"; sourceTree = "<group>"; };
-		8B2C827222DD685B0026EBF7 /* LJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJTabBarController.h; sourceTree = "<group>"; };
-		8B2C827322DD685B0026EBF7 /* LJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJTabBarController.m; sourceTree = "<group>"; };
-		8B2C827522DD689C0026EBF7 /* LJRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJRootViewController.h; sourceTree = "<group>"; };
-		8B2C827622DD689C0026EBF7 /* LJRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJRootViewController.m; sourceTree = "<group>"; };
-		8B2C828522DD6B750026EBF7 /* LJHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJHomeViewController.h; sourceTree = "<group>"; };
-		8B2C828622DD6B750026EBF7 /* LJHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJHomeViewController.m; sourceTree = "<group>"; };
-		8B2C828822DD6B990026EBF7 /* LJDiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDiscoverViewController.h; sourceTree = "<group>"; };
-		8B2C828922DD6B990026EBF7 /* LJDiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDiscoverViewController.m; sourceTree = "<group>"; };
-		8B2C829422DD76C00026EBF7 /* LJMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJMineViewController.h; sourceTree = "<group>"; };
-		8B2C829522DD76C00026EBF7 /* LJMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJMineViewController.m; sourceTree = "<group>"; };
-		8B2C829722DD77300026EBF7 /* LJTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJTabBarItem.h; sourceTree = "<group>"; };
-		8B2C829822DD77300026EBF7 /* LJTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJTabBarItem.m; sourceTree = "<group>"; };
+		8B2C828522DD6B750026EBF7 /* LJDemoHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoHomeViewController.h; sourceTree = "<group>"; };
+		8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoHomeViewController.m; sourceTree = "<group>"; };
 		8B2C829A22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8B2C829B22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8B2C829C22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8B2C829D22DD7AC40026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		8B2C829F22DD9B2B0026EBF7 /* UIBarButtonItem+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LJKit.h"; sourceTree = "<group>"; };
-		8B2C82A022DD9B2B0026EBF7 /* UIBarButtonItem+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LJKit.m"; sourceTree = "<group>"; };
-		8B2C82A522DDAE7D0026EBF7 /* LJNavigationBarContnetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJNavigationBarContnetView.h; sourceTree = "<group>"; };
-		8B2C82A622DDAE7D0026EBF7 /* LJNavigationBarContnetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJNavigationBarContnetView.m; sourceTree = "<group>"; };
-		8BFA507E23273B450014F6E0 /* LJSandboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJSandboxViewController.h; sourceTree = "<group>"; };
-		8BFA507F23273B450014F6E0 /* LJSandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJSandboxViewController.m; sourceTree = "<group>"; };
 		8BFA508223273D010014F6E0 /* LJDemoDebugController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoDebugController.h; sourceTree = "<group>"; };
 		8BFA508323273D010014F6E0 /* LJDemoDebugController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoDebugController.m; sourceTree = "<group>"; };
 		8BFA509423274BB30014F6E0 /* LJDemoBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoBaseController.h; sourceTree = "<group>"; };
 		8BFA509523274BB30014F6E0 /* LJDemoBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoBaseController.m; sourceTree = "<group>"; };
 		8BFA509723274D3D0014F6E0 /* LJDemoHttpManagerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoHttpManagerController.h; sourceTree = "<group>"; };
 		8BFA509823274D3D0014F6E0 /* LJDemoHttpManagerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoHttpManagerController.m; sourceTree = "<group>"; };
+		8BFA50C72327881E0014F6E0 /* LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJKit.h; sourceTree = "<group>"; };
+		8BFA50CA2327881E0014F6E0 /* LJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCategory.h; sourceTree = "<group>"; };
+		8BFA50CC2327881E0014F6E0 /* UIBarButtonItem+LJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LJKit.m"; sourceTree = "<group>"; };
+		8BFA50CD2327881E0014F6E0 /* UIView+LJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJKit.m"; sourceTree = "<group>"; };
+		8BFA50CE2327881E0014F6E0 /* UIImage+LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LJKit.h"; sourceTree = "<group>"; };
+		8BFA50CF2327881E0014F6E0 /* UIViewController+LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LJKit.h"; sourceTree = "<group>"; };
+		8BFA50D02327881E0014F6E0 /* UIView+LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJKit.h"; sourceTree = "<group>"; };
+		8BFA50D12327881E0014F6E0 /* UIBarButtonItem+LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LJKit.h"; sourceTree = "<group>"; };
+		8BFA50D22327881E0014F6E0 /* UIViewController+LJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LJKit.m"; sourceTree = "<group>"; };
+		8BFA50D32327881E0014F6E0 /* UIImage+LJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LJKit.m"; sourceTree = "<group>"; };
+		8BFA50D52327881E0014F6E0 /* NSString+LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LJKit.h"; sourceTree = "<group>"; };
+		8BFA50D62327881E0014F6E0 /* NSDate+LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LJKit.h"; sourceTree = "<group>"; };
+		8BFA50D72327881E0014F6E0 /* NSString+LJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJKit.m"; sourceTree = "<group>"; };
+		8BFA50D82327881E0014F6E0 /* NSDate+LJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LJKit.m"; sourceTree = "<group>"; };
+		8BFA50DF2327881E0014F6E0 /* LJSandboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSandboxViewController.m; sourceTree = "<group>"; };
+		8BFA50E02327881E0014F6E0 /* LJSandboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSandboxViewController.h; sourceTree = "<group>"; };
+		8BFA50E32327881E0014F6E0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8BFA50ED23278A090014F6E0 /* LJClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJClassViewController.h; sourceTree = "<group>"; };
+		8BFA50EE23278A090014F6E0 /* LJClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJClassViewController.m; sourceTree = "<group>"; };
+		8BFA50F023278A380014F6E0 /* LJLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJLocationManager.h; sourceTree = "<group>"; };
+		8BFA50F123278A380014F6E0 /* LJLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJLocationManager.m; sourceTree = "<group>"; };
+		8BFA50F523278A770014F6E0 /* LJAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAlertViewController.h; sourceTree = "<group>"; };
+		8BFA50F623278A770014F6E0 /* LJAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJAlertViewController.m; sourceTree = "<group>"; };
+		8BFA50FA23278B080014F6E0 /* LJThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJThemeManager.h; sourceTree = "<group>"; };
+		8BFA50FB23278B080014F6E0 /* LJThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJThemeManager.m; sourceTree = "<group>"; };
+		8BFA50FD23278C800014F6E0 /* LJHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJHttpManager.h; sourceTree = "<group>"; };
+		8BFA50FE23278C800014F6E0 /* LJHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJHttpManager.m; sourceTree = "<group>"; };
+		8BFA510123278D7A0014F6E0 /* LJImagePickerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJImagePickerManager.h; sourceTree = "<group>"; };
+		8BFA510223278D7A0014F6E0 /* LJImagePickerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJImagePickerManager.m; sourceTree = "<group>"; };
+		8BFA5106232795160014F6E0 /* UIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAppDelegate.h; sourceTree = "<group>"; };
+		8BFA5107232795160014F6E0 /* UIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAppDelegate.m; sourceTree = "<group>"; };
 		B45A2A1940A32C477FEE5A14 /* Pods-LJKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJKit_Example/Pods-LJKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B5949097FA9A44F98FFAA9C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C5E0481D2289220F00282C38 /* LJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAppDelegate.h; sourceTree = "<group>"; };
-		C5E0481E2289220F00282C38 /* LJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJAppDelegate.m; sourceTree = "<group>"; };
-		C5E0482822892A3E00282C38 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		C5E0483422892D5E00282C38 /* UIView+LJKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJKit.m"; sourceTree = "<group>"; };
-		C5E0483522892D5E00282C38 /* UIView+LJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJKit.h"; sourceTree = "<group>"; };
-		C5E048372289355900282C38 /* UIImage+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LJKit.h"; sourceTree = "<group>"; };
-		C5E048382289355900282C38 /* UIImage+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LJKit.m"; sourceTree = "<group>"; };
-		C5E0483A22894C7500282C38 /* NSString+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LJKit.h"; sourceTree = "<group>"; };
-		C5E0483B22894C7500282C38 /* NSString+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJKit.m"; sourceTree = "<group>"; };
-		C5E0483D22894CFF00282C38 /* NSDate+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+LJKit.h"; sourceTree = "<group>"; };
-		C5E0483E22894CFF00282C38 /* NSDate+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LJKit.m"; sourceTree = "<group>"; };
-		C5E0484422895F4300282C38 /* LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJKit.h; sourceTree = "<group>"; };
-		C5E0484522895F9C00282C38 /* LJCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCategory.h; sourceTree = "<group>"; };
-		C5E048492289693E00282C38 /* LJManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJManager.h; sourceTree = "<group>"; };
 		D7D7E3229F3D3C8CDD3B8248 /* LJKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LJKit.podspec; path = ../LJKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -202,7 +197,6 @@
 		6003F593195388D20070C39A /* Example for LJKit */ = {
 			isa = PBXGroup;
 			children = (
-				C5E0482422892A3E00282C38 /* LJKit */,
 				8B2C826222DD66160026EBF7 /* Modules */,
 				8B2C826322DD66200026EBF7 /* AppDelegate */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -253,46 +247,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		8B2C825D22DD641F0026EBF7 /* LJHttpManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LJHttpManager;
-			sourceTree = "<group>";
-		};
-		8B2C825E22DD654E0026EBF7 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C829E22DD7B0F0026EBF7 /* Refresh */,
-				8B2C826122DD65830026EBF7 /* UIViewController */,
-				8B2C826022DD65780026EBF7 /* UIView */,
-				8B2C825F22DD656D0026EBF7 /* LJCustom.h */,
-			);
-			path = Custom;
-			sourceTree = "<group>";
-		};
-		8B2C826022DD65780026EBF7 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		8B2C826122DD65830026EBF7 /* UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIViewController;
-			sourceTree = "<group>";
-		};
 		8B2C826222DD66160026EBF7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8BFA50C52327881E0014F6E0 /* LJKit */,
 				8BFA508123273CBB0014F6E0 /* DemoVC */,
-				8B2C826422DD66330026EBF7 /* Main */,
-				8B2C827822DD6AF80026EBF7 /* Home */,
-				8B2C826722DD665D0026EBF7 /* Discover */,
-				8B2C826622DD664B0026EBF7 /* Mine */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -300,181 +259,10 @@
 		8B2C826322DD66200026EBF7 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				C5E0481D2289220F00282C38 /* LJAppDelegate.h */,
-				C5E0481E2289220F00282C38 /* LJAppDelegate.m */,
+				8BFA5106232795160014F6E0 /* UIAppDelegate.h */,
+				8BFA5107232795160014F6E0 /* UIAppDelegate.m */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		8B2C826422DD66330026EBF7 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C826F22DD67FF0026EBF7 /* Controller */,
-				8B2C827122DD680E0026EBF7 /* Model */,
-				8B2C827022DD68080026EBF7 /* View */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		8B2C826622DD664B0026EBF7 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C827F22DD6B3C0026EBF7 /* Controller */,
-				8B2C828122DD6B4B0026EBF7 /* View */,
-				8B2C828022DD6B450026EBF7 /* Model */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		8B2C826722DD665D0026EBF7 /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C827C22DD6B270026EBF7 /* Controller */,
-				8B2C827E22DD6B350026EBF7 /* View */,
-				8B2C827D22DD6B2F0026EBF7 /* Model */,
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		8B2C826822DD67070026EBF7 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C826922DD672C0026EBF7 /* LJBaseViewController.h */,
-				8B2C826A22DD672C0026EBF7 /* LJBaseViewController.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		8B2C826F22DD67FF0026EBF7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C827222DD685B0026EBF7 /* LJTabBarController.h */,
-				8B2C827322DD685B0026EBF7 /* LJTabBarController.m */,
-				8B2C827522DD689C0026EBF7 /* LJRootViewController.h */,
-				8B2C827622DD689C0026EBF7 /* LJRootViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8B2C827022DD68080026EBF7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C829722DD77300026EBF7 /* LJTabBarItem.h */,
-				8B2C829822DD77300026EBF7 /* LJTabBarItem.m */,
-				8B2C82A522DDAE7D0026EBF7 /* LJNavigationBarContnetView.h */,
-				8B2C82A622DDAE7D0026EBF7 /* LJNavigationBarContnetView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8B2C827122DD680E0026EBF7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8B2C827822DD6AF80026EBF7 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C827922DD6B040026EBF7 /* Controller */,
-				8B2C827B22DD6B100026EBF7 /* View */,
-				8B2C827A22DD6B0B0026EBF7 /* Model */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		8B2C827922DD6B040026EBF7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C828522DD6B750026EBF7 /* LJHomeViewController.h */,
-				8B2C828622DD6B750026EBF7 /* LJHomeViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8B2C827A22DD6B0B0026EBF7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8B2C827B22DD6B100026EBF7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8B2C827C22DD6B270026EBF7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C828822DD6B990026EBF7 /* LJDiscoverViewController.h */,
-				8B2C828922DD6B990026EBF7 /* LJDiscoverViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8B2C827D22DD6B2F0026EBF7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8B2C827E22DD6B350026EBF7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8B2C827F22DD6B3C0026EBF7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8B2C829422DD76C00026EBF7 /* LJMineViewController.h */,
-				8B2C829522DD76C00026EBF7 /* LJMineViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8B2C828022DD6B450026EBF7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8B2C828122DD6B4B0026EBF7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8B2C829E22DD7B0F0026EBF7 /* Refresh */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Refresh;
-			sourceTree = "<group>";
-		};
-		8BFA507C23273AF70014F6E0 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				8BFA507D23273B240014F6E0 /* Sandbox */,
-			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
-		8BFA507D23273B240014F6E0 /* Sandbox */ = {
-			isa = PBXGroup;
-			children = (
-				8BFA507E23273B450014F6E0 /* LJSandboxViewController.h */,
-				8BFA507F23273B450014F6E0 /* LJSandboxViewController.m */,
-			);
-			path = Sandbox;
 			sourceTree = "<group>";
 		};
 		8BFA508123273CBB0014F6E0 /* DemoVC */ = {
@@ -482,6 +270,8 @@
 			children = (
 				8BFA509423274BB30014F6E0 /* LJDemoBaseController.h */,
 				8BFA509523274BB30014F6E0 /* LJDemoBaseController.m */,
+				8B2C828522DD6B750026EBF7 /* LJDemoHomeViewController.h */,
+				8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */,
 				8BFA509723274D3D0014F6E0 /* LJDemoHttpManagerController.h */,
 				8BFA509823274D3D0014F6E0 /* LJDemoHttpManagerController.m */,
 				8BFA508223273D010014F6E0 /* LJDemoDebugController.h */,
@@ -490,79 +280,177 @@
 			path = DemoVC;
 			sourceTree = "<group>";
 		};
-		C5E0482422892A3E00282C38 /* LJKit */ = {
+		8BFA50C52327881E0014F6E0 /* LJKit */ = {
 			isa = PBXGroup;
 			children = (
-				C5E0482522892A3E00282C38 /* Classes */,
-				C5E0482722892A3E00282C38 /* Assets */,
+				8BFA50C62327881E0014F6E0 /* Classes */,
+				8BFA50E22327881E0014F6E0 /* Assets */,
 			);
-			path = LJKit;
-			sourceTree = "<group>";
+			name = LJKit;
+			path = LJKit/LJKit;
+			sourceTree = SOURCE_ROOT;
 		};
-		C5E0482522892A3E00282C38 /* Classes */ = {
+		8BFA50C62327881E0014F6E0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8BFA507C23273AF70014F6E0 /* Debug */,
-				8B2C826822DD67070026EBF7 /* Base */,
-				8B2C825E22DD654E0026EBF7 /* Custom */,
-				C5E0484422895F4300282C38 /* LJKit.h */,
-				C5E048402289556300282C38 /* Manager */,
-				C5E0483122892AC500282C38 /* Category */,
+				8BFA50C72327881E0014F6E0 /* LJKit.h */,
+				8BFA50C82327881E0014F6E0 /* CustomUI */,
+				8BFA50C92327881E0014F6E0 /* Category */,
+				8BFA50DA2327881E0014F6E0 /* Utils */,
+				8BFA50DC2327881E0014F6E0 /* Debug */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		C5E0482722892A3E00282C38 /* Assets */ = {
+		8BFA50C82327881E0014F6E0 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
-				C5E0482822892A3E00282C38 /* .gitkeep */,
 			);
-			path = Assets;
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
-		C5E0483122892AC500282C38 /* Category */ = {
+		8BFA50C92327881E0014F6E0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				C5E0484522895F9C00282C38 /* LJCategory.h */,
-				C5E0483322892D3B00282C38 /* Foundation */,
-				C5E0483222892AD700282C38 /* UIKit */,
+				8BFA50CA2327881E0014F6E0 /* LJCategory.h */,
+				8BFA50CB2327881E0014F6E0 /* UIKit */,
+				8BFA50D42327881E0014F6E0 /* Foundation */,
 			);
 			path = Category;
 			sourceTree = "<group>";
 		};
-		C5E0483222892AD700282C38 /* UIKit */ = {
+		8BFA50CB2327881E0014F6E0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8B2C829F22DD9B2B0026EBF7 /* UIBarButtonItem+LJKit.h */,
-				8B2C82A022DD9B2B0026EBF7 /* UIBarButtonItem+LJKit.m */,
-				C5E0483522892D5E00282C38 /* UIView+LJKit.h */,
-				C5E0483422892D5E00282C38 /* UIView+LJKit.m */,
-				C5E048372289355900282C38 /* UIImage+LJKit.h */,
-				C5E048382289355900282C38 /* UIImage+LJKit.m */,
-				8B2C826C22DD67760026EBF7 /* UIViewController+LJKit.h */,
-				8B2C826D22DD67760026EBF7 /* UIViewController+LJKit.m */,
+				8BFA50CC2327881E0014F6E0 /* UIBarButtonItem+LJKit.m */,
+				8BFA50CD2327881E0014F6E0 /* UIView+LJKit.m */,
+				8BFA50CE2327881E0014F6E0 /* UIImage+LJKit.h */,
+				8BFA50CF2327881E0014F6E0 /* UIViewController+LJKit.h */,
+				8BFA50D02327881E0014F6E0 /* UIView+LJKit.h */,
+				8BFA50D12327881E0014F6E0 /* UIBarButtonItem+LJKit.h */,
+				8BFA50D22327881E0014F6E0 /* UIViewController+LJKit.m */,
+				8BFA50D32327881E0014F6E0 /* UIImage+LJKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		C5E0483322892D3B00282C38 /* Foundation */ = {
+		8BFA50D42327881E0014F6E0 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				C5E0483A22894C7500282C38 /* NSString+LJKit.h */,
-				C5E0483B22894C7500282C38 /* NSString+LJKit.m */,
-				C5E0483D22894CFF00282C38 /* NSDate+LJKit.h */,
-				C5E0483E22894CFF00282C38 /* NSDate+LJKit.m */,
+				8BFA50D52327881E0014F6E0 /* NSString+LJKit.h */,
+				8BFA50D62327881E0014F6E0 /* NSDate+LJKit.h */,
+				8BFA50D72327881E0014F6E0 /* NSString+LJKit.m */,
+				8BFA50D82327881E0014F6E0 /* NSDate+LJKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
 		};
-		C5E048402289556300282C38 /* Manager */ = {
+		8BFA50DA2327881E0014F6E0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				C5E048492289693E00282C38 /* LJManager.h */,
-				8B2C825D22DD641F0026EBF7 /* LJHttpManager */,
+				8BFA510023278D600014F6E0 /* LJImagePickerManager */,
+				8BFA50F923278AEC0014F6E0 /* LJThemeManager */,
+				8BFA50F823278A7D0014F6E0 /* LJToast */,
+				8BFA50F423278A560014F6E0 /* LJAlertViewController */,
+				8BFA50F323278A3C0014F6E0 /* LJLocationManager */,
+				8BFA50DB2327881E0014F6E0 /* LJHttpManager */,
 			);
-			path = Manager;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8BFA50DB2327881E0014F6E0 /* LJHttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA50FD23278C800014F6E0 /* LJHttpManager.h */,
+				8BFA50FE23278C800014F6E0 /* LJHttpManager.m */,
+			);
+			path = LJHttpManager;
+			sourceTree = "<group>";
+		};
+		8BFA50DC2327881E0014F6E0 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA50DD2327881E0014F6E0 /* Interface */,
+				8BFA50DE2327881E0014F6E0 /* Sandbox */,
+				8BFA50E12327881E0014F6E0 /* ClassView */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		8BFA50DD2327881E0014F6E0 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		8BFA50DE2327881E0014F6E0 /* Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA50DF2327881E0014F6E0 /* LJSandboxViewController.m */,
+				8BFA50E02327881E0014F6E0 /* LJSandboxViewController.h */,
+			);
+			path = Sandbox;
+			sourceTree = "<group>";
+		};
+		8BFA50E12327881E0014F6E0 /* ClassView */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA50ED23278A090014F6E0 /* LJClassViewController.h */,
+				8BFA50EE23278A090014F6E0 /* LJClassViewController.m */,
+			);
+			path = ClassView;
+			sourceTree = "<group>";
+		};
+		8BFA50E22327881E0014F6E0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA50E32327881E0014F6E0 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8BFA50F323278A3C0014F6E0 /* LJLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA50F023278A380014F6E0 /* LJLocationManager.h */,
+				8BFA50F123278A380014F6E0 /* LJLocationManager.m */,
+			);
+			path = LJLocationManager;
+			sourceTree = "<group>";
+		};
+		8BFA50F423278A560014F6E0 /* LJAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA50F523278A770014F6E0 /* LJAlertViewController.h */,
+				8BFA50F623278A770014F6E0 /* LJAlertViewController.m */,
+			);
+			path = LJAlertViewController;
+			sourceTree = "<group>";
+		};
+		8BFA50F823278A7D0014F6E0 /* LJToast */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LJToast;
+			sourceTree = "<group>";
+		};
+		8BFA50F923278AEC0014F6E0 /* LJThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA50FA23278B080014F6E0 /* LJThemeManager.h */,
+				8BFA50FB23278B080014F6E0 /* LJThemeManager.m */,
+			);
+			path = LJThemeManager;
+			sourceTree = "<group>";
+		};
+		8BFA510023278D600014F6E0 /* LJImagePickerManager */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA510123278D7A0014F6E0 /* LJImagePickerManager.h */,
+				8BFA510223278D7A0014F6E0 /* LJImagePickerManager.m */,
+			);
+			path = LJImagePickerManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,7 +464,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				5C6FF263A527430771EBA69F /* [CP] Embed Pods Frameworks */,
+				19E9661FD2038B52D12E07AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -650,8 +538,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				C5E0482A22892A3E00282C38 /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				8BFA50EC2327881E0014F6E0 /* .gitkeep in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,7 +573,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5C6FF263A527430771EBA69F /* [CP] Embed Pods Frameworks */ = {
+		19E9661FD2038B52D12E07AC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -695,6 +583,7 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
@@ -706,6 +595,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
@@ -742,26 +632,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B2C827722DD689C0026EBF7 /* LJRootViewController.m in Sources */,
-				8B2C828A22DD6B990026EBF7 /* LJDiscoverViewController.m in Sources */,
-				8B2C826B22DD672C0026EBF7 /* LJBaseViewController.m in Sources */,
-				8B2C82A122DD9B2B0026EBF7 /* UIBarButtonItem+LJKit.m in Sources */,
+				8BFA50E42327881E0014F6E0 /* UIBarButtonItem+LJKit.m in Sources */,
+				8BFA50FF23278C800014F6E0 /* LJHttpManager.m in Sources */,
+				8BFA50E82327881E0014F6E0 /* NSString+LJKit.m in Sources */,
 				8BFA509623274BB30014F6E0 /* LJDemoBaseController.m in Sources */,
-				8B2C82A722DDAE7D0026EBF7 /* LJNavigationBarContnetView.m in Sources */,
-				8BFA508023273B450014F6E0 /* LJSandboxViewController.m in Sources */,
-				8B2C826E22DD67760026EBF7 /* UIViewController+LJKit.m in Sources */,
-				8B2C828722DD6B750026EBF7 /* LJHomeViewController.m in Sources */,
-				8B2C829622DD76C00026EBF7 /* LJMineViewController.m in Sources */,
-				8B2C827422DD685B0026EBF7 /* LJTabBarController.m in Sources */,
-				C5E0483C22894C7500282C38 /* NSString+LJKit.m in Sources */,
-				8B2C829922DD77300026EBF7 /* LJTabBarItem.m in Sources */,
+				8BFA50F723278A770014F6E0 /* LJAlertViewController.m in Sources */,
+				8BFA50EF23278A090014F6E0 /* LJClassViewController.m in Sources */,
+				8BFA50E72327881E0014F6E0 /* UIImage+LJKit.m in Sources */,
+				8BFA50EB2327881E0014F6E0 /* LJSandboxViewController.m in Sources */,
+				8BFA50E52327881E0014F6E0 /* UIView+LJKit.m in Sources */,
+				8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */,
+				8BFA50FC23278B080014F6E0 /* LJThemeManager.m in Sources */,
+				8BFA50F223278A380014F6E0 /* LJLocationManager.m in Sources */,
+				8BFA50E62327881E0014F6E0 /* UIViewController+LJKit.m in Sources */,
 				8BFA508423273D010014F6E0 /* LJDemoDebugController.m in Sources */,
 				8BFA509923274D3D0014F6E0 /* LJDemoHttpManagerController.m in Sources */,
+				8BFA510323278D7A0014F6E0 /* LJImagePickerManager.m in Sources */,
+				8BFA5108232795160014F6E0 /* UIAppDelegate.m in Sources */,
+				8BFA50E92327881E0014F6E0 /* NSDate+LJKit.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				C5E0481F2289221000282C38 /* LJAppDelegate.m in Sources */,
-				C5E0483622892D5F00282C38 /* UIView+LJKit.m in Sources */,
-				C5E0483F22894CFF00282C38 /* NSDate+LJKit.m in Sources */,
-				C5E048392289355900282C38 /* UIImage+LJKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

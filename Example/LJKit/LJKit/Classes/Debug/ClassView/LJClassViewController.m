@@ -1,27 +1,22 @@
 //
-//  LJDemoHttpManagerController.m
+//  LJClassViewController.m
 //  LJKit_Example
 //
 //  Created by developer on 2019/9/10.
 //  Copyright © 2019 liujing. All rights reserved.
 //
 
-#import "LJDemoHttpManagerController.h"
-#import "LJHttpManager.h"
+#import "LJClassViewController.h"
 
-@interface LJDemoHttpManagerController ()
+@interface LJClassViewController ()
 
 @end
 
-@implementation LJDemoHttpManagerController
+@implementation LJClassViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataList = @[@"普通get或post",@"上传文件",@"下载文件"];
-    [self.tableView reloadData];
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Do any additional setup after loading the view.
 }
 
 /*

@@ -6,14 +6,11 @@
 #ifndef LJKit_h
 #define LJKit_h
 
-// 工具类
-#import "LJManager.h"
 
 // 分类相关
 #import "LJCategory.h"
 
-// 自定义
-#import "LJCustom.h"
+// 工具类
 
 // 调试
 

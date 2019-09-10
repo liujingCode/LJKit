@@ -1,6 +1,6 @@
 {
   "name": "LJKit",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -11,17 +11,15 @@
   },
   "summary": "方便自己以后开发的工具类",
   "source": {
-    "git": "https://github.com/liujingCode/LJKit.git"
+    "git": "https://github.com/liujingCode/LJKit.git",
+    "tag": "0.1.5"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "8.0"
   },
-  "source_files": "LJKit/Classes/**/*",
+  "source_files": "Example/LJKit/LJKit/Classes/**/*",
   "frameworks": "UIKit",
   "dependencies": {
-    "AFNetworking": [
-
-    ],
     "SDWebImage": [
 
     ],
@@ -43,5 +41,60 @@
     "TZImagePickerController": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Category",
+      "frameworks": [
+        "UIKit",
+        "Foundation"
+      ],
+      "source_files": "LJKit/Classes/Category/**/*"
+    },
+    {
+      "name": "CustomUI",
+      "frameworks": "UIKit",
+      "source_files": "LJKit/Classes/customUI/**/*"
+    },
+    {
+      "name": "Debug",
+      "frameworks": [
+        "UIKit",
+        "Foundation"
+      ],
+      "source_files": "LJKit/Classes/Debug/**/*"
+    },
+    {
+      "name": "Utils",
+      "source_files": "LJKit/Classes/Utils/**/*",
+      "subspecs": [
+        {
+          "name": "HttpManager",
+          "source_files": "LJKit/Classes/Utils/LJHttpManager/**/*",
+          "dependencies": {
+            "AFNetworking": [
+
+            ]
+          }
+        },
+        {
+          "name": "ImagePickerManager",
+          "source_files": "LJKit/Classes/Utils/LJImagePickerManager/**/*",
+          "dependencies": {
+            "TZImagePickerController": [
+
+            ]
+          }
+        },
+        {
+          "name": "LocationManager",
+          "source_files": "LJKit/Classes/Utils/LJLocationManager/**/*"
+        },
+        {
+          "name": "ThemeManager",
+          "source_files": "LJKit/Classes/Utils/LJThemeManager/**/*"
+        }
+      ]
+    }
+  ]
 }
