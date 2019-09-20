@@ -43,6 +43,7 @@ Pod::Spec.new do |spec|
     utils.subspec 'HttpManager' do |httpManager|
       httpManager.source_files = 'Example/LJKit/LJKit/Classes/Utils/LJHttpManager/**/*'
       httpManager.dependency 'AFNetworking'
+      #httpManager.dependency 'YYModel'
     end
     
     # 拍照或相册

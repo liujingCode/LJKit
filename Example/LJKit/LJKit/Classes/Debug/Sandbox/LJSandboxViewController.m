@@ -7,6 +7,7 @@
 //
 
 #import "LJSandboxViewController.h"
+#import "LJSandboxHomeController.h"
 
 @interface LJSandboxViewController ()
 
@@ -20,8 +21,7 @@
 }
 
 - (instancetype)init {
-    if (self = [super init]) {
-        
+    if (self = [super initWithRootViewController:[LJSandboxHomeController new]]) {
     }
     return self;
 }

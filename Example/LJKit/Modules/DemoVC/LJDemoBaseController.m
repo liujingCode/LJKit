@@ -9,12 +9,17 @@
 #import "LJDemoBaseController.h"
 
 @implementation LJDemoBaseController
-
+@synthesize dataList = _dataList;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
 }
+
+- (void)setDataList:(NSArray<NSString *> *)dataList {
+    _dataList = dataList;
+    [self.tableView reloadData];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataList.count;
 }

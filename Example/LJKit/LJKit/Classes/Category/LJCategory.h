@@ -14,7 +14,9 @@
 
 
 // Foundation
+#import "NSObject+LJKit.h"
 #import "NSString+LJKit.h"
 #import "NSDate+LJKit.h"
+
 
 #endif /* LJCategory_h */

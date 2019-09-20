@@ -4,11 +4,11 @@ platform :ios, '9.0'
 
 target 'LJKit_Example' do
   
-  pod 'LJKit', :git => 'https://github.com/liujingCode/LJKit.git'
-
+#  pod 'LJKit', :git => 'https://github.com/liujingCode/LJKit.git'
 
 #  pod 'LJKit/Utils/HttpManager', :path => '../'
 
+  pod 'YYModel'
   pod 'Masonry',:inhibit_warnings => true
   pod 'SDWebImage',:inhibit_warnings => true
   pod 'AFNetworking'

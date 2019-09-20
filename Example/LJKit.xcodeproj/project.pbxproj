@@ -20,7 +20,17 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		8B05D9C7232F63CF007A72BF /* LJFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9C6232F63CF007A72BF /* LJFileManager.m */; };
+		8B05D9CA232F6557007A72BF /* LJDemoFileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9C9232F6557007A72BF /* LJDemoFileManagerController.m */; };
+		8B05D9CE232F91A6007A72BF /* LJDebugLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9CD232F91A6007A72BF /* LJDebugLogManager.m */; };
 		8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */; };
+		8BD142752334C94F00201B60 /* LJAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD142742334C94F00201B60 /* LJAuthorityManager.m */; };
+		8BDD99DC2330751400504CDB /* LJDebugLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99DB2330751400504CDB /* LJDebugLogView.m */; };
+		8BDD99DF2330A6E000504CDB /* UIAppDelegate+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99DE2330A6E000504CDB /* UIAppDelegate+LJKit.m */; };
+		8BDD99E32330ADCE00504CDB /* LJExceptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99E22330ADCE00504CDB /* LJExceptionManager.m */; };
+		8BDD99E62330BAF300504CDB /* NSFileManager+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99E52330BAF300504CDB /* NSFileManager+LJKit.m */; };
+		8BDD99E92330CE5800504CDB /* LJCrashAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99E82330CE5800504CDB /* LJCrashAlertView.m */; };
+		8BE1E79223338526009FB19D /* LJDemoImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */; };
 		8BFA508423273D010014F6E0 /* LJDemoDebugController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA508323273D010014F6E0 /* LJDemoDebugController.m */; };
 		8BFA509623274BB30014F6E0 /* LJDemoBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA509523274BB30014F6E0 /* LJDemoBaseController.m */; };
 		8BFA509923274D3D0014F6E0 /* LJDemoHttpManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA509823274D3D0014F6E0 /* LJDemoHttpManagerController.m */; };
@@ -32,13 +42,23 @@
 		8BFA50E92327881E0014F6E0 /* NSDate+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50D82327881E0014F6E0 /* NSDate+LJKit.m */; };
 		8BFA50EB2327881E0014F6E0 /* LJSandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50DF2327881E0014F6E0 /* LJSandboxViewController.m */; };
 		8BFA50EC2327881E0014F6E0 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8BFA50E32327881E0014F6E0 /* .gitkeep */; };
-		8BFA50EF23278A090014F6E0 /* LJClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50EE23278A090014F6E0 /* LJClassViewController.m */; };
+		8BFA50EF23278A090014F6E0 /* LJClassHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50EE23278A090014F6E0 /* LJClassHomeController.m */; };
 		8BFA50F223278A380014F6E0 /* LJLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50F123278A380014F6E0 /* LJLocationManager.m */; };
 		8BFA50F723278A770014F6E0 /* LJAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50F623278A770014F6E0 /* LJAlertViewController.m */; };
 		8BFA50FC23278B080014F6E0 /* LJThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50FB23278B080014F6E0 /* LJThemeManager.m */; };
-		8BFA50FF23278C800014F6E0 /* LJHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA50FE23278C800014F6E0 /* LJHttpManager.m */; };
 		8BFA510323278D7A0014F6E0 /* LJImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA510223278D7A0014F6E0 /* LJImagePickerManager.m */; };
 		8BFA5108232795160014F6E0 /* UIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA5107232795160014F6E0 /* UIAppDelegate.m */; };
+		8BFA51162327A0A80014F6E0 /* LJHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA510C2327A0A80014F6E0 /* LJHttpRequest.m */; };
+		8BFA51182327A0A80014F6E0 /* LJHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA51122327A0A80014F6E0 /* LJHttpManager.m */; };
+		8BFA51192327A0A80014F6E0 /* LJHttpUploadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA51132327A0A80014F6E0 /* LJHttpUploadModel.m */; };
+		8BFA511D23288BDA0014F6E0 /* LJSandboxHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA511C23288BDA0014F6E0 /* LJSandboxHomeController.m */; };
+		8BFA512023288C940014F6E0 /* LJSandboxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA511F23288C940014F6E0 /* LJSandboxModel.m */; };
+		8BFA512323288CC90014F6E0 /* LJSandboxViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA512223288CC90014F6E0 /* LJSandboxViewCell.m */; };
+		8BFA512623288CDC0014F6E0 /* LJLocalFilePreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA512523288CDC0014F6E0 /* LJLocalFilePreviewController.m */; };
+		8BFA512D2328BDB30014F6E0 /* LJHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA512B2328BDB30014F6E0 /* LJHttpResponse.m */; };
+		8BFA51312328D5F40014F6E0 /* NSObject+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA51302328D5F40014F6E0 /* NSObject+LJKit.m */; };
+		8BFA5135232A0BEA0014F6E0 /* LJClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA5134232A0BEA0014F6E0 /* LJClassViewController.m */; };
+		8BFA5138232A11960014F6E0 /* LJClassDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA5137232A11960014F6E0 /* LJClassDetailController.m */; };
 		D71509C90EC597059B2349C2 /* Pods_LJKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B0BD7AC5448F5558A57E46 /* Pods_LJKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,12 +95,33 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		64AB2533BEA4784402527DF4 /* Pods-LJKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJKit_Example/Pods-LJKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B05D9C5232F63CF007A72BF /* LJFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJFileManager.h; sourceTree = "<group>"; };
+		8B05D9C6232F63CF007A72BF /* LJFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJFileManager.m; sourceTree = "<group>"; };
+		8B05D9C8232F6557007A72BF /* LJDemoFileManagerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoFileManagerController.h; sourceTree = "<group>"; };
+		8B05D9C9232F6557007A72BF /* LJDemoFileManagerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoFileManagerController.m; sourceTree = "<group>"; };
+		8B05D9CC232F91A6007A72BF /* LJDebugLogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDebugLogManager.h; sourceTree = "<group>"; };
+		8B05D9CD232F91A6007A72BF /* LJDebugLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDebugLogManager.m; sourceTree = "<group>"; };
 		8B2C828522DD6B750026EBF7 /* LJDemoHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoHomeViewController.h; sourceTree = "<group>"; };
 		8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoHomeViewController.m; sourceTree = "<group>"; };
 		8B2C829A22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8B2C829B22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8B2C829C22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8B2C829D22DD7AC40026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8BD142732334C94F00201B60 /* LJAuthorityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAuthorityManager.h; sourceTree = "<group>"; };
+		8BD142742334C94F00201B60 /* LJAuthorityManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJAuthorityManager.m; sourceTree = "<group>"; };
+		8BD3F9EE2331CFCD0062EA29 /* LJHttpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJHttpResponse.h; sourceTree = "<group>"; };
+		8BDD99DA2330751400504CDB /* LJDebugLogView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDebugLogView.h; sourceTree = "<group>"; };
+		8BDD99DB2330751400504CDB /* LJDebugLogView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDebugLogView.m; sourceTree = "<group>"; };
+		8BDD99DD2330A6E000504CDB /* UIAppDelegate+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAppDelegate+LJKit.h"; sourceTree = "<group>"; };
+		8BDD99DE2330A6E000504CDB /* UIAppDelegate+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAppDelegate+LJKit.m"; sourceTree = "<group>"; };
+		8BDD99E12330ADCE00504CDB /* LJExceptionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJExceptionManager.h; sourceTree = "<group>"; };
+		8BDD99E22330ADCE00504CDB /* LJExceptionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJExceptionManager.m; sourceTree = "<group>"; };
+		8BDD99E42330BAF300504CDB /* NSFileManager+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+LJKit.h"; sourceTree = "<group>"; };
+		8BDD99E52330BAF300504CDB /* NSFileManager+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+LJKit.m"; sourceTree = "<group>"; };
+		8BDD99E72330CE5800504CDB /* LJCrashAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJCrashAlertView.h; sourceTree = "<group>"; };
+		8BDD99E82330CE5800504CDB /* LJCrashAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCrashAlertView.m; sourceTree = "<group>"; };
+		8BE1E79023338526009FB19D /* LJDemoImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoImagePickerController.h; sourceTree = "<group>"; };
+		8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoImagePickerController.m; sourceTree = "<group>"; };
 		8BFA508223273D010014F6E0 /* LJDemoDebugController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoDebugController.h; sourceTree = "<group>"; };
 		8BFA508323273D010014F6E0 /* LJDemoDebugController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoDebugController.m; sourceTree = "<group>"; };
 		8BFA509423274BB30014F6E0 /* LJDemoBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoBaseController.h; sourceTree = "<group>"; };
@@ -104,20 +145,39 @@
 		8BFA50DF2327881E0014F6E0 /* LJSandboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJSandboxViewController.m; sourceTree = "<group>"; };
 		8BFA50E02327881E0014F6E0 /* LJSandboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJSandboxViewController.h; sourceTree = "<group>"; };
 		8BFA50E32327881E0014F6E0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		8BFA50ED23278A090014F6E0 /* LJClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJClassViewController.h; sourceTree = "<group>"; };
-		8BFA50EE23278A090014F6E0 /* LJClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJClassViewController.m; sourceTree = "<group>"; };
+		8BFA50ED23278A090014F6E0 /* LJClassHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJClassHomeController.h; sourceTree = "<group>"; };
+		8BFA50EE23278A090014F6E0 /* LJClassHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJClassHomeController.m; sourceTree = "<group>"; };
 		8BFA50F023278A380014F6E0 /* LJLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJLocationManager.h; sourceTree = "<group>"; };
 		8BFA50F123278A380014F6E0 /* LJLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJLocationManager.m; sourceTree = "<group>"; };
 		8BFA50F523278A770014F6E0 /* LJAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAlertViewController.h; sourceTree = "<group>"; };
 		8BFA50F623278A770014F6E0 /* LJAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJAlertViewController.m; sourceTree = "<group>"; };
 		8BFA50FA23278B080014F6E0 /* LJThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJThemeManager.h; sourceTree = "<group>"; };
 		8BFA50FB23278B080014F6E0 /* LJThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJThemeManager.m; sourceTree = "<group>"; };
-		8BFA50FD23278C800014F6E0 /* LJHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJHttpManager.h; sourceTree = "<group>"; };
-		8BFA50FE23278C800014F6E0 /* LJHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJHttpManager.m; sourceTree = "<group>"; };
 		8BFA510123278D7A0014F6E0 /* LJImagePickerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJImagePickerManager.h; sourceTree = "<group>"; };
 		8BFA510223278D7A0014F6E0 /* LJImagePickerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJImagePickerManager.m; sourceTree = "<group>"; };
 		8BFA5106232795160014F6E0 /* UIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAppDelegate.h; sourceTree = "<group>"; };
 		8BFA5107232795160014F6E0 /* UIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAppDelegate.m; sourceTree = "<group>"; };
+		8BFA510C2327A0A80014F6E0 /* LJHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHttpRequest.m; sourceTree = "<group>"; };
+		8BFA510E2327A0A80014F6E0 /* LJHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHttpRequest.h; sourceTree = "<group>"; };
+		8BFA510F2327A0A80014F6E0 /* LJHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHttpManager.h; sourceTree = "<group>"; };
+		8BFA51102327A0A80014F6E0 /* LJHttpUploadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHttpUploadModel.h; sourceTree = "<group>"; };
+		8BFA51122327A0A80014F6E0 /* LJHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHttpManager.m; sourceTree = "<group>"; };
+		8BFA51132327A0A80014F6E0 /* LJHttpUploadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHttpUploadModel.m; sourceTree = "<group>"; };
+		8BFA511B23288BDA0014F6E0 /* LJSandboxHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJSandboxHomeController.h; sourceTree = "<group>"; };
+		8BFA511C23288BDA0014F6E0 /* LJSandboxHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJSandboxHomeController.m; sourceTree = "<group>"; };
+		8BFA511E23288C940014F6E0 /* LJSandboxModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJSandboxModel.h; sourceTree = "<group>"; };
+		8BFA511F23288C940014F6E0 /* LJSandboxModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJSandboxModel.m; sourceTree = "<group>"; };
+		8BFA512123288CC90014F6E0 /* LJSandboxViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJSandboxViewCell.h; sourceTree = "<group>"; };
+		8BFA512223288CC90014F6E0 /* LJSandboxViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJSandboxViewCell.m; sourceTree = "<group>"; };
+		8BFA512423288CDC0014F6E0 /* LJLocalFilePreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJLocalFilePreviewController.h; sourceTree = "<group>"; };
+		8BFA512523288CDC0014F6E0 /* LJLocalFilePreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJLocalFilePreviewController.m; sourceTree = "<group>"; };
+		8BFA512B2328BDB30014F6E0 /* LJHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHttpResponse.m; sourceTree = "<group>"; };
+		8BFA512F2328D5F40014F6E0 /* NSObject+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LJKit.h"; sourceTree = "<group>"; };
+		8BFA51302328D5F40014F6E0 /* NSObject+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LJKit.m"; sourceTree = "<group>"; };
+		8BFA5133232A0BEA0014F6E0 /* LJClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJClassViewController.h; sourceTree = "<group>"; };
+		8BFA5134232A0BEA0014F6E0 /* LJClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJClassViewController.m; sourceTree = "<group>"; };
+		8BFA5136232A11960014F6E0 /* LJClassDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJClassDetailController.h; sourceTree = "<group>"; };
+		8BFA5137232A11960014F6E0 /* LJClassDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJClassDetailController.m; sourceTree = "<group>"; };
 		B45A2A1940A32C477FEE5A14 /* Pods-LJKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJKit_Example/Pods-LJKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B5949097FA9A44F98FFAA9C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D7D7E3229F3D3C8CDD3B8248 /* LJKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LJKit.podspec; path = ../LJKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -247,6 +307,26 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		8B05D9C4232F63B2007A72BF /* LJFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				8B05D9C5232F63CF007A72BF /* LJFileManager.h */,
+				8B05D9C6232F63CF007A72BF /* LJFileManager.m */,
+			);
+			path = LJFileManager;
+			sourceTree = "<group>";
+		};
+		8B05D9CB232F9167007A72BF /* DebugLog */ = {
+			isa = PBXGroup;
+			children = (
+				8B05D9CC232F91A6007A72BF /* LJDebugLogManager.h */,
+				8B05D9CD232F91A6007A72BF /* LJDebugLogManager.m */,
+				8BDD99DA2330751400504CDB /* LJDebugLogView.h */,
+				8BDD99DB2330751400504CDB /* LJDebugLogView.m */,
+			);
+			path = DebugLog;
+			sourceTree = "<group>";
+		};
 		8B2C826222DD66160026EBF7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +345,26 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		8BD142722334C8F700201B60 /* LJAuthorityManager */ = {
+			isa = PBXGroup;
+			children = (
+				8BD142732334C94F00201B60 /* LJAuthorityManager.h */,
+				8BD142742334C94F00201B60 /* LJAuthorityManager.m */,
+			);
+			path = LJAuthorityManager;
+			sourceTree = "<group>";
+		};
+		8BDD99E02330ADAC00504CDB /* LJExceptionManager */ = {
+			isa = PBXGroup;
+			children = (
+				8BDD99E12330ADCE00504CDB /* LJExceptionManager.h */,
+				8BDD99E22330ADCE00504CDB /* LJExceptionManager.m */,
+				8BDD99E72330CE5800504CDB /* LJCrashAlertView.h */,
+				8BDD99E82330CE5800504CDB /* LJCrashAlertView.m */,
+			);
+			path = LJExceptionManager;
+			sourceTree = "<group>";
+		};
 		8BFA508123273CBB0014F6E0 /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +376,10 @@
 				8BFA509823274D3D0014F6E0 /* LJDemoHttpManagerController.m */,
 				8BFA508223273D010014F6E0 /* LJDemoDebugController.h */,
 				8BFA508323273D010014F6E0 /* LJDemoDebugController.m */,
+				8B05D9C8232F6557007A72BF /* LJDemoFileManagerController.h */,
+				8B05D9C9232F6557007A72BF /* LJDemoFileManagerController.m */,
+				8BE1E79023338526009FB19D /* LJDemoImagePickerController.h */,
+				8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
@@ -322,14 +426,16 @@
 		8BFA50CB2327881E0014F6E0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8BFA50CC2327881E0014F6E0 /* UIBarButtonItem+LJKit.m */,
+				8BFA50D02327881E0014F6E0 /* UIView+LJKit.h */,
 				8BFA50CD2327881E0014F6E0 /* UIView+LJKit.m */,
 				8BFA50CE2327881E0014F6E0 /* UIImage+LJKit.h */,
-				8BFA50CF2327881E0014F6E0 /* UIViewController+LJKit.h */,
-				8BFA50D02327881E0014F6E0 /* UIView+LJKit.h */,
-				8BFA50D12327881E0014F6E0 /* UIBarButtonItem+LJKit.h */,
-				8BFA50D22327881E0014F6E0 /* UIViewController+LJKit.m */,
 				8BFA50D32327881E0014F6E0 /* UIImage+LJKit.m */,
+				8BFA50D12327881E0014F6E0 /* UIBarButtonItem+LJKit.h */,
+				8BFA50CC2327881E0014F6E0 /* UIBarButtonItem+LJKit.m */,
+				8BFA50CF2327881E0014F6E0 /* UIViewController+LJKit.h */,
+				8BFA50D22327881E0014F6E0 /* UIViewController+LJKit.m */,
+				8BDD99DD2330A6E000504CDB /* UIAppDelegate+LJKit.h */,
+				8BDD99DE2330A6E000504CDB /* UIAppDelegate+LJKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -341,6 +447,10 @@
 				8BFA50D62327881E0014F6E0 /* NSDate+LJKit.h */,
 				8BFA50D72327881E0014F6E0 /* NSString+LJKit.m */,
 				8BFA50D82327881E0014F6E0 /* NSDate+LJKit.m */,
+				8BFA512F2328D5F40014F6E0 /* NSObject+LJKit.h */,
+				8BFA51302328D5F40014F6E0 /* NSObject+LJKit.m */,
+				8BDD99E42330BAF300504CDB /* NSFileManager+LJKit.h */,
+				8BDD99E52330BAF300504CDB /* NSFileManager+LJKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -348,6 +458,9 @@
 		8BFA50DA2327881E0014F6E0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8BD142722334C8F700201B60 /* LJAuthorityManager */,
+				8BDD99E02330ADAC00504CDB /* LJExceptionManager */,
+				8B05D9C4232F63B2007A72BF /* LJFileManager */,
 				8BFA510023278D600014F6E0 /* LJImagePickerManager */,
 				8BFA50F923278AEC0014F6E0 /* LJThemeManager */,
 				8BFA50F823278A7D0014F6E0 /* LJToast */,
@@ -361,8 +474,14 @@
 		8BFA50DB2327881E0014F6E0 /* LJHttpManager */ = {
 			isa = PBXGroup;
 			children = (
-				8BFA50FD23278C800014F6E0 /* LJHttpManager.h */,
-				8BFA50FE23278C800014F6E0 /* LJHttpManager.m */,
+				8BD3F9EE2331CFCD0062EA29 /* LJHttpResponse.h */,
+				8BFA512B2328BDB30014F6E0 /* LJHttpResponse.m */,
+				8BFA510F2327A0A80014F6E0 /* LJHttpManager.h */,
+				8BFA51122327A0A80014F6E0 /* LJHttpManager.m */,
+				8BFA510E2327A0A80014F6E0 /* LJHttpRequest.h */,
+				8BFA510C2327A0A80014F6E0 /* LJHttpRequest.m */,
+				8BFA51102327A0A80014F6E0 /* LJHttpUploadModel.h */,
+				8BFA51132327A0A80014F6E0 /* LJHttpUploadModel.m */,
 			);
 			path = LJHttpManager;
 			sourceTree = "<group>";
@@ -370,6 +489,7 @@
 		8BFA50DC2327881E0014F6E0 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				8B05D9CB232F9167007A72BF /* DebugLog */,
 				8BFA50DD2327881E0014F6E0 /* Interface */,
 				8BFA50DE2327881E0014F6E0 /* Sandbox */,
 				8BFA50E12327881E0014F6E0 /* ClassView */,
@@ -387,8 +507,16 @@
 		8BFA50DE2327881E0014F6E0 /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
-				8BFA50DF2327881E0014F6E0 /* LJSandboxViewController.m */,
 				8BFA50E02327881E0014F6E0 /* LJSandboxViewController.h */,
+				8BFA50DF2327881E0014F6E0 /* LJSandboxViewController.m */,
+				8BFA511B23288BDA0014F6E0 /* LJSandboxHomeController.h */,
+				8BFA511C23288BDA0014F6E0 /* LJSandboxHomeController.m */,
+				8BFA511E23288C940014F6E0 /* LJSandboxModel.h */,
+				8BFA511F23288C940014F6E0 /* LJSandboxModel.m */,
+				8BFA512123288CC90014F6E0 /* LJSandboxViewCell.h */,
+				8BFA512223288CC90014F6E0 /* LJSandboxViewCell.m */,
+				8BFA512423288CDC0014F6E0 /* LJLocalFilePreviewController.h */,
+				8BFA512523288CDC0014F6E0 /* LJLocalFilePreviewController.m */,
 			);
 			path = Sandbox;
 			sourceTree = "<group>";
@@ -396,8 +524,12 @@
 		8BFA50E12327881E0014F6E0 /* ClassView */ = {
 			isa = PBXGroup;
 			children = (
-				8BFA50ED23278A090014F6E0 /* LJClassViewController.h */,
-				8BFA50EE23278A090014F6E0 /* LJClassViewController.m */,
+				8BFA50ED23278A090014F6E0 /* LJClassHomeController.h */,
+				8BFA50EE23278A090014F6E0 /* LJClassHomeController.m */,
+				8BFA5133232A0BEA0014F6E0 /* LJClassViewController.h */,
+				8BFA5134232A0BEA0014F6E0 /* LJClassViewController.m */,
+				8BFA5136232A11960014F6E0 /* LJClassDetailController.h */,
+				8BFA5137232A11960014F6E0 /* LJClassDetailController.m */,
 			);
 			path = ClassView;
 			sourceTree = "<group>";
@@ -589,6 +721,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -601,6 +734,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -632,24 +766,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDD99E32330ADCE00504CDB /* LJExceptionManager.m in Sources */,
+				8BFA512623288CDC0014F6E0 /* LJLocalFilePreviewController.m in Sources */,
 				8BFA50E42327881E0014F6E0 /* UIBarButtonItem+LJKit.m in Sources */,
-				8BFA50FF23278C800014F6E0 /* LJHttpManager.m in Sources */,
 				8BFA50E82327881E0014F6E0 /* NSString+LJKit.m in Sources */,
 				8BFA509623274BB30014F6E0 /* LJDemoBaseController.m in Sources */,
+				8BFA5138232A11960014F6E0 /* LJClassDetailController.m in Sources */,
+				8BFA512D2328BDB30014F6E0 /* LJHttpResponse.m in Sources */,
+				8BDD99E62330BAF300504CDB /* NSFileManager+LJKit.m in Sources */,
 				8BFA50F723278A770014F6E0 /* LJAlertViewController.m in Sources */,
-				8BFA50EF23278A090014F6E0 /* LJClassViewController.m in Sources */,
+				8BDD99DF2330A6E000504CDB /* UIAppDelegate+LJKit.m in Sources */,
+				8BFA50EF23278A090014F6E0 /* LJClassHomeController.m in Sources */,
 				8BFA50E72327881E0014F6E0 /* UIImage+LJKit.m in Sources */,
 				8BFA50EB2327881E0014F6E0 /* LJSandboxViewController.m in Sources */,
 				8BFA50E52327881E0014F6E0 /* UIView+LJKit.m in Sources */,
 				8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */,
 				8BFA50FC23278B080014F6E0 /* LJThemeManager.m in Sources */,
+				8BFA51182327A0A80014F6E0 /* LJHttpManager.m in Sources */,
 				8BFA50F223278A380014F6E0 /* LJLocationManager.m in Sources */,
+				8BFA511D23288BDA0014F6E0 /* LJSandboxHomeController.m in Sources */,
+				8BFA5135232A0BEA0014F6E0 /* LJClassViewController.m in Sources */,
+				8B05D9CA232F6557007A72BF /* LJDemoFileManagerController.m in Sources */,
 				8BFA50E62327881E0014F6E0 /* UIViewController+LJKit.m in Sources */,
+				8BFA51162327A0A80014F6E0 /* LJHttpRequest.m in Sources */,
+				8BD142752334C94F00201B60 /* LJAuthorityManager.m in Sources */,
+				8BFA51192327A0A80014F6E0 /* LJHttpUploadModel.m in Sources */,
+				8B05D9CE232F91A6007A72BF /* LJDebugLogManager.m in Sources */,
+				8BFA51312328D5F40014F6E0 /* NSObject+LJKit.m in Sources */,
 				8BFA508423273D010014F6E0 /* LJDemoDebugController.m in Sources */,
 				8BFA509923274D3D0014F6E0 /* LJDemoHttpManagerController.m in Sources */,
+				8BE1E79223338526009FB19D /* LJDemoImagePickerController.m in Sources */,
 				8BFA510323278D7A0014F6E0 /* LJImagePickerManager.m in Sources */,
+				8BFA512023288C940014F6E0 /* LJSandboxModel.m in Sources */,
 				8BFA5108232795160014F6E0 /* UIAppDelegate.m in Sources */,
+				8B05D9C7232F63CF007A72BF /* LJFileManager.m in Sources */,
 				8BFA50E92327881E0014F6E0 /* NSDate+LJKit.m in Sources */,
+				8BFA512323288CC90014F6E0 /* LJSandboxViewCell.m in Sources */,
+				8BDD99E92330CE5800504CDB /* LJCrashAlertView.m in Sources */,
+				8BDD99DC2330751400504CDB /* LJDebugLogView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

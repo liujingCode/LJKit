@@ -10,8 +10,10 @@
 #endif
 #endif
 
-#import "LJHttpManager.h"
+#import "NSObject+YYModel.h"
+#import "YYClassInfo.h"
+#import "YYModel.h"
 
-FOUNDATION_EXPORT double LJKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char LJKitVersionString[];
+FOUNDATION_EXPORT double YYModelVersionNumber;
+FOUNDATION_EXPORT const unsigned char YYModelVersionString[];
 

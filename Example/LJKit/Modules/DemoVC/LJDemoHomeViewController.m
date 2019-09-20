@@ -8,6 +8,9 @@
 
 #import "LJDemoHomeViewController.h"
 #import "LJDemoHttpManagerController.h"
+#import "LJDemoDebugController.h"
+#import "LJDemoFileManagerController.h"
+#import "LJDemoImagePickerController.h"
 @interface LJDemoHomeViewController ()
 
 @end
@@ -17,8 +20,7 @@
     [super viewDidLoad];
     self.title = @"首页";
 
-    self.dataList = @[@"网络请求",@"Toast",@"弹框",@"自定义UI",@"定位",@"相册选择或拍照",@"自定义键盘",@"navigationBar",@"tabBar"];
-    [self.tableView reloadData];
+    self.dataList = @[@"网络请求",@"Toast",@"弹框",@"自定义UI",@"定位",@"相册选择或拍照",@"自定义键盘",@"navigationBar",@"tabBar",@"Debug",@"文件管理"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -27,14 +29,22 @@
     switch (indexPath.row) {
         case 0:
             targetVC = [LJDemoHttpManagerController new];
-            targetVC.title = self.dataList[indexPath.row];
             break;
+        case 5:
+            targetVC = [LJDemoImagePickerController new];
+            break;
+            
+        case 9:
+            targetVC = [LJDemoDebugController new];
+            break;
+        case 10:
+            targetVC = [LJDemoFileManagerController new];
             
         default:
             break;
     }
     
-    
+    targetVC.title = self.dataList[indexPath.row];
     targetVC.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:targetVC animated:YES];
 }
