@@ -32,7 +32,7 @@ typedef void(^LJImagePickerCongigCallback)(LJImagePickerManagerConfig *config);
 #pragma mark - 相机属性
 /** 默认NO，不允许裁剪，如果设置为YES，允许裁剪(maxImagesCount = 1 才有效) */
 @property (nonatomic, assign) BOOL allowsEditing;
-/** 设置裁剪区域左右边距: 默认16px */
+/** 设置裁剪区域左右边距: 默认16px,只对相册选取的有效 */
 @property (nonatomic, assign) CGFloat cropLeftMargin;
 
 #pragma mark - 相册属性
@@ -61,6 +61,9 @@ typedef void(^LJImagePickerCongigCallback)(LJImagePickerManagerConfig *config);
 @property (nonatomic, strong) UIColor *cannotSelectLayerColor;
 /** 主题色 默认为(255,130,71) */
 @property (nonatomic, strong) UIColor *themeColor;
+
+
++ (instancetype)sharedInstance;
 @end
 
 

@@ -11,6 +11,7 @@
 #import "LJDemoDebugController.h"
 #import "LJDemoFileManagerController.h"
 #import "LJDemoImagePickerController.h"
+#import "LJDemoLocationController.h"
 @interface LJDemoHomeViewController ()
 
 @end
@@ -29,6 +30,9 @@
     switch (indexPath.row) {
         case 0:
             targetVC = [LJDemoHttpManagerController new];
+            break;
+        case 4:
+            targetVC = [LJDemoLocationController new];
             break;
         case 5:
             targetVC = [LJDemoImagePickerController new];

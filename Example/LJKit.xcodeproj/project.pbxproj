@@ -24,6 +24,7 @@
 		8B05D9CA232F6557007A72BF /* LJDemoFileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9C9232F6557007A72BF /* LJDemoFileManagerController.m */; };
 		8B05D9CE232F91A6007A72BF /* LJDebugLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9CD232F91A6007A72BF /* LJDebugLogManager.m */; };
 		8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */; };
+		8BCBD2CD2339ECCB0066460D /* LJDemoLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBD2CC2339ECCB0066460D /* LJDemoLocationController.m */; };
 		8BD142752334C94F00201B60 /* LJAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD142742334C94F00201B60 /* LJAuthorityManager.m */; };
 		8BDD99DC2330751400504CDB /* LJDebugLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99DB2330751400504CDB /* LJDebugLogView.m */; };
 		8BDD99DF2330A6E000504CDB /* UIAppDelegate+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99DE2330A6E000504CDB /* UIAppDelegate+LJKit.m */; };
@@ -31,6 +32,7 @@
 		8BDD99E62330BAF300504CDB /* NSFileManager+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99E52330BAF300504CDB /* NSFileManager+LJKit.m */; };
 		8BDD99E92330CE5800504CDB /* LJCrashAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99E82330CE5800504CDB /* LJCrashAlertView.m */; };
 		8BE1E79223338526009FB19D /* LJDemoImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */; };
+		8BF5F0CD2339C08100996D1B /* LJHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5F0CC2339C08100996D1B /* LJHttpConfig.m */; };
 		8BFA508423273D010014F6E0 /* LJDemoDebugController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA508323273D010014F6E0 /* LJDemoDebugController.m */; };
 		8BFA509623274BB30014F6E0 /* LJDemoBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA509523274BB30014F6E0 /* LJDemoBaseController.m */; };
 		8BFA509923274D3D0014F6E0 /* LJDemoHttpManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA509823274D3D0014F6E0 /* LJDemoHttpManagerController.m */; };
@@ -107,6 +109,8 @@
 		8B2C829B22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8B2C829C22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8B2C829D22DD7AC40026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8BCBD2CB2339ECCB0066460D /* LJDemoLocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoLocationController.h; sourceTree = "<group>"; };
+		8BCBD2CC2339ECCB0066460D /* LJDemoLocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoLocationController.m; sourceTree = "<group>"; };
 		8BD142732334C94F00201B60 /* LJAuthorityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAuthorityManager.h; sourceTree = "<group>"; };
 		8BD142742334C94F00201B60 /* LJAuthorityManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJAuthorityManager.m; sourceTree = "<group>"; };
 		8BD3F9EE2331CFCD0062EA29 /* LJHttpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJHttpResponse.h; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 		8BDD99E82330CE5800504CDB /* LJCrashAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCrashAlertView.m; sourceTree = "<group>"; };
 		8BE1E79023338526009FB19D /* LJDemoImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoImagePickerController.h; sourceTree = "<group>"; };
 		8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoImagePickerController.m; sourceTree = "<group>"; };
+		8BF5F0CB2339C08100996D1B /* LJHttpConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJHttpConfig.h; sourceTree = "<group>"; };
+		8BF5F0CC2339C08100996D1B /* LJHttpConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJHttpConfig.m; sourceTree = "<group>"; };
 		8BFA508223273D010014F6E0 /* LJDemoDebugController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoDebugController.h; sourceTree = "<group>"; };
 		8BFA508323273D010014F6E0 /* LJDemoDebugController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoDebugController.m; sourceTree = "<group>"; };
 		8BFA509423274BB30014F6E0 /* LJDemoBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoBaseController.h; sourceTree = "<group>"; };
@@ -380,6 +386,8 @@
 				8B05D9C9232F6557007A72BF /* LJDemoFileManagerController.m */,
 				8BE1E79023338526009FB19D /* LJDemoImagePickerController.h */,
 				8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */,
+				8BCBD2CB2339ECCB0066460D /* LJDemoLocationController.h */,
+				8BCBD2CC2339ECCB0066460D /* LJDemoLocationController.m */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
@@ -482,6 +490,8 @@
 				8BFA510C2327A0A80014F6E0 /* LJHttpRequest.m */,
 				8BFA51102327A0A80014F6E0 /* LJHttpUploadModel.h */,
 				8BFA51132327A0A80014F6E0 /* LJHttpUploadModel.m */,
+				8BF5F0CB2339C08100996D1B /* LJHttpConfig.h */,
+				8BF5F0CC2339C08100996D1B /* LJHttpConfig.m */,
 			);
 			path = LJHttpManager;
 			sourceTree = "<group>";
@@ -638,6 +648,7 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = 3SLHUVQHML;
+						LastSwiftMigration = 1020;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -771,6 +782,7 @@
 				8BFA50E42327881E0014F6E0 /* UIBarButtonItem+LJKit.m in Sources */,
 				8BFA50E82327881E0014F6E0 /* NSString+LJKit.m in Sources */,
 				8BFA509623274BB30014F6E0 /* LJDemoBaseController.m in Sources */,
+				8BF5F0CD2339C08100996D1B /* LJHttpConfig.m in Sources */,
 				8BFA5138232A11960014F6E0 /* LJClassDetailController.m in Sources */,
 				8BFA512D2328BDB30014F6E0 /* LJHttpResponse.m in Sources */,
 				8BDD99E62330BAF300504CDB /* NSFileManager+LJKit.m in Sources */,
@@ -778,6 +790,7 @@
 				8BDD99DF2330A6E000504CDB /* UIAppDelegate+LJKit.m in Sources */,
 				8BFA50EF23278A090014F6E0 /* LJClassHomeController.m in Sources */,
 				8BFA50E72327881E0014F6E0 /* UIImage+LJKit.m in Sources */,
+				8BCBD2CD2339ECCB0066460D /* LJDemoLocationController.m in Sources */,
 				8BFA50EB2327881E0014F6E0 /* LJSandboxViewController.m in Sources */,
 				8BFA50E52327881E0014F6E0 /* UIView+LJKit.m in Sources */,
 				8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */,
@@ -964,13 +977,17 @@
 			baseConfigurationReference = B45A2A1940A32C477FEE5A14 /* Pods-LJKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3SLHUVQHML;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJKit/LJKit-Prefix.pch";
 				INFOPLIST_FILE = "LJKit/LJKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -981,13 +998,16 @@
 			baseConfigurationReference = 64AB2533BEA4784402527DF4 /* Pods-LJKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3SLHUVQHML;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJKit/LJKit-Prefix.pch";
 				INFOPLIST_FILE = "LJKit/LJKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

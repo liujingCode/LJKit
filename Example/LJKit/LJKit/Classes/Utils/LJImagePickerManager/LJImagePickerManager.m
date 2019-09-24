@@ -16,7 +16,7 @@
 @property (nonatomic, strong) UIImagePickerController *cameraPicker;
 /** 默认配置 */
 @property (nonatomic, strong) LJImagePickerManagerConfig *defaultConfig;
-@property (nonatomic, copy) LJImagePickerCompleteCallback callback;
+@property (nonatomic, copy) LJImagePickerCompleteCallback completeCallback;
 @end
 @implementation LJImagePickerManager
 #pragma mark - class method
@@ -31,19 +31,19 @@ static dispatch_once_t onceToken;
 
 +(void)showWithType:(LJImagePickerManagerSourceType)type andCallback:(LJImagePickerCompleteCallback)callback; {
     // 默认配置
-    LJImagePickerCongigCallback config = ^(LJImagePickerManagerConfig *config) {
+    LJImagePickerCongigCallback configCallback = ^(LJImagePickerManagerConfig *config) {
         
     };
-    [self showWithType:type andConfig:config andCallback:callback];
+    [self showWithType:type andConfig:configCallback andCallback:callback];
 }
 
 +(void)showWithType:(LJImagePickerManagerSourceType)type andConfig:(LJImagePickerCongigCallback)config andCallback:(LJImagePickerCompleteCallback)callback {
     LJImagePickerManager *manager = [LJImagePickerManager sharedManager];
-    manager.callback = callback;
-    // 自定义配置
+    manager.completeCallback = callback;
     if (config) {
         config(manager.defaultConfig);
     }
+    
     [manager showWithType:type];
 }
 
@@ -64,72 +64,74 @@ static dispatch_once_t onceToken;
 - (void)checkCameraAuthor {
     __weak typeof(self) weakSelf = self;
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-    if ((authStatus == AVAuthorizationStatusRestricted || authStatus ==AVAuthorizationStatusDenied)) {
-        
-        NSDictionary *infoDict = [NSBundle mainBundle].localizedInfoDictionary;
-        if (!infoDict || !infoDict.count) {
-            infoDict = [NSBundle mainBundle].infoDictionary;
-        }
-        if (!infoDict || !infoDict.count) {
-            NSString *path = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
-            infoDict = [NSDictionary dictionaryWithContentsOfFile:path];
-        }
-        // 无权限 做一个友好的提示
-        NSString *appName = [infoDict valueForKey:@"CFBundleDisplayName"];
-        if (!appName) appName = [infoDict valueForKey:@"CFBundleName"];
-        
-        NSString *message = [NSString stringWithFormat:@"请在设置中打开%@的相机使用权限",appName];
-        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:message preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
-        }];
-        
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            
-        }];
-        [alertVC addAction:confirmAction];
-        [alertVC addAction:cancelAction];
-        
-        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertVC animated:YES completion:nil];
-    } else if (authStatus == AVAuthorizationStatusNotDetermined) {
+    if ((authStatus == AVAuthorizationStatusRestricted || authStatus ==AVAuthorizationStatusDenied)) { // 未同意
+        [self showAuthSetting];
+    } else if (authStatus == AVAuthorizationStatusNotDetermined) { // 等待选择
         // 防止用户首次拍照拒绝授权时相机页黑屏
         [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
             if (granted) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [weakSelf showImagePickerController];
+                    [weakSelf showCameraController];
                 });
+            } else {
+                
             }
+            
         }];
-    } else {
-        [self showImagePickerController];
+    } else { // 已同意
+        [self showCameraController];
     }
 }
 
+#pragma mark - 跳转到权限设置页面
+- (void)showAuthSetting {
+    NSDictionary *infoDict = [NSBundle mainBundle].localizedInfoDictionary;
+    if (!infoDict || !infoDict.count) {
+        infoDict = [NSBundle mainBundle].infoDictionary;
+    }
+    if (!infoDict || !infoDict.count) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+        infoDict = [NSDictionary dictionaryWithContentsOfFile:path];
+    }
+    // 无权限
+    NSString *appName = [infoDict valueForKey:@"CFBundleDisplayName"];
+    if (!appName) appName = [infoDict valueForKey:@"CFBundleName"];
+    
+    NSString *message = [NSString stringWithFormat:@"请在设置中打开%@的相机使用权限",appName];
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"温馨提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        dispatch_after(DISPATCH_TIME_NOW + 0.2, dispatch_get_main_queue(), ^{
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+        });
+        
+    }];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alertVC addAction:confirmAction];
+    [alertVC addAction:cancelAction];
+    
+    [[self lj_rootViewController] presentViewController:alertVC animated:YES completion:nil];
+}
 
-- (void)showImagePickerController {
-//    __weak typeof(self) weakSelf = self;
+- (void)showCameraController {
+    self.cameraPicker.allowsEditing = self.defaultConfig.allowsEditing;
     if ([UIImagePickerController isSourceTypeAvailable: self.cameraPicker.sourceType]) {
-        NSMutableArray *mediaTypes = [NSMutableArray array];
-        [mediaTypes addObject:(NSString *)kUTTypeImage];
-
-        if (self.defaultConfig.allowTakeVideo) {
-            [mediaTypes addObject:(NSString *)kUTTypeMovie];
-            self.cameraPicker.videoMaximumDuration = self.defaultConfig.videoMaximumDuration;
-        }
-        self.cameraPicker.mediaTypes= mediaTypes;
         [[self lj_rootViewController] presentViewController:self.cameraPicker animated:YES completion:nil];
-    } else {
-        LJKitLog(@"模拟器中无法打开照相机,请在真机中使用");
+    } else { // 无法加载资源 可能当前为模拟器
+        
     }
 }
 
+#pragma mark - dismiss
 - (void)dismissWithTargetVC:(UIViewController *)targetVC Photos:(NSArray <UIImage *>*)photos andOriginal:(BOOL)isOriginal {
     // 释放内存
     instance = nil;
     onceToken = 0;
     [targetVC dismissViewControllerAnimated:YES completion:nil];
-    if (self.callback) {
-        self.callback(photos, isOriginal);
+    if (self.completeCallback) {
+        self.completeCallback(photos, isOriginal);
     }
     
 }
@@ -141,7 +143,6 @@ static dispatch_once_t onceToken;
     }
     self.imagePicker.allowCrop = self.defaultConfig.allowsEditing;
     self.imagePicker.showSelectBtn = !self.defaultConfig.allowsEditing;
-    
     CGFloat width = [UIScreen mainScreen].bounds.size.width - self.defaultConfig.cropLeftMargin * 2;
     CGFloat y = ([UIScreen mainScreen].bounds.size.height - width) * 0.5;
     self.imagePicker.cropRect = CGRectMake(self.defaultConfig.cropLeftMargin, y, width, width);
@@ -157,34 +158,15 @@ static dispatch_once_t onceToken;
 
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> *)info {
-    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    if (!image){
+    UIImage *originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    if (!originalImage){
         return;
     }
-    __weak typeof(self) weakSelf = self;
-    if (self.defaultConfig.allowsEditing == YES) { // 裁剪图片
-        [picker dismissViewControllerAnimated:NO completion:nil];
-        
-        // 自定义配置
-        [self setupConfig];
-        [[TZImageManager manager] savePhotoWithImage:image location:nil completion:^(PHAsset *asset, NSError *error) {
-            TZAssetModel *assetModel = [[TZImageManager manager] createModelWithAsset:asset];
-            TZImagePickerController *cropVC = [[TZImagePickerController alloc] initCropTypeWithAsset:assetModel.asset photo:image completion:^(UIImage *cropImage, id asset) {
-                if (weakSelf.callback) {
-                    weakSelf.callback(@[cropImage], YES);
-                }
-                //                [self dismissWithTargetVC:cropVC Photos:@[cropImage] andOriginal:YES];
-            }];
-            cropVC.isSelectOriginalPhoto = self.defaultConfig.allowPickingOriginalPhoto;
-            cropVC.iconThemeColor = self.defaultConfig.themeColor;
-            cropVC.oKButtonTitleColorNormal = self.defaultConfig.themeColor;
-            cropVC.cropRect = weakSelf.imagePicker.cropRect;
-            [[self lj_rootViewController] presentViewController:cropVC animated:YES completion:nil];
-        }];
-    } else { // 系统拍照
-        [self dismissWithTargetVC:picker Photos:@[image] andOriginal:YES];
-        
+    if (self.defaultConfig.allowsEditing && [info.allKeys containsObject:UIImagePickerControllerEditedImage]) {
+        UIImage *editImage = [info objectForKey:UIImagePickerControllerEditedImage];
+        originalImage = editImage?editImage:originalImage;
     }
+    [self dismissWithTargetVC:picker Photos:@[originalImage] andOriginal:YES];
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [self dismissWithTargetVC:picker Photos:nil andOriginal:NO];
@@ -200,50 +182,25 @@ static dispatch_once_t onceToken;
 
 #pragma mark - 获取根控制器
 - (UIViewController *)lj_rootViewController {
-    UIViewController *VC = [UIApplication sharedApplication].keyWindow.rootViewController;
+    UIViewController *VC = [UIApplication sharedApplication].delegate.window.rootViewController;
     return VC;
 }
 
-#pragma mark - dealloc
-- (void)dealloc {
-    LJKitLog(@"dealloc %@",self);
-}
+//#pragma mark - dealloc
+//- (void)dealloc {
+//}
 
 
 #pragma mark - 懒加载
-//- (UIImagePickerController *)cameraPicker {
-//    if (!_cameraPicker) {
-//        _cameraPicker = [[UIImagePickerController alloc] init];
-//        _cameraPicker.delegate = self;
-//        _cameraPicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-//        _cameraPicker.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
-//    }
-//    return _cameraPicker;
-//}
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (UIImagePickerController *)cameraPicker {
     if (_cameraPicker == nil) {
         _cameraPicker = [[UIImagePickerController alloc] init];
         _cameraPicker.delegate = self;
         _cameraPicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-        // set appearance / 改变相册选择页的导航栏外观
-        _cameraPicker.navigationBar.barTintColor = self.imagePicker.navigationController.navigationBar.barTintColor;
-        _cameraPicker.navigationBar.tintColor = self.imagePicker.navigationController.navigationBar.tintColor;
-        UIBarButtonItem *tzBarItem, *BarItem;
-        if (@available(iOS 9, *)) {
-            tzBarItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[TZImagePickerController class]]];
-            BarItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UIImagePickerController class]]];
-        } else {
-            tzBarItem = [UIBarButtonItem appearanceWhenContainedIn:[TZImagePickerController class], nil];
-            BarItem = [UIBarButtonItem appearanceWhenContainedIn:[UIImagePickerController class], nil];
-        }
-        NSDictionary *titleTextAttributes = [tzBarItem titleTextAttributesForState:UIControlStateNormal];
-        [BarItem setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
     }
     return _cameraPicker;
 }
-#pragma clang diagnostic pop
+
 
 
 - (TZImagePickerController *)imagePicker {
@@ -264,18 +221,21 @@ static dispatch_once_t onceToken;
 
 - (LJImagePickerManagerConfig *)defaultConfig {
     if (!_defaultConfig) {
-        LJImagePickerManagerConfig *config = [[LJImagePickerManagerConfig alloc] init];
-        config.allowsEditing = NO; // 不允许裁剪
-        config.cropLeftMargin = 16.f; // 裁剪区域左右边距 16px
-        config.minImagesCount = 0; // 最小必选张数
-        config.maxImagesCount = 1; // 最大必选张数
-        config.allowTakePicture = NO; // 选照片时不可拍照
-        config.allowTakeVideo = NO;
-        config.allowPickingOriginalPhoto = NO; // 隐藏底部原图按钮
-        config.allowPreview = YES;  // 允许预览
-        config.showSelectedIndex = YES; // 不展示索引
-        config.showPhotoCannotSelectLayer = NO; // 显示不可选择遮罩图层
-        config.themeColor = [UIColor colorWithRed:255.0/255 green:130.0/255 blue:71.0/255 alpha:1.0];
+        // 获取单例属性
+        LJImagePickerManagerConfig *sharedConfig = [LJImagePickerManagerConfig sharedInstance];
+        
+        LJImagePickerManagerConfig *config = [LJImagePickerManagerConfig new];
+        config.allowsEditing = sharedConfig.allowsEditing;
+        config.cropLeftMargin = sharedConfig.cropLeftMargin;
+        config.minImagesCount = sharedConfig.minImagesCount;
+        config.maxImagesCount = sharedConfig.maxImagesCount;
+        config.allowTakePicture = sharedConfig.allowTakePicture;
+        config.allowTakeVideo = sharedConfig.allowTakeVideo;
+        config.allowPickingOriginalPhoto = sharedConfig.allowPickingOriginalPhoto;
+        config.allowPreview = sharedConfig.allowPreview;
+        config.showSelectedIndex = sharedConfig.showSelectedIndex;
+        config.showPhotoCannotSelectLayer = sharedConfig.showPhotoCannotSelectLayer;
+        config.themeColor = sharedConfig.themeColor;
         _defaultConfig = config;
     }
     return _defaultConfig;
@@ -285,5 +245,23 @@ static dispatch_once_t onceToken;
 
 #pragma mark - LJImagePickerManagerConfig
 @implementation LJImagePickerManagerConfig
-
++ (instancetype)sharedInstance {
+    static LJImagePickerManagerConfig *instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [LJImagePickerManagerConfig new];
+        instance.allowsEditing = NO; // 不允许裁剪
+        instance.cropLeftMargin = 16.f; // 裁剪区域左右边距 16px
+        instance.minImagesCount = 0; // 最小必选张数
+        instance.maxImagesCount = 1; // 最大必选张数
+        instance.allowTakePicture = NO; // 选照片时不可拍照
+        instance.allowTakeVideo = NO;
+        instance.allowPickingOriginalPhoto = NO; // 隐藏底部原图按钮
+        instance.allowPreview = YES;  // 允许预览
+        instance.showSelectedIndex = YES; // 不展示索引
+        instance.showPhotoCannotSelectLayer = NO; // 显示不可选择遮罩图层
+        instance.themeColor = [UIColor colorWithRed:255.0/255 green:130.0/255 blue:71.0/255 alpha:1.0];
+    });
+    return instance;
+}
 @end

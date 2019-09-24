@@ -7,6 +7,11 @@
 //
 
 #import "LJHttpManager.h"
+#import "LJHttpConfig.h"
+@interface LJHttpManager ()
+/** 默认配置 */
+@property (nonatomic, strong) LJHttpConfig *defaultHttpConfig;
+@end
 
 @implementation LJHttpManager
 + (instancetype)sharedInstance {
@@ -177,5 +182,20 @@
                                                         options:NSJSONReadingMutableContainers
                                                           error:&error];
     return dic;
+}
+
+
+
+#pragma mark - 默认网络配置
+- (LJHttpConfig *)defaultHttpConfig {
+    LJHttpConfig *sharedConfig = [LJHttpConfig sharedInstance];
+    
+    LJHttpConfig *config = [LJHttpConfig new];
+    config.hostStr = sharedConfig.hostStr;
+    config.requestSerializerType = sharedConfig.requestSerializerType;
+    config.responseSerializerType = sharedConfig.responseSerializerType;
+    
+    _defaultHttpConfig = config;
+    return _defaultHttpConfig;
 }
 @end

@@ -96,7 +96,7 @@
 
 // 有参数post
 - (void)requestPostParams {
-    NSString *urlStr = @"";
+    NSString *urlStr = @"http://61.234.48.8:180/api/social/signInfo";
     NSDictionary *params = @{
                              };
     [LJHttpManager requestWithRequest:[LJHttpRequest requestPostWithUrlStr:urlStr andParams:params] andCallback:^(id  _Nullable response, NSError * _Nullable error, NSURLSessionDataTask * _Nonnull task) {
