@@ -181,63 +181,75 @@
 @implementation LJLocationManager (LJMapNavigation)
 
 + (void)showMapNavigationWithCoordinate:(CLLocationCoordinate2D)coordinate andAddressName:(NSString *)addressName {
-        NSString *name = @"测试";
-        //支持的地图
-        NSMutableArray *maps = [NSMutableArray array];
+    // app信息
+    NSDictionary *infoDict = [NSBundle mainBundle].localizedInfoDictionary;
+    if (!infoDict || !infoDict.count) {
+        infoDict = [NSBundle mainBundle].infoDictionary;
+    }
+    if (!infoDict || !infoDict.count) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+        infoDict = [NSDictionary dictionaryWithContentsOfFile:path];
+    }
+    NSString *appName = [infoDict valueForKey:@"CFBundleDisplayName"];
+    if (!appName) appName = [infoDict valueForKey:@"CFBundleName"];
     
-        //苹果原生地图-苹果原生地图方法和其他不一样
-        NSMutableDictionary *iosMapDic = [NSMutableDictionary dictionary];
-        iosMapDic[@"title"] = @"苹果地图";
-        [maps addObject:iosMapDic];
-    
-        //百度地图
-        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"baidumap://"]]) {
-            NSMutableDictionary *baiduMapDic = [NSMutableDictionary dictionary];
-            baiduMapDic[@"title"] = @"百度地图";
-            /*
-             详细参数: https://lbsyun.baidu.com/index.php?title=uri/api/ios
-             */
-            NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/geocoder?location=%f,%f&coord_type=gcj02",coordinate.latitude,coordinate.longitude] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-            baiduMapDic[@"url"] = urlString;
-            [maps addObject:baiduMapDic];
-        }
-        //高德地图
-        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"iosamap://"]]) {
-            NSMutableDictionary *gaodeMapDic = [NSMutableDictionary dictionary];
-            gaodeMapDic[@"title"] = @"高德地图";
-            /*
-            详细参数: https://lbs.amap.com/api/amap-mobile/guide/ios/ios-uri-information
-            */
-            
-            NSString *urlString = [[NSString stringWithFormat:@"iosamap://path?sourceApplication=%@&sid=BGVIS1&slat=&slon=&sname=&did=BGVIS2&dlat=%f&dlon=%f&dname=%@&dev=0&t=2",@"旅橙",coordinate.latitude,coordinate.longitude,addressName] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-            
-            gaodeMapDic[@"url"] = urlString;
-            [maps addObject:gaodeMapDic];
-        }
-        // 选择
-        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"选择地图" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-        NSInteger index = maps.count;
-        for (int i = 0; i < index; i++) {
-            NSString * title = maps[i][@"title"];
-            //苹果原生地图方法
-            if (i == 0) {
-                UIAlertAction * action = [UIAlertAction actionWithTitle:title style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
-                    [self navAppleMapWithCoordinate:coordinate andAddressName:addressName];
-                }];
-                [alert addAction:action];
-                continue;
-            }
-            UIAlertAction * action = [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                NSString *urlString = maps[i][@"url"];
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+    //支持的地图
+    NSMutableArray *maps = [NSMutableArray array];
+
+    //苹果原生地图-苹果原生地图方法和其他不一样
+    NSMutableDictionary *iosMapDic = [NSMutableDictionary dictionary];
+    iosMapDic[@"title"] = @"苹果地图";
+    [maps addObject:iosMapDic];
+
+    //百度地图
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"baidumap://"]]) {
+        NSMutableDictionary *baiduMapDic = [NSMutableDictionary dictionary];
+        baiduMapDic[@"title"] = @"百度地图";
+        /*
+         详细参数: https://lbsyun.baidu.com/index.php?title=uri/api/ios
+         */
+        
+        NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/direction?origin={{我的位置}}&destination=name:%@|latlng:%f,%f&mode=driving&coord_type=gcj02",addressName,coordinate.latitude,coordinate.longitude] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        baiduMapDic[@"url"] = urlString;
+        [maps addObject:baiduMapDic];
+    }
+    //高德地图
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"iosamap://"]]) {
+        NSMutableDictionary *gaodeMapDic = [NSMutableDictionary dictionary];
+        gaodeMapDic[@"title"] = @"高德地图";
+        /*
+        详细参数: https://lbs.amap.com/api/amap-mobile/guide/ios/ios-uri-information
+        */
+        
+        NSString *urlString = [[NSString stringWithFormat:@"iosamap://viewMap?sourceApplication=%@&poiname=%@&lat=%f&lon=%f&dev=1",appName,addressName,coordinate.latitude,coordinate.longitude] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        
+        gaodeMapDic[@"url"] = urlString;
+        [maps addObject:gaodeMapDic];
+    }
+    // 选择
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"选择地图" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    NSInteger index = maps.count;
+    for (int i = 0; i < index; i++) {
+        NSString * title = maps[i][@"title"];
+        //苹果原生地图方法
+        if (i == 0) {
+            UIAlertAction * action = [UIAlertAction actionWithTitle:title style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+                [self navAppleMapWithCoordinate:coordinate andAddressName:addressName];
             }];
             [alert addAction:action];
+            continue;
         }
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction * action = [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            NSString *urlString = maps[i][@"url"];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
         }];
-        [alert addAction:cancelAction];
-        [[self lj_rootViewController] presentViewController:alert animated:YES completion:nil];
+        [alert addAction:action];
     }
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    }];
+    [alert addAction:cancelAction];
+    [[self lj_rootViewController] presentViewController:alert animated:YES completion:nil];
+}
 
 // 苹果地图
 + (void)navAppleMapWithCoordinate:(CLLocationCoordinate2D)coordinate andAddressName:(NSString *)addressName {

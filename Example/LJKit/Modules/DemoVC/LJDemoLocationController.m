@@ -88,7 +88,7 @@
             [self presentViewController:alertVC animated:YES completion:nil];
             return;
         }
-        [LJLocationManager showMapNavigationWithCoordinate:self.currentPlacemark.location.coordinate andAddressName:self.currentPlacemark.locality];
+        [LJLocationManager showMapNavigationWithCoordinate:self.currentPlacemark.location.coordinate andAddressName:self.currentPlacemark.name];
         return;
     }
 }
