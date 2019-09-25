@@ -7,7 +7,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma mark - UIView+LJKit
 @interface UIView (LJKit)
+
+@end
+
+#pragma mark - UIView+LJFrame
+@interface UIView (LJFrame)
 /** 宽度 */
 @property(assign, nonatomic) CGFloat lj_width;
 /** 高度 */

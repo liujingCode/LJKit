@@ -4,8 +4,13 @@
 //  Copyright © 2019 185704108@qq.com. All rights reserved.
 
 #import "UIView+LJKit.h"
-
+#pragma mark - UIView+LJKit
 @implementation UIView (LJKit)
+
+@end
+
+#pragma mark - UIView+LJFrame
+@implementation UIView (LJFrame)
 - (void)setLj_width:(CGFloat)lj_width {
     self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, lj_width, self.frame.size.height);
 }

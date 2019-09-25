@@ -9,14 +9,25 @@ target 'LJKit_Example' do
 #  pod 'LJKit/Utils/HttpManager', :path => '../'
 
   pod 'YYModel'
+  # 布局
   pod 'Masonry',:inhibit_warnings => true
+  # 图片下载
   pod 'SDWebImage',:inhibit_warnings => true
+  # 网络请求
   pod 'AFNetworking'
+  # 下拉刷新
   pod 'MJRefresh',:inhibit_warnings => true
+  # 字典转模型
   pod 'MJExtension'
+  # 空列表
+  pod 'DZNEmptyDataSet',:inhibit_warnings => true
+  # 键盘
   pod 'IQKeyboardManager'
+  # 轮播图
   pod 'SDCycleScrollView',:inhibit_warnings => true
+  # toast
   pod 'MBProgressHUD', '~> 1.1.0'
+  
   
   pod 'TZImagePickerController'
 

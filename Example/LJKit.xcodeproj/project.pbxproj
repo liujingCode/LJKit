@@ -24,6 +24,11 @@
 		8B05D9CA232F6557007A72BF /* LJDemoFileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9C9232F6557007A72BF /* LJDemoFileManagerController.m */; };
 		8B05D9CE232F91A6007A72BF /* LJDebugLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9CD232F91A6007A72BF /* LJDebugLogManager.m */; };
 		8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */; };
+		8BA6B230233B02A6001D5ACB /* UIScrollView+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B22F233B02A6001D5ACB /* UIScrollView+LJKit.m */; };
+		8BA6B233233B0E27001D5ACB /* LJDemoCustomUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B232233B0E27001D5ACB /* LJDemoCustomUIController.m */; };
+		8BA6B236233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B235233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m */; };
+		8BA6B239233B5FA4001D5ACB /* LJToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B238233B5FA4001D5ACB /* LJToast.m */; };
+		8BA6B23C233B6083001D5ACB /* LJDemoToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B23B233B6083001D5ACB /* LJDemoToastViewController.m */; };
 		8BCBD2CD2339ECCB0066460D /* LJDemoLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCBD2CC2339ECCB0066460D /* LJDemoLocationController.m */; };
 		8BD142752334C94F00201B60 /* LJAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD142742334C94F00201B60 /* LJAuthorityManager.m */; };
 		8BDD99DC2330751400504CDB /* LJDebugLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99DB2330751400504CDB /* LJDebugLogView.m */; };
@@ -109,6 +114,16 @@
 		8B2C829B22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8B2C829C22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8B2C829D22DD7AC40026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8BA6B22E233B02A6001D5ACB /* UIScrollView+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LJKit.h"; sourceTree = "<group>"; };
+		8BA6B22F233B02A6001D5ACB /* UIScrollView+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LJKit.m"; sourceTree = "<group>"; };
+		8BA6B231233B0E27001D5ACB /* LJDemoCustomUIController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoCustomUIController.h; sourceTree = "<group>"; };
+		8BA6B232233B0E27001D5ACB /* LJDemoCustomUIController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoCustomUIController.m; sourceTree = "<group>"; };
+		8BA6B234233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoCustomUIScrollViewController.h; sourceTree = "<group>"; };
+		8BA6B235233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoCustomUIScrollViewController.m; sourceTree = "<group>"; };
+		8BA6B237233B5FA4001D5ACB /* LJToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LJToast.h; path = LJKit/Modules/DemoVC/LJToast.h; sourceTree = SOURCE_ROOT; };
+		8BA6B238233B5FA4001D5ACB /* LJToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LJToast.m; path = LJKit/Modules/DemoVC/LJToast.m; sourceTree = SOURCE_ROOT; };
+		8BA6B23A233B6083001D5ACB /* LJDemoToastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoToastViewController.h; sourceTree = "<group>"; };
+		8BA6B23B233B6083001D5ACB /* LJDemoToastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoToastViewController.m; sourceTree = "<group>"; };
 		8BCBD2CB2339ECCB0066460D /* LJDemoLocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoLocationController.h; sourceTree = "<group>"; };
 		8BCBD2CC2339ECCB0066460D /* LJDemoLocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoLocationController.m; sourceTree = "<group>"; };
 		8BD142732334C94F00201B60 /* LJAuthorityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAuthorityManager.h; sourceTree = "<group>"; };
@@ -388,6 +403,12 @@
 				8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */,
 				8BCBD2CB2339ECCB0066460D /* LJDemoLocationController.h */,
 				8BCBD2CC2339ECCB0066460D /* LJDemoLocationController.m */,
+				8BA6B231233B0E27001D5ACB /* LJDemoCustomUIController.h */,
+				8BA6B232233B0E27001D5ACB /* LJDemoCustomUIController.m */,
+				8BA6B234233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.h */,
+				8BA6B235233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m */,
+				8BA6B23A233B6083001D5ACB /* LJDemoToastViewController.h */,
+				8BA6B23B233B6083001D5ACB /* LJDemoToastViewController.m */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
@@ -444,6 +465,8 @@
 				8BFA50D22327881E0014F6E0 /* UIViewController+LJKit.m */,
 				8BDD99DD2330A6E000504CDB /* UIAppDelegate+LJKit.h */,
 				8BDD99DE2330A6E000504CDB /* UIAppDelegate+LJKit.m */,
+				8BA6B22E233B02A6001D5ACB /* UIScrollView+LJKit.h */,
+				8BA6B22F233B02A6001D5ACB /* UIScrollView+LJKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -573,6 +596,8 @@
 		8BFA50F823278A7D0014F6E0 /* LJToast */ = {
 			isa = PBXGroup;
 			children = (
+				8BA6B237233B5FA4001D5ACB /* LJToast.h */,
+				8BA6B238233B5FA4001D5ACB /* LJToast.m */,
 			);
 			path = LJToast;
 			sourceTree = "<group>";
@@ -724,6 +749,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LJKit_Example/Pods-LJKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
@@ -737,6 +763,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
@@ -781,6 +808,8 @@
 				8BFA512623288CDC0014F6E0 /* LJLocalFilePreviewController.m in Sources */,
 				8BFA50E42327881E0014F6E0 /* UIBarButtonItem+LJKit.m in Sources */,
 				8BFA50E82327881E0014F6E0 /* NSString+LJKit.m in Sources */,
+				8BA6B230233B02A6001D5ACB /* UIScrollView+LJKit.m in Sources */,
+				8BA6B23C233B6083001D5ACB /* LJDemoToastViewController.m in Sources */,
 				8BFA509623274BB30014F6E0 /* LJDemoBaseController.m in Sources */,
 				8BF5F0CD2339C08100996D1B /* LJHttpConfig.m in Sources */,
 				8BFA5138232A11960014F6E0 /* LJClassDetailController.m in Sources */,
@@ -793,6 +822,7 @@
 				8BCBD2CD2339ECCB0066460D /* LJDemoLocationController.m in Sources */,
 				8BFA50EB2327881E0014F6E0 /* LJSandboxViewController.m in Sources */,
 				8BFA50E52327881E0014F6E0 /* UIView+LJKit.m in Sources */,
+				8BA6B233233B0E27001D5ACB /* LJDemoCustomUIController.m in Sources */,
 				8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */,
 				8BFA50FC23278B080014F6E0 /* LJThemeManager.m in Sources */,
 				8BFA51182327A0A80014F6E0 /* LJHttpManager.m in Sources */,
@@ -809,9 +839,11 @@
 				8BFA508423273D010014F6E0 /* LJDemoDebugController.m in Sources */,
 				8BFA509923274D3D0014F6E0 /* LJDemoHttpManagerController.m in Sources */,
 				8BE1E79223338526009FB19D /* LJDemoImagePickerController.m in Sources */,
+				8BA6B239233B5FA4001D5ACB /* LJToast.m in Sources */,
 				8BFA510323278D7A0014F6E0 /* LJImagePickerManager.m in Sources */,
 				8BFA512023288C940014F6E0 /* LJSandboxModel.m in Sources */,
 				8BFA5108232795160014F6E0 /* UIAppDelegate.m in Sources */,
+				8BA6B236233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m in Sources */,
 				8B05D9C7232F63CF007A72BF /* LJFileManager.m in Sources */,
 				8BFA50E92327881E0014F6E0 /* NSDate+LJKit.m in Sources */,
 				8BFA512323288CC90014F6E0 /* LJSandboxViewCell.m in Sources */,

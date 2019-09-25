@@ -11,6 +11,7 @@
 #import "UIImage+LJKit.h"
 #import "UIViewController+LJKit.h"
 #import "UIBarButtonItem+LJKit.h"
+#import "UIScrollView+LJKit.h"
 
 
 // Foundation
