@@ -348,6 +348,17 @@
 			path = DebugLog;
 			sourceTree = "<group>";
 		};
+		8B23F10D233CC10000DDE494 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				8BA6B231233B0E27001D5ACB /* LJDemoCustomUIController.h */,
+				8BA6B232233B0E27001D5ACB /* LJDemoCustomUIController.m */,
+				8BA6B234233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.h */,
+				8BA6B235233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		8B2C826222DD66160026EBF7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +400,7 @@
 		8BFA508123273CBB0014F6E0 /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
+				8B23F10D233CC10000DDE494 /* CustomUI */,
 				8BFA509423274BB30014F6E0 /* LJDemoBaseController.h */,
 				8BFA509523274BB30014F6E0 /* LJDemoBaseController.m */,
 				8B2C828522DD6B750026EBF7 /* LJDemoHomeViewController.h */,
@@ -403,10 +415,6 @@
 				8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */,
 				8BCBD2CB2339ECCB0066460D /* LJDemoLocationController.h */,
 				8BCBD2CC2339ECCB0066460D /* LJDemoLocationController.m */,
-				8BA6B231233B0E27001D5ACB /* LJDemoCustomUIController.h */,
-				8BA6B232233B0E27001D5ACB /* LJDemoCustomUIController.m */,
-				8BA6B234233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.h */,
-				8BA6B235233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m */,
 				8BA6B23A233B6083001D5ACB /* LJDemoToastViewController.h */,
 				8BA6B23B233B6083001D5ACB /* LJDemoToastViewController.m */,
 			);

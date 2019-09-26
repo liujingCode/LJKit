@@ -20,23 +20,42 @@ typedef NS_ENUM(NSUInteger, LJToastStyle) {
 /// 当前进度
 @property (nonatomic, assign) float progress;
 
-+ (instancetype)showWithText:(NSString *)text;
-+ (instancetype)showWithImage:(UIImage *)image;
-+ (instancetype)showWithText:(NSString *)text andImage:(UIImage *)image;
+
+/// 展示文字
+/// @param text 文本
++ (instancetype)showToastWithText:(NSString *)text;
+
+/// 展示图片
+/// @param image 图片
++ (instancetype)showToastWithImage:(UIImage *)image;
+
+/// 展示文本+图片
+/// @param text 文本
+/// @param image 图片
++ (instancetype)showToastWithText:(NSString *)text andImage:(UIImage *)image;
 
 
+/// 展示loading
+/// @param text 文本
++ (instancetype)showLoadingWithText:(NSString *)text;
+
+/// 展示loading
+/// @param image 图片
++ (instancetype)showLoadingWithImage:(UIImage *)image;
+
+/// 展示loading
+/// @param text 文本
+/// @param image 图片
++ (instancetype)showLoadingWithText:(NSString *)text andImage:(UIImage *)image;
 
 
+/// 展示进度条
+/// @param text 文本
++ (instancetype)showProgressWithText:(NSString *)text;
 
-+ (void)showToastWithText:(NSString *)text andDetailText:(NSString *)detailText andImage:(UIImage *)image andDuration:(NSTimeInterval)duration andEnableInteraction:(BOOL)enableInteraction;
 
-+ (void)showProgressWithText:(NSString *)text andImage:(UIImage *)image andEnableInteraction:(BOOL)enableInteraction;
-
-+ (void)showLoadingWithText:(NSString *)text andImage:(UIImage *)image andEnableInteraction:(BOOL)enableInteraction;
-
-+ (void)showWithStyle:(LJToastStyle)style andText:(NSString *)text andDetailText:(NSString *)detailText andImage:(UIImage *)image andDuration:(NSTimeInterval)duration andEnableInteraction:(BOOL)enableInteraction;
-
-- (void)dismiss;
+/// 移除toast
+- (void)dismissToast;
 @end
 
 NS_ASSUME_NONNULL_END

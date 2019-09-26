@@ -44,6 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
 /** 阴影半径 */
 @property (assign, nonatomic) IBInspectable CGFloat lj_shadowRadius;
 
+
+/// 获取当前的controller
+- (UIViewController *)lj_get_currentController;
+
 @end
 
 NS_ASSUME_NONNULL_END

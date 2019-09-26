@@ -113,4 +113,15 @@
     return self.layer.shadowRadius;
 }
 
+
+#pragma mark - 获取当前的的controller
+- (UIViewController *)lj_get_currentController; {
+    for (UIView *view = self; view; view = view.superview) {
+        UIResponder *nextResponder = [view nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
+}
 @end

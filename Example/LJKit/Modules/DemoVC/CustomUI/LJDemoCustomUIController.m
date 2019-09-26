@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataList = @[@"UIscrollView+Refresh",@"UIButton按钮处理",@"UIImage图片处理",@"UIAlert弹框处理"];
+    self.dataList = @[@"UIscrollView+Refresh",@"UIButton按钮处理",@"UIImage图片处理",@"扫一扫",@"生成二维码",@"手势密码",@"滑块验证"];
     
 }
 
