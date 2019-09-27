@@ -21,8 +21,9 @@ pod 'LJKit'
 ```
 
 ## Author
+liujing 
+email: liujingguoke@163.com
 
-liujingguoke@163.com
 
 ## License
 
