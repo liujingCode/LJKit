@@ -1,8 +1,8 @@
 //
-//  LJDialogView.h
+//  LJAnimationView.h
 //  LJKit_Example
 //
-//  Created by developer on 2019/9/27.
+//  Created by developer on 2019/9/29.
 //  Copyright © 2019 liujing. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LJDialogView : UIView
+@interface LJAnimationView : UIView
 
 @end
 

@@ -1,5 +1,5 @@
 //
-//  LJAlertContainerView.h
+//  LJAlertCheckPwdView.h
 //  LJKit_Example
 //
 //  Created by developer on 2019/9/30.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LJAlertContainerView : UIView
+@interface LJAlertCheckPwdView : UIView
 
 @end
 

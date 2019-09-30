@@ -7,23 +7,31 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LJAlertAction.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, LJAlertViewControllerStyle) {
-    LJAlertViewControllerStyleDialog,
-    LJAlertViewControllerStyleActionSheet,
-};
+
 @interface LJAlertViewController : UIViewController
 
 /// 弹框模式
-@property (nonatomic, assign) LJAlertViewControllerStyle alertStyle;
+@property (nonatomic, assign) UIAlertControllerStyle alertStyle;
 
-+ (instancetype)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(LJAlertViewControllerStyle)alertStyle;
 
-- (void)addAction:(LJAlertAction *)action;
-- (void)addTextField:(UITextField *)textField;
+/**
+ 使用show
+ */
+
+/// 展示自定义view的弹框 (类方法,不需要自定义控制器)
+/// @param containerView 自定义view
+/// @param alertStyle 弹框类型
++ (void)showWithContainerView:(UIView *)containerView alertStyle:(UIAlertControllerStyle)alertStyle;
+
+
+/// 展示自定义view的弹框 (对象方法,需要自定义控制器)
+/// @param containerView 自定义view
+/// @param alertStyle 弹框类型
+- (void)showWithContainerView:(UIView *)containerView alertStyle:(UIAlertControllerStyle)alertStyle;
 @end
 
 NS_ASSUME_NONNULL_END
