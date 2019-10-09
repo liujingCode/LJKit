@@ -25,13 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// 展示自定义view的弹框 (类方法,不需要自定义控制器)
 /// @param containerView 自定义view
 /// @param alertStyle 弹框类型
-+ (void)showWithContainerView:(UIView *)containerView alertStyle:(UIAlertControllerStyle)alertStyle;
++ (instancetype)showWithContainerView:(UIView *)containerView alertStyle:(UIAlertControllerStyle)alertStyle;
 
 
 /// 展示自定义view的弹框 (对象方法,需要自定义控制器)
 /// @param containerView 自定义view
 /// @param alertStyle 弹框类型
 - (void)showWithContainerView:(UIView *)containerView alertStyle:(UIAlertControllerStyle)alertStyle;
+
+/// 隐藏
+- (void)dismissAlert;
 @end
 
 NS_ASSUME_NONNULL_END

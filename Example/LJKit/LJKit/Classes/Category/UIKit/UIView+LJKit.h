@@ -43,6 +43,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) IBInspectable CGSize lj_shadowOffset;
 /** 阴影半径 */
 @property (assign, nonatomic) IBInspectable CGFloat lj_shadowRadius;
+/** 阴影颜色 */
+@property (nonatomic, copy) IBInspectable UIColor *lj_shadowColor;
 
 
 /// 获取当前的controller

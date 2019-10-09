@@ -22,7 +22,7 @@ BOOL isIPhoneX () {
 @implementation LJAlertViewController
 
 
-+ (void)showWithContainerView:(UIView *)containerView alertStyle:(UIAlertControllerStyle)alertStyle {
++ (instancetype)showWithContainerView:(UIView *)containerView alertStyle:(UIAlertControllerStyle)alertStyle {
     LJAlertViewController *alertVC = [self new];
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -30,6 +30,7 @@ BOOL isIPhoneX () {
     });
     
     [alertVC showWithContainerView:containerView alertStyle:alertStyle];
+    return alertVC;
 }
 
 - (void)showWithContainerView:(UIView *)containerView alertStyle:(UIAlertControllerStyle)alertStyle {
@@ -183,6 +184,8 @@ BOOL isIPhoneX () {
     return _backgroundMaskView;
 }
 
-
+- (void)dealloc {
+    NSLog(@"dealloc = %@",self);
+}
 
 @end

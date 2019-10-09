@@ -26,6 +26,16 @@
 		8B2B49D82340AFDF0072822F /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B49D42340AFDE0072822F /* CustomView.m */; };
 		8B2B49D92340AFDF0072822F /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B49D62340AFDE0072822F /* QCMethod.m */; };
 		8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */; };
+		8B3BA73F234D818D00146286 /* LJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA73D234D818D00146286 /* LJDatePickerView.m */; };
+		8B3BA743234D8AFC00146286 /* LJSliderVerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA742234D8AFC00146286 /* LJSliderVerifyView.m */; };
+		8B3BA746234DA63B00146286 /* LJSliderVerifyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA745234DA63B00146286 /* LJSliderVerifyImageView.m */; };
+		8B3BA749234DA64800146286 /* LJSliderVerifySliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA748234DA64800146286 /* LJSliderVerifySliderView.m */; };
+		8B3BA75A234DBE3D00146286 /* ORSKUDataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA758234DBE3D00146286 /* ORSKUDataFilter.m */; };
+		8B3BA75D234DC0D300146286 /* LJGoodsSpecsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA75C234DC0D300146286 /* LJGoodsSpecsView.m */; };
+		8B3BA760234DC10100146286 /* LJGoodsSpecsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA75F234DC10100146286 /* LJGoodsSpecsHeadView.m */; };
+		8B3BA763234DC12600146286 /* LJGoodsSpecsCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA762234DC12600146286 /* LJGoodsSpecsCountView.m */; };
+		8B3BA767234DE48300146286 /* LJGoodsSpecsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA766234DE48300146286 /* LJGoodsSpecsCollectionView.m */; };
+		8B3BA76A234DE49200146286 /* LJGoodsSpecsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA769234DE49200146286 /* LJGoodsSpecsCollectionViewCell.m */; };
 		8B52F7FD233DA79000D98CFC /* LJDemoAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F7FC233DA79000D98CFC /* LJDemoAlertViewController.m */; };
 		8BA6B230233B02A6001D5ACB /* UIScrollView+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B22F233B02A6001D5ACB /* UIScrollView+LJKit.m */; };
 		8BA6B233233B0E27001D5ACB /* LJDemoCustomUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B232233B0E27001D5ACB /* LJDemoCustomUIController.m */; };
@@ -128,6 +138,27 @@
 		8B2C829B22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8B2C829C22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8B2C829D22DD7AC40026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8B3BA73D234D818D00146286 /* LJDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJDatePickerView.m; sourceTree = "<group>"; };
+		8B3BA73E234D818D00146286 /* LJDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDatePickerView.h; sourceTree = "<group>"; };
+		8B3BA741234D8AFC00146286 /* LJSliderVerifyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJSliderVerifyView.h; sourceTree = "<group>"; };
+		8B3BA742234D8AFC00146286 /* LJSliderVerifyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJSliderVerifyView.m; sourceTree = "<group>"; };
+		8B3BA744234DA63B00146286 /* LJSliderVerifyImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJSliderVerifyImageView.h; sourceTree = "<group>"; };
+		8B3BA745234DA63B00146286 /* LJSliderVerifyImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJSliderVerifyImageView.m; sourceTree = "<group>"; };
+		8B3BA747234DA64800146286 /* LJSliderVerifySliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJSliderVerifySliderView.h; sourceTree = "<group>"; };
+		8B3BA748234DA64800146286 /* LJSliderVerifySliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJSliderVerifySliderView.m; sourceTree = "<group>"; };
+		8B3BA758234DBE3D00146286 /* ORSKUDataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSKUDataFilter.m; sourceTree = "<group>"; };
+		8B3BA759234DBE3D00146286 /* ORSKUDataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSKUDataFilter.h; sourceTree = "<group>"; };
+		8B3BA75B234DC0D300146286 /* LJGoodsSpecsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsSpecsView.h; sourceTree = "<group>"; };
+		8B3BA75C234DC0D300146286 /* LJGoodsSpecsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsSpecsView.m; sourceTree = "<group>"; };
+		8B3BA75E234DC10100146286 /* LJGoodsSpecsHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsSpecsHeadView.h; sourceTree = "<group>"; };
+		8B3BA75F234DC10100146286 /* LJGoodsSpecsHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsSpecsHeadView.m; sourceTree = "<group>"; };
+		8B3BA761234DC12600146286 /* LJGoodsSpecsCountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsSpecsCountView.h; sourceTree = "<group>"; };
+		8B3BA762234DC12600146286 /* LJGoodsSpecsCountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsSpecsCountView.m; sourceTree = "<group>"; };
+		8B3BA765234DE48300146286 /* LJGoodsSpecsCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsSpecsCollectionView.h; sourceTree = "<group>"; };
+		8B3BA766234DE48300146286 /* LJGoodsSpecsCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsSpecsCollectionView.m; sourceTree = "<group>"; };
+		8B3BA768234DE49200146286 /* LJGoodsSpecsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsSpecsCollectionViewCell.h; sourceTree = "<group>"; };
+		8B3BA769234DE49200146286 /* LJGoodsSpecsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsSpecsCollectionViewCell.m; sourceTree = "<group>"; };
+		8B4DBF14234C56960035C8C9 /* LJKit_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LJKit_Example.entitlements; sourceTree = "<group>"; };
 		8B52F7FB233DA79000D98CFC /* LJDemoAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoAlertViewController.h; sourceTree = "<group>"; };
 		8B52F7FC233DA79000D98CFC /* LJDemoAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoAlertViewController.m; sourceTree = "<group>"; };
 		8BA6B22E233B02A6001D5ACB /* UIScrollView+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LJKit.h"; sourceTree = "<group>"; };
@@ -274,6 +305,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				8B4DBF14234C56960035C8C9 /* LJKit_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LJKit */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -407,6 +439,63 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		8B3BA73C234D817800146286 /* LJDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BA73E234D818D00146286 /* LJDatePickerView.h */,
+				8B3BA73D234D818D00146286 /* LJDatePickerView.m */,
+			);
+			path = LJDatePickerView;
+			sourceTree = "<group>";
+		};
+		8B3BA740234D8ACF00146286 /* LJSliderVerifyView */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BA741234D8AFC00146286 /* LJSliderVerifyView.h */,
+				8B3BA742234D8AFC00146286 /* LJSliderVerifyView.m */,
+				8B3BA744234DA63B00146286 /* LJSliderVerifyImageView.h */,
+				8B3BA745234DA63B00146286 /* LJSliderVerifyImageView.m */,
+				8B3BA747234DA64800146286 /* LJSliderVerifySliderView.h */,
+				8B3BA748234DA64800146286 /* LJSliderVerifySliderView.m */,
+			);
+			path = LJSliderVerifyView;
+			sourceTree = "<group>";
+		};
+		8B3BA74A234DB79000146286 /* LJGoodsSpecsView */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BA764234DE45100146286 /* LJGoodsSpecsCollectionView */,
+				8B3BA757234DBE3D00146286 /* SKUDataFilter */,
+				8B3BA75B234DC0D300146286 /* LJGoodsSpecsView.h */,
+				8B3BA75C234DC0D300146286 /* LJGoodsSpecsView.m */,
+				8B3BA75E234DC10100146286 /* LJGoodsSpecsHeadView.h */,
+				8B3BA75F234DC10100146286 /* LJGoodsSpecsHeadView.m */,
+				8B3BA761234DC12600146286 /* LJGoodsSpecsCountView.h */,
+				8B3BA762234DC12600146286 /* LJGoodsSpecsCountView.m */,
+			);
+			path = LJGoodsSpecsView;
+			sourceTree = "<group>";
+		};
+		8B3BA757234DBE3D00146286 /* SKUDataFilter */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BA759234DBE3D00146286 /* ORSKUDataFilter.h */,
+				8B3BA758234DBE3D00146286 /* ORSKUDataFilter.m */,
+			);
+			path = SKUDataFilter;
+			sourceTree = "<group>";
+		};
+		8B3BA764234DE45100146286 /* LJGoodsSpecsCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8B3BA765234DE48300146286 /* LJGoodsSpecsCollectionView.h */,
+				8B3BA766234DE48300146286 /* LJGoodsSpecsCollectionView.m */,
+				8B3BA768234DE49200146286 /* LJGoodsSpecsCollectionViewCell.h */,
+				8B3BA769234DE49200146286 /* LJGoodsSpecsCollectionViewCell.m */,
+			);
+			path = LJGoodsSpecsCollectionView;
+			sourceTree = "<group>";
+		};
 		8BD142722334C8F700201B60 /* LJAuthorityManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +526,9 @@
 		8BDC2C122341DEA0000C04DF /* CustomAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				8B3BA74A234DB79000146286 /* LJGoodsSpecsView */,
+				8B3BA740234D8ACF00146286 /* LJSliderVerifyView */,
+				8B3BA73C234D817800146286 /* LJDatePickerView */,
 				8BDC2C142341DEDA000C04DF /* LJAlertCheckPwdView */,
 			);
 			path = CustomAlertView;
@@ -918,12 +1010,16 @@
 				8BA6B23C233B6083001D5ACB /* LJDemoToastViewController.m in Sources */,
 				8BFA509623274BB30014F6E0 /* LJDemoBaseController.m in Sources */,
 				8BF5F0CD2339C08100996D1B /* LJHttpConfig.m in Sources */,
+				8B3BA743234D8AFC00146286 /* LJSliderVerifyView.m in Sources */,
 				8BFA5138232A11960014F6E0 /* LJClassDetailController.m in Sources */,
 				8BFA512D2328BDB30014F6E0 /* LJHttpResponse.m in Sources */,
+				8B3BA746234DA63B00146286 /* LJSliderVerifyImageView.m in Sources */,
 				8BDD99E62330BAF300504CDB /* NSFileManager+LJKit.m in Sources */,
 				8BF4DE402340782E00B80CB2 /* LJAnimationView.m in Sources */,
 				8BFA50F723278A770014F6E0 /* LJAlertViewController.m in Sources */,
 				8BDD99DF2330A6E000504CDB /* UIAppDelegate+LJKit.m in Sources */,
+				8B3BA73F234D818D00146286 /* LJDatePickerView.m in Sources */,
+				8B3BA760234DC10100146286 /* LJGoodsSpecsHeadView.m in Sources */,
 				8BDC2C1D2341DFBF000C04DF /* LJBoxTextFieldViewCell.m in Sources */,
 				8BFA50EF23278A090014F6E0 /* LJClassHomeController.m in Sources */,
 				8BFA50E72327881E0014F6E0 /* UIImage+LJKit.m in Sources */,
@@ -932,16 +1028,19 @@
 				8BFA50EB2327881E0014F6E0 /* LJSandboxViewController.m in Sources */,
 				8BFA50E52327881E0014F6E0 /* UIView+LJKit.m in Sources */,
 				8BA6B233233B0E27001D5ACB /* LJDemoCustomUIController.m in Sources */,
+				8B3BA749234DA64800146286 /* LJSliderVerifySliderView.m in Sources */,
 				8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */,
 				8BFA50FC23278B080014F6E0 /* LJThemeManager.m in Sources */,
 				8BFA51182327A0A80014F6E0 /* LJHttpManager.m in Sources */,
 				8BFA50F223278A380014F6E0 /* LJLocationManager.m in Sources */,
 				8BDC2C052341A1B7000C04DF /* LJAlertContainerView.m in Sources */,
+				8B3BA75A234DBE3D00146286 /* ORSKUDataFilter.m in Sources */,
 				8BDC2C112341C9CF000C04DF /* LJToast.m in Sources */,
 				8BFA511D23288BDA0014F6E0 /* LJSandboxHomeController.m in Sources */,
 				8BFA5135232A0BEA0014F6E0 /* LJClassViewController.m in Sources */,
 				8B2B49D92340AFDF0072822F /* QCMethod.m in Sources */,
 				8B05D9CA232F6557007A72BF /* LJDemoFileManagerController.m in Sources */,
+				8B3BA763234DC12600146286 /* LJGoodsSpecsCountView.m in Sources */,
 				8BFA50E62327881E0014F6E0 /* UIViewController+LJKit.m in Sources */,
 				8B52F7FD233DA79000D98CFC /* LJDemoAlertViewController.m in Sources */,
 				8BFA51162327A0A80014F6E0 /* LJHttpRequest.m in Sources */,
@@ -954,12 +1053,15 @@
 				8BFA508423273D010014F6E0 /* LJDemoDebugController.m in Sources */,
 				8BFA509923274D3D0014F6E0 /* LJDemoHttpManagerController.m in Sources */,
 				8BE1E79223338526009FB19D /* LJDemoImagePickerController.m in Sources */,
+				8B3BA767234DE48300146286 /* LJGoodsSpecsCollectionView.m in Sources */,
 				8BFA510323278D7A0014F6E0 /* LJImagePickerManager.m in Sources */,
 				8BFA512023288C940014F6E0 /* LJSandboxModel.m in Sources */,
+				8B3BA76A234DE49200146286 /* LJGoodsSpecsCollectionViewCell.m in Sources */,
 				8BF4DE392340750400B80CB2 /* LJDemoAnimationController.m in Sources */,
 				8BFA5108232795160014F6E0 /* UIAppDelegate.m in Sources */,
 				8BA6B236233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m in Sources */,
 				8B05D9C7232F63CF007A72BF /* LJFileManager.m in Sources */,
+				8B3BA75D234DC0D300146286 /* LJGoodsSpecsView.m in Sources */,
 				8BDC2C172341DF0A000C04DF /* LJAlertCheckPwdView.m in Sources */,
 				8BFA50E92327881E0014F6E0 /* NSDate+LJKit.m in Sources */,
 				8BFA512323288CC90014F6E0 /* LJSandboxViewCell.m in Sources */,
@@ -1126,6 +1228,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LJKit_Example.entitlements;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 3SLHUVQHML;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJKit/LJKit-Prefix.pch";
@@ -1134,9 +1238,10 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1147,6 +1252,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LJKit_Example.entitlements;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 3SLHUVQHML;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJKit/LJKit-Prefix.pch";
@@ -1155,8 +1262,9 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width);
+    imageView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 200);
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     self.tableView.tableHeaderView = imageView;
     

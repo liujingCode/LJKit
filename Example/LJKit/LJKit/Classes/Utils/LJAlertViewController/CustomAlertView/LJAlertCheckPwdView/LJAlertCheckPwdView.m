@@ -23,6 +23,15 @@
         self.layer.cornerRadius = 2;
         self.backgroundColor = [UIColor whiteColor];
         [self setupSubViewLayouts];
+        
+        // 输入完成后的回调
+        __weak typeof(self) weakSelf = self;
+        self.pwdView.completeHandle = ^(NSString * _Nonnull password) {
+            if (!weakSelf.actionHandle) {
+                return ;
+            }
+            weakSelf.actionHandle(LJAlertCheckPwdViewActionComplete, password);
+        };
     }
     return self;
 }
@@ -61,11 +70,15 @@
 
 // 点击关闭
 - (void)clickCloseBtn:(UIButton *)sender {
- 
+    if (self.actionHandle) {
+         self.actionHandle(LJAlertCheckPwdViewActionCancel, nil);
+     }
 }
 // 点击忘记密码
 - (void)clickForgetPwdBtn:(UIButton *)sender {
-  
+    if (self.actionHandle) {
+        self.actionHandle(LJAlertCheckPwdViewActionForgetPwd, nil);
+    }
 }
 
 

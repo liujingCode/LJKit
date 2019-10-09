@@ -112,6 +112,12 @@
 - (CGFloat)lj_shadowRadius {
     return self.layer.shadowRadius;
 }
+- (void)setLj_shadowColor:(UIColor *)lj_shadowColor {
+    self.layer.shadowColor = lj_shadowColor.CGColor;
+}
+- (UIColor *)lj_shadowColor {
+    return [UIColor colorWithCGColor:self.layer.shadowColor];
+}
 
 
 #pragma mark - 获取当前的的controller
