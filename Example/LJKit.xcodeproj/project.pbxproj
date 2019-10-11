@@ -26,6 +26,11 @@
 		8B2B49D82340AFDF0072822F /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B49D42340AFDE0072822F /* CustomView.m */; };
 		8B2B49D92340AFDF0072822F /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B49D62340AFDE0072822F /* QCMethod.m */; };
 		8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */; };
+		8B2CA658234F1524000F6C78 /* LJGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA657234F1524000F6C78 /* LJGoodsModel.m */; };
+		8B2CA65B234F1536000F6C78 /* LJGoodsSpecsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA65A234F1536000F6C78 /* LJGoodsSpecsModel.m */; };
+		8B2CA65E234F1545000F6C78 /* LJGoodsOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA65D234F1545000F6C78 /* LJGoodsOptionModel.m */; };
+		8B2CA661234F15F5000F6C78 /* LJGoodsSpecsItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA660234F15F5000F6C78 /* LJGoodsSpecsItemModel.m */; };
+		8B2CA664234F23B3000F6C78 /* LJGoodsOptionSelectedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA663234F23B3000F6C78 /* LJGoodsOptionSelectedModel.m */; };
 		8B3BA73F234D818D00146286 /* LJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA73D234D818D00146286 /* LJDatePickerView.m */; };
 		8B3BA743234D8AFC00146286 /* LJSliderVerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA742234D8AFC00146286 /* LJSliderVerifyView.m */; };
 		8B3BA746234DA63B00146286 /* LJSliderVerifyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA745234DA63B00146286 /* LJSliderVerifyImageView.m */; };
@@ -138,6 +143,16 @@
 		8B2C829B22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8B2C829C22DD7ABD0026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8B2C829D22DD7AC40026EBF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8B2CA656234F1524000F6C78 /* LJGoodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsModel.h; sourceTree = "<group>"; };
+		8B2CA657234F1524000F6C78 /* LJGoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsModel.m; sourceTree = "<group>"; };
+		8B2CA659234F1536000F6C78 /* LJGoodsSpecsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsSpecsModel.h; sourceTree = "<group>"; };
+		8B2CA65A234F1536000F6C78 /* LJGoodsSpecsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsSpecsModel.m; sourceTree = "<group>"; };
+		8B2CA65C234F1545000F6C78 /* LJGoodsOptionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsOptionModel.h; sourceTree = "<group>"; };
+		8B2CA65D234F1545000F6C78 /* LJGoodsOptionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsOptionModel.m; sourceTree = "<group>"; };
+		8B2CA65F234F15F5000F6C78 /* LJGoodsSpecsItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsSpecsItemModel.h; sourceTree = "<group>"; };
+		8B2CA660234F15F5000F6C78 /* LJGoodsSpecsItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsSpecsItemModel.m; sourceTree = "<group>"; };
+		8B2CA662234F23B3000F6C78 /* LJGoodsOptionSelectedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsOptionSelectedModel.h; sourceTree = "<group>"; };
+		8B2CA663234F23B3000F6C78 /* LJGoodsOptionSelectedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsOptionSelectedModel.m; sourceTree = "<group>"; };
 		8B3BA73D234D818D00146286 /* LJDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJDatePickerView.m; sourceTree = "<group>"; };
 		8B3BA73E234D818D00146286 /* LJDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDatePickerView.h; sourceTree = "<group>"; };
 		8B3BA741234D8AFC00146286 /* LJSliderVerifyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJSliderVerifyView.h; sourceTree = "<group>"; };
@@ -439,6 +454,23 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		8B2CA655234F1503000F6C78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B2CA656234F1524000F6C78 /* LJGoodsModel.h */,
+				8B2CA657234F1524000F6C78 /* LJGoodsModel.m */,
+				8B2CA659234F1536000F6C78 /* LJGoodsSpecsModel.h */,
+				8B2CA65A234F1536000F6C78 /* LJGoodsSpecsModel.m */,
+				8B2CA65F234F15F5000F6C78 /* LJGoodsSpecsItemModel.h */,
+				8B2CA660234F15F5000F6C78 /* LJGoodsSpecsItemModel.m */,
+				8B2CA65C234F1545000F6C78 /* LJGoodsOptionModel.h */,
+				8B2CA65D234F1545000F6C78 /* LJGoodsOptionModel.m */,
+				8B2CA662234F23B3000F6C78 /* LJGoodsOptionSelectedModel.h */,
+				8B2CA663234F23B3000F6C78 /* LJGoodsOptionSelectedModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8B3BA73C234D817800146286 /* LJDatePickerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +496,7 @@
 		8B3BA74A234DB79000146286 /* LJGoodsSpecsView */ = {
 			isa = PBXGroup;
 			children = (
+				8B2CA655234F1503000F6C78 /* Model */,
 				8B3BA764234DE45100146286 /* LJGoodsSpecsCollectionView */,
 				8B3BA757234DBE3D00146286 /* SKUDataFilter */,
 				8B3BA75B234DC0D300146286 /* LJGoodsSpecsView.h */,
@@ -1002,9 +1035,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2CA661234F15F5000F6C78 /* LJGoodsSpecsItemModel.m in Sources */,
 				8BDD99E32330ADCE00504CDB /* LJExceptionManager.m in Sources */,
 				8BFA512623288CDC0014F6E0 /* LJLocalFilePreviewController.m in Sources */,
 				8BFA50E42327881E0014F6E0 /* UIBarButtonItem+LJKit.m in Sources */,
+				8B2CA65E234F1545000F6C78 /* LJGoodsOptionModel.m in Sources */,
 				8BFA50E82327881E0014F6E0 /* NSString+LJKit.m in Sources */,
 				8BA6B230233B02A6001D5ACB /* UIScrollView+LJKit.m in Sources */,
 				8BA6B23C233B6083001D5ACB /* LJDemoToastViewController.m in Sources */,
@@ -1029,6 +1064,7 @@
 				8BFA50E52327881E0014F6E0 /* UIView+LJKit.m in Sources */,
 				8BA6B233233B0E27001D5ACB /* LJDemoCustomUIController.m in Sources */,
 				8B3BA749234DA64800146286 /* LJSliderVerifySliderView.m in Sources */,
+				8B2CA664234F23B3000F6C78 /* LJGoodsOptionSelectedModel.m in Sources */,
 				8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */,
 				8BFA50FC23278B080014F6E0 /* LJThemeManager.m in Sources */,
 				8BFA51182327A0A80014F6E0 /* LJHttpManager.m in Sources */,
@@ -1066,8 +1102,10 @@
 				8BFA50E92327881E0014F6E0 /* NSDate+LJKit.m in Sources */,
 				8BFA512323288CC90014F6E0 /* LJSandboxViewCell.m in Sources */,
 				8BDD99E92330CE5800504CDB /* LJCrashAlertView.m in Sources */,
+				8B2CA658234F1524000F6C78 /* LJGoodsModel.m in Sources */,
 				8BDD99DC2330751400504CDB /* LJDebugLogView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				8B2CA65B234F1536000F6C78 /* LJGoodsSpecsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,14 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class LJGoodsSpecsModel;
+@class LJGoodsOptionModel;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LJGoodsSpecsCollectionView : UICollectionView
-/// 规格数组
-@property (nonatomic, copy) NSArray *specsList;
-/// 所有的选项
-@property (nonatomic, copy) NSArray *optionList;
+/// 规格列表
+@property (nonatomic, copy) NSArray <LJGoodsSpecsModel *>*specsList;
+/// 选项组合列表
+@property (nonatomic, copy) NSArray <LJGoodsOptionModel *>*optionList;
+
+@property(copy, nonatomic) void (^clickOptionItemHandle) (NSArray <NSIndexPath *>*selectedIndexPaths, LJGoodsOptionModel *optionModel);
+
 
 + (instancetype)defaultSpecsCollectionView;
 @end

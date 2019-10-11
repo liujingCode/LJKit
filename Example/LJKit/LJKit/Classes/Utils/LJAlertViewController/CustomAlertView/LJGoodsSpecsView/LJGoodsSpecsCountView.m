@@ -33,7 +33,11 @@
     if (count > self.maxCount) {
         return;
     }
+    self.currentCount = count;
     self.countTextField.text = [NSString stringWithFormat:@"%d",count];
+    if (self.countChangedHandle) {
+        self.countChangedHandle(count);
+    }
 }
 
 - (void)clickReduceBtn:(UIButton *)sender {
@@ -41,13 +45,22 @@
     if (count < self.minCount) {
         return;
     }
+    self.currentCount = count;
     self.countTextField.text = [NSString stringWithFormat:@"%d",count];
+    if (self.countChangedHandle) {
+        self.countChangedHandle(count);
+    }
 }
 
 #pragma mark - 重写set方法
 - (void)setAllowInput:(BOOL)allowInput {
     _allowInput = allowInput;
     self.countTextField.userInteractionEnabled = allowInput;
+}
+
+- (void)setCurrentCount:(int)currentCount {
+    _currentCount = currentCount;
+    self.countTextField.text = [NSString stringWithFormat:@"%d",currentCount];
 }
 
 #pragma mark - 子控件布局

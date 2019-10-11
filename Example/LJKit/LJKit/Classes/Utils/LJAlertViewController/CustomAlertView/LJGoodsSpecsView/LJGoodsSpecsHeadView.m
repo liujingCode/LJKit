@@ -26,6 +26,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self setupSubviewLayouts];
+        
+        self.goodsImageView.backgroundColor = [UIColor purpleColor];
     }
     return self;
 }
@@ -50,7 +52,9 @@
 }
 #pragma mark - 点击事件
 - (void)clickCloseBtn:(UIButton *)sender {
-    
+    if (self.closeHandle) {
+        self.closeHandle();
+    }
 }
 
 #pragma mark - 子控件布局

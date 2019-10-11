@@ -21,6 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 格式化好的信息
 @property (nonatomic, copy) NSString *formatInfoStr;
 
+/// 点击关闭的回调
+@property (nonatomic, copy) void (^closeHandle) (void);
+/// 展示商品缩略图的回调
+@property (nonatomic, copy) void (^showThumbHandle) (NSString *goodsImageAddress);
+
 @end
 
 NS_ASSUME_NONNULL_END

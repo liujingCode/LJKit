@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LJGoodsSpecsCollectionViewCell : UICollectionViewCell
-
+/// 标题
+@property (nonatomic, weak) UILabel *titleLabel;
 @end
 
 NS_ASSUME_NONNULL_END

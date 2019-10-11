@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class LJGoodsModel;
+#import "LJGoodsOptionSelectedModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 /// 商品规格选择
@@ -17,8 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSArray *specsList;
 /// 所有的选项
 @property (nonatomic, copy) NSArray *optionList;
+/// 消失的回调
+@property (nonatomic, copy) void (^dismissHandle) (LJGoodsOptionSelectedModel *model, BOOL isCancel);
 
-+ (instancetype)defaultView;
++ (instancetype)defaultViewWithGoods:(LJGoodsModel *)goods;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -14,6 +14,10 @@
 #import "LJSliderVerifyView.h"
 #import "LJGoodsSpecsView.h"
 
+#import "LJGoodsModel.h"
+#import <YYModel/YYModel.h>
+
+
 /// 自定义dialog控制器
 @interface LJDemoCustomAlertController : LJAlertViewController
 
@@ -34,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     
     self.dataList = @[@"系统dialog",@"系统actionSheet",@"自定义dialogView",@"自定义actionSheetView",@"自定义dialog控制器",@"自定义actionSheet控制器",@"自定义-方块密码输入",@"自定义-滑块验证",@"自定义-选择指定范围内的时间(10年前)",@"自定义-商品规格选择"];
 }
@@ -197,10 +202,116 @@
 
 // 商品规格选择
 - (void)goodsSpecsAlertView {
-    LJGoodsSpecsView *specsView = [LJGoodsSpecsView defaultView];
+    NSArray *goodsList = [self getGoodsList];
+    
+    LJGoodsSpecsView *specsView = [LJGoodsSpecsView defaultViewWithGoods:goodsList.firstObject];
+    
     LJAlertViewController *alertVC = [LJAlertViewController showWithContainerView:specsView alertStyle:UIAlertControllerStyleActionSheet];
     
     specsView.backgroundColor = [UIColor orangeColor];
+    
+    __weak typeof(alertVC) weakAlertVC = alertVC;
+    specsView.dismissHandle = ^(LJGoodsOptionSelectedModel * _Nonnull model, BOOL isCancel) {
+        [weakAlertVC dismissAlert];
+        if (isCancel) {
+            NSLog(@"点击了取消");
+            return ;
+        }
+        NSLog(@"选择了 = %@",model.optionModel.title);
+    };
+}
+
+#pragma mark - 测试数据
+- (NSArray *)getGoodsList {
+    NSArray *goodsList = @[
+        @{
+            @"id":@"1000",
+            @"title":@"24k土豪披风时尚百搭+生命+抗性+强化99+附魔暴击99%",
+            @"thumb":@"",
+            @"price":@"9.9",
+            @"total":@"309",
+            @"specsList":@[
+                    @{
+                        @"id":@"100001",
+                        @"goodsid":@"1000",
+                        @"title":@"颜色",
+                        @"itemList":@[
+                                @{
+                                    @"itemid":@"10000101",
+                                    @"title":@"红色",
+                                },
+                                @{
+                                    @"itemid":@"10000102",
+                                    @"title":@"绿色",
+                                },
+                                @{
+                                    @"itemid":@"10000103",
+                                    @"title":@"蓝色",
+                                }
+                        ]
+                    },
+                    @{
+                        @"id":@"100002",
+                        @"goodsid":@"1000",
+                        @"title":@"尺寸",
+                        @"itemList":@[
+                                @{
+                                    @"itemid":@"10000201",
+                                    @"title":@"S码",
+                                },
+                                @{
+                                    @"itemid":@"10000202",
+                                    @"title":@"M码",
+                                },
+                                @{
+                                    @"itemid":@"10000203",
+                                    @"title":@"L码",
+                                }
+                        ]
+                    }
+            ],
+            @"optionList":@[
+                    @{
+                        @"id":@"",
+                        @"goodsid":@"1000",
+                        @"thumb":@"",
+                        @"price":@"9.9",
+                        @"stock":@"100",
+                        @"title":@"红色+S码",
+                        @"specs":@"10000101_10000201"
+                    },
+                    @{
+                        @"id":@"",
+                        @"goodsid":@"1000",
+                        @"thumb":@"",
+                        @"price":@"9.9",
+                        @"stock":@"100",
+                        @"title":@"红色+M码",
+                        @"specs":@"10000101_10000202"
+                    },
+                    @{
+                        @"id":@"",
+                        @"goodsid":@"1000",
+                        @"thumb":@"",
+                        @"price":@"9.9",
+                        @"stock":@"100",
+                        @"title":@"红色+L码",
+                        @"specs":@"10000101_10000203"
+                    },
+                    @{
+                        @"id":@"",
+                        @"goodsid":@"1000",
+                        @"thumb":@"",
+                        @"price":@"8.9",
+                        @"stock":@"9",
+                        @"title":@"绿色+S码",
+                        @"specs":@"10000102_10000201"
+                    }
+            ]
+        }
+    ];
+    goodsList = [NSArray yy_modelArrayWithClass:[LJGoodsModel class] json:goodsList];
+    return goodsList;
 }
 
 @end
