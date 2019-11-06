@@ -23,6 +23,8 @@
 		8B05D9C7232F63CF007A72BF /* LJFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9C6232F63CF007A72BF /* LJFileManager.m */; };
 		8B05D9CA232F6557007A72BF /* LJDemoFileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9C9232F6557007A72BF /* LJDemoFileManagerController.m */; };
 		8B05D9CE232F91A6007A72BF /* LJDebugLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B05D9CD232F91A6007A72BF /* LJDebugLogManager.m */; };
+		8B2816A723692CBA00F31BDE /* LJScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2816A623692CBA00F31BDE /* LJScanView.m */; };
+		8B2816AA2369356900F31BDE /* LJScanCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2816A92369356900F31BDE /* LJScanCapture.m */; };
 		8B2B49D82340AFDF0072822F /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B49D42340AFDE0072822F /* CustomView.m */; };
 		8B2B49D92340AFDF0072822F /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B49D62340AFDE0072822F /* QCMethod.m */; };
 		8B2C828722DD6B750026EBF7 /* LJDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C828622DD6B750026EBF7 /* LJDemoHomeViewController.m */; };
@@ -31,6 +33,7 @@
 		8B2CA65E234F1545000F6C78 /* LJGoodsOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA65D234F1545000F6C78 /* LJGoodsOptionModel.m */; };
 		8B2CA661234F15F5000F6C78 /* LJGoodsSpecsItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA660234F15F5000F6C78 /* LJGoodsSpecsItemModel.m */; };
 		8B2CA664234F23B3000F6C78 /* LJGoodsOptionSelectedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CA663234F23B3000F6C78 /* LJGoodsOptionSelectedModel.m */; };
+		8B35FE4F2371149100282655 /* LJScanMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B35FE4E2371149100282655 /* LJScanMaskView.m */; };
 		8B3BA73F234D818D00146286 /* LJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA73D234D818D00146286 /* LJDatePickerView.m */; };
 		8B3BA743234D8AFC00146286 /* LJSliderVerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA742234D8AFC00146286 /* LJSliderVerifyView.m */; };
 		8B3BA746234DA63B00146286 /* LJSliderVerifyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA745234DA63B00146286 /* LJSliderVerifyImageView.m */; };
@@ -42,6 +45,7 @@
 		8B3BA767234DE48300146286 /* LJGoodsSpecsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA766234DE48300146286 /* LJGoodsSpecsCollectionView.m */; };
 		8B3BA76A234DE49200146286 /* LJGoodsSpecsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA769234DE49200146286 /* LJGoodsSpecsCollectionViewCell.m */; };
 		8B52F7FD233DA79000D98CFC /* LJDemoAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F7FC233DA79000D98CFC /* LJDemoAlertViewController.m */; };
+		8B5AF0D12372750E0065E716 /* LJDemoBorderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5AF0D02372750E0065E716 /* LJDemoBorderController.m */; };
 		8BA6B230233B02A6001D5ACB /* UIScrollView+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B22F233B02A6001D5ACB /* UIScrollView+LJKit.m */; };
 		8BA6B233233B0E27001D5ACB /* LJDemoCustomUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B232233B0E27001D5ACB /* LJDemoCustomUIController.m */; };
 		8BA6B236233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B235233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m */; };
@@ -60,6 +64,8 @@
 		8BDD99E62330BAF300504CDB /* NSFileManager+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99E52330BAF300504CDB /* NSFileManager+LJKit.m */; };
 		8BDD99E92330CE5800504CDB /* LJCrashAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD99E82330CE5800504CDB /* LJCrashAlertView.m */; };
 		8BE1E79223338526009FB19D /* LJDemoImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */; };
+		8BEE9658236924B5008651D9 /* LJScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE9657236924B5008651D9 /* LJScanViewController.m */; };
+		8BEE965B23692579008651D9 /* LJDemoScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE965A23692579008651D9 /* LJDemoScanController.m */; };
 		8BF4DE392340750400B80CB2 /* LJDemoAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4DE382340750400B80CB2 /* LJDemoAnimationController.m */; };
 		8BF4DE402340782E00B80CB2 /* LJAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4DE3F2340782E00B80CB2 /* LJAnimationView.m */; };
 		8BF5F0CD2339C08100996D1B /* LJHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5F0CC2339C08100996D1B /* LJHttpConfig.m */; };
@@ -133,6 +139,10 @@
 		8B05D9C9232F6557007A72BF /* LJDemoFileManagerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoFileManagerController.m; sourceTree = "<group>"; };
 		8B05D9CC232F91A6007A72BF /* LJDebugLogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDebugLogManager.h; sourceTree = "<group>"; };
 		8B05D9CD232F91A6007A72BF /* LJDebugLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDebugLogManager.m; sourceTree = "<group>"; };
+		8B2816A523692CBA00F31BDE /* LJScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJScanView.h; sourceTree = "<group>"; };
+		8B2816A623692CBA00F31BDE /* LJScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJScanView.m; sourceTree = "<group>"; };
+		8B2816A82369356900F31BDE /* LJScanCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJScanCapture.h; sourceTree = "<group>"; };
+		8B2816A92369356900F31BDE /* LJScanCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJScanCapture.m; sourceTree = "<group>"; };
 		8B2B49D42340AFDE0072822F /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		8B2B49D52340AFDE0072822F /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
 		8B2B49D62340AFDE0072822F /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
@@ -153,6 +163,8 @@
 		8B2CA660234F15F5000F6C78 /* LJGoodsSpecsItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsSpecsItemModel.m; sourceTree = "<group>"; };
 		8B2CA662234F23B3000F6C78 /* LJGoodsOptionSelectedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJGoodsOptionSelectedModel.h; sourceTree = "<group>"; };
 		8B2CA663234F23B3000F6C78 /* LJGoodsOptionSelectedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJGoodsOptionSelectedModel.m; sourceTree = "<group>"; };
+		8B35FE4D2371149100282655 /* LJScanMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJScanMaskView.h; sourceTree = "<group>"; };
+		8B35FE4E2371149100282655 /* LJScanMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJScanMaskView.m; sourceTree = "<group>"; };
 		8B3BA73D234D818D00146286 /* LJDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJDatePickerView.m; sourceTree = "<group>"; };
 		8B3BA73E234D818D00146286 /* LJDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDatePickerView.h; sourceTree = "<group>"; };
 		8B3BA741234D8AFC00146286 /* LJSliderVerifyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJSliderVerifyView.h; sourceTree = "<group>"; };
@@ -176,6 +188,8 @@
 		8B4DBF14234C56960035C8C9 /* LJKit_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LJKit_Example.entitlements; sourceTree = "<group>"; };
 		8B52F7FB233DA79000D98CFC /* LJDemoAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoAlertViewController.h; sourceTree = "<group>"; };
 		8B52F7FC233DA79000D98CFC /* LJDemoAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoAlertViewController.m; sourceTree = "<group>"; };
+		8B5AF0CF2372750E0065E716 /* LJDemoBorderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoBorderController.h; sourceTree = "<group>"; };
+		8B5AF0D02372750E0065E716 /* LJDemoBorderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoBorderController.m; sourceTree = "<group>"; };
 		8BA6B22E233B02A6001D5ACB /* UIScrollView+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LJKit.h"; sourceTree = "<group>"; };
 		8BA6B22F233B02A6001D5ACB /* UIScrollView+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LJKit.m"; sourceTree = "<group>"; };
 		8BA6B231233B0E27001D5ACB /* LJDemoCustomUIController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoCustomUIController.h; sourceTree = "<group>"; };
@@ -213,6 +227,10 @@
 		8BDD99E82330CE5800504CDB /* LJCrashAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJCrashAlertView.m; sourceTree = "<group>"; };
 		8BE1E79023338526009FB19D /* LJDemoImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoImagePickerController.h; sourceTree = "<group>"; };
 		8BE1E79123338526009FB19D /* LJDemoImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoImagePickerController.m; sourceTree = "<group>"; };
+		8BEE9656236924B5008651D9 /* LJScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJScanViewController.h; sourceTree = "<group>"; };
+		8BEE9657236924B5008651D9 /* LJScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJScanViewController.m; sourceTree = "<group>"; };
+		8BEE965923692579008651D9 /* LJDemoScanController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoScanController.h; sourceTree = "<group>"; };
+		8BEE965A23692579008651D9 /* LJDemoScanController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoScanController.m; sourceTree = "<group>"; };
 		8BF4DE372340750400B80CB2 /* LJDemoAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoAnimationController.h; sourceTree = "<group>"; };
 		8BF4DE382340750400B80CB2 /* LJDemoAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoAnimationController.m; sourceTree = "<group>"; };
 		8BF4DE3E2340782E00B80CB2 /* LJAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJAnimationView.h; sourceTree = "<group>"; };
@@ -598,6 +616,21 @@
 			path = LJExceptionManager;
 			sourceTree = "<group>";
 		};
+		8BEE965523692490008651D9 /* LJScanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE9656236924B5008651D9 /* LJScanViewController.h */,
+				8BEE9657236924B5008651D9 /* LJScanViewController.m */,
+				8B2816A523692CBA00F31BDE /* LJScanView.h */,
+				8B2816A623692CBA00F31BDE /* LJScanView.m */,
+				8B2816A82369356900F31BDE /* LJScanCapture.h */,
+				8B2816A92369356900F31BDE /* LJScanCapture.m */,
+				8B35FE4D2371149100282655 /* LJScanMaskView.h */,
+				8B35FE4E2371149100282655 /* LJScanMaskView.m */,
+			);
+			path = LJScanViewController;
+			sourceTree = "<group>";
+		};
 		8BF4DE36234074DB00B80CB2 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +677,10 @@
 				8BA6B23B233B6083001D5ACB /* LJDemoToastViewController.m */,
 				8B52F7FB233DA79000D98CFC /* LJDemoAlertViewController.h */,
 				8B52F7FC233DA79000D98CFC /* LJDemoAlertViewController.m */,
+				8BEE965923692579008651D9 /* LJDemoScanController.h */,
+				8BEE965A23692579008651D9 /* LJDemoScanController.m */,
+				8B5AF0CF2372750E0065E716 /* LJDemoBorderController.h */,
+				8B5AF0D02372750E0065E716 /* LJDemoBorderController.m */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
@@ -710,8 +747,8 @@
 			isa = PBXGroup;
 			children = (
 				8BFA50D52327881E0014F6E0 /* NSString+LJKit.h */,
-				8BFA50D62327881E0014F6E0 /* NSDate+LJKit.h */,
 				8BFA50D72327881E0014F6E0 /* NSString+LJKit.m */,
+				8BFA50D62327881E0014F6E0 /* NSDate+LJKit.h */,
 				8BFA50D82327881E0014F6E0 /* NSDate+LJKit.m */,
 				8BFA512F2328D5F40014F6E0 /* NSObject+LJKit.h */,
 				8BFA51302328D5F40014F6E0 /* NSObject+LJKit.m */,
@@ -724,6 +761,7 @@
 		8BFA50DA2327881E0014F6E0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8BEE965523692490008651D9 /* LJScanViewController */,
 				8BDC2C0B2341C999000C04DF /* LJToast */,
 				8BDC2C072341C924000C04DF /* LJWebViewController */,
 				8BD142722334C8F700201B60 /* LJAuthorityManager */,
@@ -905,6 +943,7 @@
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = 3SLHUVQHML;
 						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -1070,15 +1109,18 @@
 				8BFA51182327A0A80014F6E0 /* LJHttpManager.m in Sources */,
 				8BFA50F223278A380014F6E0 /* LJLocationManager.m in Sources */,
 				8BDC2C052341A1B7000C04DF /* LJAlertContainerView.m in Sources */,
+				8B2816AA2369356900F31BDE /* LJScanCapture.m in Sources */,
 				8B3BA75A234DBE3D00146286 /* ORSKUDataFilter.m in Sources */,
 				8BDC2C112341C9CF000C04DF /* LJToast.m in Sources */,
 				8BFA511D23288BDA0014F6E0 /* LJSandboxHomeController.m in Sources */,
 				8BFA5135232A0BEA0014F6E0 /* LJClassViewController.m in Sources */,
 				8B2B49D92340AFDF0072822F /* QCMethod.m in Sources */,
+				8B35FE4F2371149100282655 /* LJScanMaskView.m in Sources */,
 				8B05D9CA232F6557007A72BF /* LJDemoFileManagerController.m in Sources */,
 				8B3BA763234DC12600146286 /* LJGoodsSpecsCountView.m in Sources */,
 				8BFA50E62327881E0014F6E0 /* UIViewController+LJKit.m in Sources */,
 				8B52F7FD233DA79000D98CFC /* LJDemoAlertViewController.m in Sources */,
+				8B5AF0D12372750E0065E716 /* LJDemoBorderController.m in Sources */,
 				8BFA51162327A0A80014F6E0 /* LJHttpRequest.m in Sources */,
 				8BD142752334C94F00201B60 /* LJAuthorityManager.m in Sources */,
 				8BFA51192327A0A80014F6E0 /* LJHttpUploadModel.m in Sources */,
@@ -1086,6 +1128,9 @@
 				8BDC2C0A2341C982000C04DF /* LJWebViewController.m in Sources */,
 				8B05D9CE232F91A6007A72BF /* LJDebugLogManager.m in Sources */,
 				8BFA51312328D5F40014F6E0 /* NSObject+LJKit.m in Sources */,
+				8B2816A723692CBA00F31BDE /* LJScanView.m in Sources */,
+				8BEE965B23692579008651D9 /* LJDemoScanController.m in Sources */,
+				8BEE9658236924B5008651D9 /* LJScanViewController.m in Sources */,
 				8BFA508423273D010014F6E0 /* LJDemoDebugController.m in Sources */,
 				8BFA509923274D3D0014F6E0 /* LJDemoHttpManagerController.m in Sources */,
 				8BE1E79223338526009FB19D /* LJDemoImagePickerController.m in Sources */,
@@ -1267,8 +1312,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LJKit_Example.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 3SLHUVQHML;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJKit/LJKit-Prefix.pch";
 				INFOPLIST_FILE = "LJKit/LJKit-Info.plist";
@@ -1276,6 +1324,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1291,8 +1340,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LJKit_Example.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 3SLHUVQHML;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJKit/LJKit-Prefix.pch";
 				INFOPLIST_FILE = "LJKit/LJKit-Info.plist";
@@ -1300,6 +1352,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
