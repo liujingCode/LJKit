@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LJScanView : UIView
+@interface LJScanAnimationView : UIView
 
 /// 开始扫描动画
 - (void)startScanAnimation;

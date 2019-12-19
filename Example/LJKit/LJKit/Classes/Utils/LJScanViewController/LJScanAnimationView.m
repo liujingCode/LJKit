@@ -6,15 +6,15 @@
 //  Copyright © 2019 liujing. All rights reserved.
 //
 
-#import "LJScanView.h"
-@interface LJScanView ()
+#import "LJScanAnimationView.h"
+@interface LJScanAnimationView ()
 
 /// 扫描线
 @property (nonatomic, weak) UIImageView *scanLineView;
 
 @end
 
-@implementation LJScanView
+@implementation LJScanAnimationView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -23,7 +23,6 @@
     }
     return self;
 }
-
 
 - (void)layoutSubviews {
     [super layoutSubviews];

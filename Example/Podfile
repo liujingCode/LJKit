@@ -27,10 +27,11 @@ target 'LJKit_Example' do
   pod 'SDCycleScrollView',:inhibit_warnings => true
   # toast
   pod 'MBProgressHUD', '~> 1.1.0'
-  
-  
+  # 相册选择器
   pod 'TZImagePickerController'
-
+  # 二维码扫描
+  pod 'ZXingObjC', '~> 3.6.4'
+  
   target 'LJKit_Tests' do
     inherit! :search_paths
   end

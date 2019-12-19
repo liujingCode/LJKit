@@ -7,16 +7,18 @@
 //
 
 #import "LJScanMaskView.h"
+#import "LJScanAnimationView.h"
 @interface LJScanMaskView ()
-///
+/// 扫描范围
 @property (nonatomic, assign) CGRect scanRect;
+/// 扫描动画
+@property (nonatomic, weak) LJScanAnimationView *animationView;
 @end
 
 @implementation LJScanMaskView
 
 + (instancetype)maskViewWithFrame:(CGRect)frame andScanRect:(CGRect)scanRect {
     LJScanMaskView *maskView = [[LJScanMaskView alloc] initWithFrame:frame andScanRect:scanRect];
-    
     return maskView;
 }
 
@@ -25,6 +27,9 @@
         self.scanRect = scanRect;
         [self bgPath];
         [self bezierPath];
+        
+        [self animationView];
+        [self startScanAnimation];
         
 //        self.backgroundColor = [UIColor yellowColor];
     }
@@ -80,6 +85,27 @@
     [self.layer addSublayer:cornerShapLayer];
     
 //    return path;
+}
+
+
+/// 开始扫描动画
+- (void)startScanAnimation {
+    [self.animationView startScanAnimation];
+}
+
+/// 停止扫描动画
+- (void)stopScanAnimation {
+    [self.animationView stopScanAnimation];
+}
+
+
+- (LJScanAnimationView *)animationView {
+    if (!_animationView) {
+        LJScanAnimationView *animationView = [[LJScanAnimationView alloc] initWithFrame:self.scanRect];
+        [self addSubview:animationView];
+        _animationView = animationView;
+    }
+    return _animationView;
 }
 
 @end

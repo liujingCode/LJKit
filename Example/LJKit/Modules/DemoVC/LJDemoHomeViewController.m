@@ -63,7 +63,7 @@
         case 13:
             targetVC = [LJDemoScanController new];
         case 14:
-            targetVC = [LJDemoBorderController new];
+            targetVC = [LJDemoScanController new];
             
             
         default:
