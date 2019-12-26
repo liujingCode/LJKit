@@ -45,6 +45,8 @@
 		8B3BA76A234DE49200146286 /* LJGoodsSpecsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3BA769234DE49200146286 /* LJGoodsSpecsCollectionViewCell.m */; };
 		8B52F7FD233DA79000D98CFC /* LJDemoAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52F7FC233DA79000D98CFC /* LJDemoAlertViewController.m */; };
 		8B5AF0D12372750E0065E716 /* LJDemoBorderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5AF0D02372750E0065E716 /* LJDemoBorderController.m */; };
+		8B66C33123AB6FCE00E58D92 /* LJDemoImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B66C33023AB6FCE00E58D92 /* LJDemoImageController.m */; };
+		8B66C33423AB73A400E58D92 /* LJDemoAuthorizatioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B66C33323AB73A400E58D92 /* LJDemoAuthorizatioController.m */; };
 		8BA6B230233B02A6001D5ACB /* UIScrollView+LJKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B22F233B02A6001D5ACB /* UIScrollView+LJKit.m */; };
 		8BA6B233233B0E27001D5ACB /* LJDemoCustomUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B232233B0E27001D5ACB /* LJDemoCustomUIController.m */; };
 		8BA6B236233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6B235233B0F24001D5ACB /* LJDemoCustomUIScrollViewController.m */; };
@@ -189,6 +191,10 @@
 		8B52F7FC233DA79000D98CFC /* LJDemoAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoAlertViewController.m; sourceTree = "<group>"; };
 		8B5AF0CF2372750E0065E716 /* LJDemoBorderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoBorderController.h; sourceTree = "<group>"; };
 		8B5AF0D02372750E0065E716 /* LJDemoBorderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoBorderController.m; sourceTree = "<group>"; };
+		8B66C32F23AB6FCE00E58D92 /* LJDemoImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoImageController.h; sourceTree = "<group>"; };
+		8B66C33023AB6FCE00E58D92 /* LJDemoImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoImageController.m; sourceTree = "<group>"; };
+		8B66C33223AB73A400E58D92 /* LJDemoAuthorizatioController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoAuthorizatioController.h; sourceTree = "<group>"; };
+		8B66C33323AB73A400E58D92 /* LJDemoAuthorizatioController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJDemoAuthorizatioController.m; sourceTree = "<group>"; };
 		8BA6B22E233B02A6001D5ACB /* UIScrollView+LJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LJKit.h"; sourceTree = "<group>"; };
 		8BA6B22F233B02A6001D5ACB /* UIScrollView+LJKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LJKit.m"; sourceTree = "<group>"; };
 		8BA6B231233B0E27001D5ACB /* LJDemoCustomUIController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJDemoCustomUIController.h; sourceTree = "<group>"; };
@@ -682,6 +688,10 @@
 				8B52F7FC233DA79000D98CFC /* LJDemoAlertViewController.m */,
 				8BEE965923692579008651D9 /* LJDemoScanController.h */,
 				8BEE965A23692579008651D9 /* LJDemoScanController.m */,
+				8B66C32F23AB6FCE00E58D92 /* LJDemoImageController.h */,
+				8B66C33023AB6FCE00E58D92 /* LJDemoImageController.m */,
+				8B66C33223AB73A400E58D92 /* LJDemoAuthorizatioController.h */,
+				8B66C33323AB73A400E58D92 /* LJDemoAuthorizatioController.m */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
@@ -1110,6 +1120,7 @@
 				8B3BA73F234D818D00146286 /* LJDatePickerView.m in Sources */,
 				8B3BA760234DC10100146286 /* LJGoodsSpecsHeadView.m in Sources */,
 				8BFF3CC023A71B6100BDACF9 /* LJAuthorizationManager.m in Sources */,
+				8B66C33123AB6FCE00E58D92 /* LJDemoImageController.m in Sources */,
 				8BDC2C1D2341DFBF000C04DF /* LJBoxTextFieldViewCell.m in Sources */,
 				8BFA50EF23278A090014F6E0 /* LJClassHomeController.m in Sources */,
 				8BFA50E72327881E0014F6E0 /* UIImage+LJKit.m in Sources */,
@@ -1147,6 +1158,7 @@
 				8BEE965B23692579008651D9 /* LJDemoScanController.m in Sources */,
 				8BB491BF237E942800EB0F3D /* UIButton+LJKit.m in Sources */,
 				8BEE9658236924B5008651D9 /* LJScanViewController.m in Sources */,
+				8B66C33423AB73A400E58D92 /* LJDemoAuthorizatioController.m in Sources */,
 				8BFA508423273D010014F6E0 /* LJDemoDebugController.m in Sources */,
 				8BFA509923274D3D0014F6E0 /* LJDemoHttpManagerController.m in Sources */,
 				8BE1E79223338526009FB19D /* LJDemoImagePickerController.m in Sources */,

@@ -12,7 +12,9 @@
 }
 
 + (instancetype)lj_imageWithSize:(CGSize)size andColor:(UIColor *)color {
-    CGSize targetSize = CGSizeMake(size.width * [UIScreen mainScreen].scale, size.height * [UIScreen mainScreen].scale);
+    float scale = [UIScreen mainScreen].scale;
+    scale = 1.0;
+    CGSize targetSize = CGSizeMake(size.width * scale, size.height * scale);
     UIGraphicsBeginImageContext(targetSize);
     CGContextRef context =UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [color CGColor]);

@@ -18,6 +18,8 @@
 #import "LJDemoAnimationController.h"
 #import "LJDemoScanController.h"
 #import "LJDemoBorderController.h"
+#import "LJDemoImageController.h"
+#import "LJDemoAuthorizatioController.h"
 @interface LJDemoHomeViewController ()
 
 @end
@@ -27,7 +29,7 @@
     [super viewDidLoad];
     self.title = @"首页";
     
-    self.dataList = @[@"网络请求",@"Toast",@"UIAlertController",@"自定义UI相关",@"定位",@"相册选择或拍照",@"自定义键盘",@"navigationBar",@"tabBar",@"Debug",@"文件管理",@"字符串正则校验",@"Animation",@"二维码扫描",@"边框"];
+    self.dataList = @[@"网络请求",@"Toast",@"UIAlertController",@"自定义UI相关",@"定位",@"相册选择或拍照",@"自定义键盘",@"navigationBar",@"tabBar",@"Debug",@"文件管理",@"字符串正则校验",@"Animation",@"二维码扫描",@"图片处理",@"权限状态"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -62,10 +64,13 @@
             break;
         case 13:
             targetVC = [LJDemoScanController new];
+            break;
         case 14:
-            targetVC = [LJDemoScanController new];
-            
-            
+            targetVC = [LJDemoImageController new];
+            break;
+        case 15:
+            targetVC = [LJDemoAuthorizatioController new];
+            break;
         default:
             break;
     }

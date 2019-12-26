@@ -10,37 +10,47 @@
 
 NS_ASSUME_NONNULL_BEGIN
 /**
-NotDetermined  用户尚未做出选择
-Denied         用户已拒绝
-Restricted     用户没有权限(家长控制)
-Authorized     用户已允许
-Provisional    临时授权
+ Unknown        未知错误(例如摄像头坏了,用的模拟器)
+ NotDetermined  用户尚未做出选择
+ Denied         用户已拒绝
+ Authorized     用户已允许
+ Restricted     用户没有权限(家长控制)
+ NotRestricted  不受限制
+ Provisional    临时授权(仅允许这一次,下次系统还会询问)
+ LocationAlways 已允许持续定位
+ LocationWhen   已允许一次性定位
 */
 
 typedef NS_ENUM(NSUInteger, LJKitAuthorizationStatus) {
-    LJKitAuthorizationStatusNotDetermined = 0,
+    LJKitAuthorizationStatusUnknown = 0,
+    LJKitAuthorizationStatusNotDetermined,
     LJKitAuthorizationStatusDenied,
     LJKitAuthorizationStatusAuthorized,
     LJKitAuthorizationStatusRestricted,
+    LJKitAuthorizationStatusNotRestricted,
     LJKitAuthorizationStatusProvisional,
+    LJKitAuthorizationStatusLocationAlways,
+    LJKitAuthorizationStatusLocationWhen,
 };
 
 /**
- 相机
- 相册的读取和写入
- 一次性定位
- 持续定位
- 无线数据(wifi或蜂窝网络)
- 通讯录
+ Camera         相机
+ MediaLibrary   相册
+ Location       定位
+ Telephony      网络
+ Contact        通讯录
  麦克风
  蓝牙
  */
 typedef NS_ENUM(NSUInteger, LJKitAuthorizationType) {
     LJKitAuthorizationTypeCamera,
     LJKitAuthorizationTypeMediaLibrary,
-    LJKitAuthorizationTypeLocationAlways,
-    LJKitAuthorizationTypeLocationWhen
+    LJKitAuthorizationTypeLocation,
+    LJKitAuthorizationTypeTelephony,
+    LJKitAuthorizationTypeContact,
 };
+
+typedef void(^LJAuthorizationRequestComplete)(LJKitAuthorizationStatus status);
 
 // 权限发生改变的通知
 
@@ -48,13 +58,17 @@ typedef NS_ENUM(NSUInteger, LJKitAuthorizationType) {
 /// 权限管理类
 @interface LJAuthorizationManager : NSObject
 
-
-
-
 /// 展示用户已拒绝授权的弹框
 - (void)showDenied;
 
+
+/// 获取权限
+/// @param type 权限类型
 + (LJKitAuthorizationStatus)getAuthorizationStateWithType:(LJKitAuthorizationType)type;
+
+/// 请求权限
+/// @param type 权限类型
++ (void)requestAuthorizationStateWithType:(LJKitAuthorizationType)type complete:(LJAuthorizationRequestComplete)complete;
 @end
 
 NS_ASSUME_NONNULL_END
