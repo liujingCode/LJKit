@@ -10,13 +10,14 @@
 
 @interface LJDebugLogView ()
 @property (nonatomic, weak) UITextView *textView;
+//@property (nonatomic, weak) UITextField *textView;
 @end
 
 @implementation LJDebugLogView
 - (instancetype)initWithFrame:(CGRect)frame {
     CGFloat height = [UIScreen mainScreen].bounds.size.height * 0.4;
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGFloat y = [UIScreen mainScreen].bounds.size.height - height;
+    CGFloat y = [UIScreen mainScreen].bounds.size.height - height - 20;
     frame = CGRectMake(0, y, width, height);
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor colorWithWhite:0.1 alpha:0.3];
@@ -33,13 +34,23 @@
         return;
     }
     self.textView.text = logStr;
-//    self.textView.layoutManager.allowsNonContiguousLayout = NO;
-//    [self.textView scrollRangeToVisible:NSMakeRange(logStr.length - 1, 1)];
+    self.textView.contentMode = UIViewContentModeBottom;
     
+    CGFloat contentHeight = self.textView.contentSize.height;
     
-//    CGRect scrollFrame = CGRectMake(0, self.textView.contentSize.height - 44, self.textView.bounds.size.width, 44.0);
+    if ((contentHeight - self.textView.bounds.size.height) > 0) {
+//        [self.textView scrollRectToVisible:CGRectMake(0, self.textView.bounds.size.height - 20, self.textView.bounds.size.width, 44) animated:NO];
+        self.textView.contentOffset = CGPointMake(0, contentHeight + 20);
+    }
+    
+//    if (self.textView.text.length > 2) {
+//        self.textView.layoutManager.allowsNonContiguousLayout = NO;
+//        [self.textView scrollRangeToVisible:NSMakeRange(self.textView.text.length - 2, 1)];
+//    }
+    
 //
-//    [self.textView scrollRectToVisible:scrollFrame animated:YES];
+//    self.textView.layoutManager.allowsNonContiguousLayout = NO;
+//    [self.textView scrollRangeToVisible:NSMakeRange(self.textView.text.length, 1)];
 }
 
 - (UITextView *)textView {
@@ -52,4 +63,16 @@
     }
     return _textView;
 }
+
+
+//- (UITextView *)textView {
+//    if (!_textView) {
+//        UITextView *textView = [[UITextView alloc] init];
+//        textView.font = [UIFont systemFontOfSize:11.0];
+//        textView.textColor = [UIColor whiteColor];
+//        [self addSubview:textView];
+//        _textView = textView;
+//    }
+//    return _textView;
+//}
 @end

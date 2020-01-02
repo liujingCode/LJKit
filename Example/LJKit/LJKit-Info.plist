@@ -22,6 +22,11 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>iosamap</string>
+		<string>baidumap</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -42,13 +47,11 @@
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>App需要您的同意,才能访问健康更新 </string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>App需要您的同意,才能访问位置,Always Usage Description</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>App需要您的同意,才能访问位置,Always and When In Use Usage Description</string>
+	<string>App需要您的同意,才能始终访问位置</string>
 	<key>NSLocationUsageDescription</key>
-	<string>App需要您的同意,才能访问位置,Usage Description</string>
+	<string>App需要您的同意,才能访问位置</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>App需要您的同意,才能访问位置,When In Use Usage Description</string>
+	<string>App需要您的同意,才能在使用期间访问位置</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>App需要您的同意,才能访问麦克风</string>
 	<key>NSMotionUsageDescription</key>
@@ -59,13 +62,6 @@
 	<string>App需要您的同意,才能访问提醒事项</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>App需要您的同意,才能使用语音识别</string>
-	<key>NSContactsUsageDescription</key>
-	<string>App需要您的同意,才能使用通讯录</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>iosamap</string>
-		<string>baidumap</string>
-	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

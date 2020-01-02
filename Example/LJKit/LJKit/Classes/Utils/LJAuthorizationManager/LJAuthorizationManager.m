@@ -12,9 +12,16 @@
 #import <CoreTelephony/CTCellularData.h>
 #import <Photos/Photos.h>
 #import <Contacts/Contacts.h>
+#import <CoreBluetooth/CoreBluetooth.h> 
 @interface LJAuthorizationManager ()<CLLocationManagerDelegate>
 /// 定位管理者
 @property (nonatomic, strong) CLLocationManager *locationManager;
+/// 请求定位权限的回调
+@property (nonatomic, copy) LJAuthorizationRequestComplete locationRequestComplete;
+/// 第一次请求定位权限
+@property (nonatomic, assign) BOOL firstRequestLocationAuth;
+
+
 /// 通讯录
 @property (nonatomic, strong) CNContactStore *contackStore;
 @end
@@ -51,6 +58,9 @@
             break;
         case LJKitAuthorizationTypeContact: // 通讯录
             status = [self getContactAuthorization];
+            break;
+        case LJKitAuthorizationTypeMicroPhone: // 麦克风
+            status = [self getMicroPhoneAuthorization];
             break;
         default:
             break;
@@ -174,6 +184,54 @@
     return status;
 }
 
+/// 获取麦克风权限状态
++ (LJKitAuthorizationStatus)getMicroPhoneAuthorization {
+    LJKitAuthorizationStatus status = LJKitAuthorizationStatusNotDetermined;
+    // 麦克风权限
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeAudio];
+    switch (authStatus) {
+        case AVAuthorizationStatusNotDetermined:
+            status = LJKitAuthorizationStatusNotDetermined;
+            break;
+        case AVAuthorizationStatusRestricted:
+            status = LJKitAuthorizationStatusRestricted;
+            break;
+        case AVAuthorizationStatusDenied:
+            status = LJKitAuthorizationStatusDenied;
+            break;
+        case AVAuthorizationStatusAuthorized:
+            status = LJKitAuthorizationStatusAuthorized;
+            break;
+        default:
+            break;
+    }
+    return status;
+}
+
+/// 获取蓝牙权限状态
++ (LJKitAuthorizationStatus)getBluetoothAuthorization {
+    LJKitAuthorizationStatus status = LJKitAuthorizationStatusNotDetermined;
+    // 蓝牙权限
+    CBPeripheralManagerAuthorizationStatus authStatus = [CBPeripheralManager authorizationStatus];
+    switch (authStatus) {
+        case CBPeripheralManagerAuthorizationStatusNotDetermined:
+            status = LJKitAuthorizationStatusNotDetermined;
+            break;
+        case CBPeripheralManagerAuthorizationStatusRestricted:
+            status = LJKitAuthorizationStatusRestricted;
+            break;
+        case CBPeripheralManagerAuthorizationStatusDenied:
+            status = LJKitAuthorizationStatusDenied;
+            break;
+        case CBPeripheralManagerAuthorizationStatusAuthorized:
+            status = LJKitAuthorizationStatusAuthorized;
+            break;
+        default:
+            break;
+    }
+    return status;
+}
+
 
 
 
@@ -187,13 +245,16 @@
             [self requestMediaLibraryAuthorizationWithComplete:complete];
             break;
         case LJKitAuthorizationTypeLocation:
-            [self getLocationAuthorization];
+            [self requestLocationAuthorizationWithComplete:complete];
             break;
         case LJKitAuthorizationTypeTelephony:
-            [self getLocationAuthorization];
+            [self requestTelephonyAuthorizationWithComplete:complete];
             break;
         case LJKitAuthorizationTypeContact:
             [self requestContactAuthorizationWithComplete:complete];
+            break;
+        case LJKitAuthorizationTypeMicroPhone:
+            [self requestMicroPhoneAuthorizationWithComplete:complete];
             break;
         default:
             break;
@@ -236,11 +297,24 @@
 /// 请求定位权限
 + (void)requestLocationAuthorizationWithComplete:(LJAuthorizationRequestComplete)complete {
     LJAuthorizationManager *manager = [LJAuthorizationManager sharedManager];
+    manager.locationRequestComplete = complete;
+    manager.firstRequestLocationAuth = YES;
     if (!manager.locationManager) {
-         manager.locationManager = [[CLLocationManager alloc] init];
+        manager.locationManager = [[CLLocationManager alloc] init];
+        manager.locationManager.delegate = manager;
     }
-    
     [manager.locationManager requestAlwaysAuthorization];
+}
+
+
+/// 请求网络权限
++ (void)requestTelephonyAuthorizationWithComplete:(LJAuthorizationRequestComplete)complete {
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+    }];
 }
 
 
@@ -255,6 +329,58 @@
         LJKitAuthorizationStatus customStatus = granted?LJKitAuthorizationStatusAuthorized:LJKitAuthorizationStatusDenied;
         complete(customStatus);
     }];
+}
+
+
+/// 请求麦克风权限
++ (void)requestMicroPhoneAuthorizationWithComplete:(LJAuthorizationRequestComplete)complete {
+   
+    [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted) {
+        LJKitAuthorizationStatus customStatus = granted?LJKitAuthorizationStatusAuthorized:LJKitAuthorizationStatusDenied;
+        complete(customStatus);
+    }];
+}
+
+
+#pragma mark - CLLocationManagerDelegate
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    if (([LJAuthorizationManager getLocationAuthorization] == LJKitAuthorizationStatusNotDetermined) && (self.firstRequestLocationAuth == YES)) {
+        return;
+    }
+    LJAuthorizationManager *sharedManager = [LJAuthorizationManager sharedManager];
+    LJKitAuthorizationStatus authStatus;
+    switch (status) {
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            authStatus = LJKitAuthorizationStatusLocationWhen;
+            break;
+        case kCLAuthorizationStatusAuthorizedAlways:
+            authStatus = LJKitAuthorizationStatusLocationAlways;
+            break;
+        case kCLAuthorizationStatusDenied:
+            authStatus = LJKitAuthorizationStatusDenied;
+            break;
+        case kCLAuthorizationStatusRestricted:
+            authStatus = LJKitAuthorizationStatusRestricted;
+            break;
+        case kCLAuthorizationStatusNotDetermined:{
+            authStatus = LJKitAuthorizationStatusNotDetermined;
+            if (self.firstRequestLocationAuth == YES) {
+                self.firstRequestLocationAuth = NO;
+            }
+        }
+            
+            break;
+        default:
+               break;
+       }
+    if (sharedManager.locationRequestComplete) {
+        sharedManager.locationRequestComplete(authStatus);
+    }
+    [sharedManager.locationManager stopUpdatingLocation];
+    sharedManager.locationManager.delegate = nil;
+    sharedManager.locationManager = nil;
+    sharedManager.locationRequestComplete = nil;
+    sharedManager.firstRequestLocationAuth = NO;
 }
 
 @end

@@ -39,8 +39,8 @@ typedef NS_ENUM(NSUInteger, LJKitAuthorizationStatus) {
  Location       定位
  Telephony      网络
  Contact        通讯录
- 麦克风
- 蓝牙
+ MicroPhone     麦克风
+ Bluetooth      蓝牙
  */
 typedef NS_ENUM(NSUInteger, LJKitAuthorizationType) {
     LJKitAuthorizationTypeCamera,
@@ -48,6 +48,8 @@ typedef NS_ENUM(NSUInteger, LJKitAuthorizationType) {
     LJKitAuthorizationTypeLocation,
     LJKitAuthorizationTypeTelephony,
     LJKitAuthorizationTypeContact,
+    LJKitAuthorizationTypeMicroPhone,
+    LJKitAuthorizationTypeBluetooth,
 };
 
 typedef void(^LJAuthorizationRequestComplete)(LJKitAuthorizationStatus status);

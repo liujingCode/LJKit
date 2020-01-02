@@ -19,36 +19,90 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataList = @[@"沙盒浏览",@"开启或关闭实时log",@"查看UI层级视图",@"查看属性和方法"];
+    self.dataList = @[@"沙盒浏览",@"沙盒局域网浏览",@"log写入沙盒",@"log写入沙盒并实时展示",@"查看属性和方法",@"写入一条log"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        LJSandboxViewController *VC = [LJSandboxViewController new];
-        [self presentViewController:VC animated:YES completion:nil];
+    if (indexPath.row == 0) { // 沙盒浏览
+        [LJDebugLogManager showSandBox];
         return;
     }
-    if (indexPath.row == 1) {
-        [LJDebugLogManager show];
+    if (indexPath.row == 1) { // 沙盒局域网浏览
+        [LJDebugLogManager sharedManager].enableSandBoxLocalNetwork = YES;
         return;
     }
     if (indexPath.row == 2) {
-        LJSandboxViewController *VC = [LJSandboxViewController new];
-        [self presentViewController:VC animated:YES completion:nil];
+        
         return;
     }
-    if (indexPath.row == 3) {
-        LJClassViewController *VC = [LJClassViewController new];
-        [self presentViewController:VC animated:YES completion:nil];
-        // 触发crash
-//        @[][2];
+    if (indexPath.row == 4) { // 查看属性和方法
+        [LJDebugLogManager showClassDetail];
         return;
     }
+    if (indexPath.row == 5) { // 写入一条log
+        NSString *testLog = [NSString stringWithFormat:@"测试log = %@",[NSDate date]];
+        NSLog(@"%@",testLog);
+        return;
+    }
+    
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellID = @"LJDemoDebugControllerCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
     
+    cell.textLabel.text = self.dataList[indexPath.row];
+    switch (indexPath.item) {
+        case 0:
+            break;
+        case 1:{ // 沙盒在局域网查看
+            UISwitch *accessoryView = [[UISwitch alloc] init];
+            accessoryView.on = [LJDebugLogManager sharedManager].enableSandBoxLocalNetwork;
+            [accessoryView addTarget:self action:@selector(clickEnableSandBox:) forControlEvents:UIControlEventValueChanged];
+            cell.accessoryView = accessoryView;
+        }
+            break;
+        case 2: { // log写入沙盒
+            UISwitch *accessoryView = [[UISwitch alloc] init];
+            [accessoryView addTarget:self action:@selector(clickEnableSaveLogToLocal:) forControlEvents:UIControlEventValueChanged];
+            accessoryView.on = [LJDebugLogManager sharedManager].enableSaveLogToLocal;
+            cell.accessoryView = accessoryView;
+        }
+            break;
+        case 3:{ // log写入沙盒并展示
+            UISwitch *accessoryView = [[UISwitch alloc] init];
+            [accessoryView addTarget:self action:@selector(clickEnableLiveLog:) forControlEvents:UIControlEventValueChanged];
+            accessoryView.on = [LJDebugLogManager sharedManager].enableLiveLog;
+            cell.accessoryView = accessoryView;
+        }
+            break;
+        case 4:
+            break;
+            
+        default:
+            break;
+    }
     
+    return cell;
+}
+
+
+// 改变局域网查看沙盒的状态
+- (void)clickEnableSandBox:(UISwitch *)sender {
+    [LJDebugLogManager sharedManager].enableSandBoxLocalNetwork = ![LJDebugLogManager sharedManager].enableSandBoxLocalNetwork;
+}
+
+// 改变实时log的状态
+- (void)clickEnableLiveLog:(UISwitch *)sender {
+    [LJDebugLogManager sharedManager].enableLiveLog = ![LJDebugLogManager sharedManager].enableLiveLog;
+}
+
+// 改变log写入沙盒的状态
+- (void)clickEnableSaveLogToLocal:(UISwitch *)sender {
+    [LJDebugLogManager sharedManager].enableSaveLogToLocal = ![LJDebugLogManager sharedManager].enableSaveLogToLocal;
 }
 
 @end

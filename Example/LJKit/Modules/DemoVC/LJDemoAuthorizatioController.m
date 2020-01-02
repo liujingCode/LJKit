@@ -25,15 +25,18 @@
 
 @end
 
+/// <#Description#>
 @implementation LJDemoAuthorizatioController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.title = @"权限状态";
-    self.dataList = @[@"相机权限",@"相册权限",@"定位权限(一次性定位)",@"网络权限",@"通讯录权限"];
+    self.dataList = @[@"相机权限",@"相册权限",@"定位权限",@"网络权限",@"通讯录权限",@"麦克风权限"];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"请求权限" style:UIBarButtonItemStylePlain target:self action:@selector(clickRightItem)];;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"请求权限" style:UIBarButtonItemStylePlain target:self action:@selector(clickRightItem)];
+    
 }
 
 
@@ -71,6 +74,11 @@
             statuString = [self formatStringWithStatu:statu];
         }
             break;
+        case 5: {  // 麦克风权限
+                statu = [LJAuthorizationManager getAuthorizationStateWithType:LJKitAuthorizationTypeMicroPhone];
+                statuString = [self formatStringWithStatu:statu];
+            }
+                break;
             
         default:
             break;
@@ -102,12 +110,11 @@
                         
                         NSString *result = [self formatStringWithStatu:status];
                         NSLog(@"请求结果:result = %@",result);
-                        
+                         
                         // 刷新数据
                         dispatch_sync(dispatch_get_main_queue(), ^{
                             [self.tableView reloadData];
                         });
-                        
                     }];
                     break;
                 }
@@ -118,9 +125,8 @@
                         NSLog(@"请求结果:result = %@",result);
                         
                         // 刷新数据
-                        dispatch_sync(dispatch_get_main_queue(), ^{
-                            [self.tableView reloadData];
-                        });
+                        [self.tableView reloadData];
+                        
                         
                     }];
                     break;
@@ -141,6 +147,20 @@
                 }
                 case 4:{ // 请求通讯录权限
                     [LJAuthorizationManager requestAuthorizationStateWithType:LJKitAuthorizationTypeContact complete:^(LJKitAuthorizationStatus status) {
+                        
+                        NSString *result = [self formatStringWithStatu:status];
+                        NSLog(@"请求结果:result = %@",result);
+                        
+                        // 刷新数据
+                        dispatch_sync(dispatch_get_main_queue(), ^{
+                            [self.tableView reloadData];
+                        });
+                        
+                    }];
+                    break;
+                }
+                case 5:{ // 请求麦克风权限
+                    [LJAuthorizationManager requestAuthorizationStateWithType:LJKitAuthorizationTypeMicroPhone complete:^(LJKitAuthorizationStatus status) {
                         
                         NSString *result = [self formatStringWithStatu:status];
                         NSLog(@"请求结果:result = %@",result);

@@ -11,6 +11,12 @@
 #import "LJDebugLogManager.h"
 #import "LJExceptionManager.h"
 
+//#ifdef DEBUG
+//#import <DoraemonKit/DoraemonManager.h>
+//#import <YYDebugDatabase/DebugDatabaseManager.h>
+//#endif
+
+
 @implementation UIAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -18,18 +24,6 @@
     [self.window makeKeyAndVisible];
     
     NSLog(@"NSLog = didFinishLaunchingWithOptions");
-    
-//    NSString *filePath = [LJDebugLogManager sharedManager].filePath;
-//
-//    // 先删除已经存在的文件
-//    NSFileManager *defaultManager = [NSFileManager defaultManager];
-//    [defaultManager removeItemAtPath:filePath error:nil];
-//    // 将log输入到文件
-//    freopen([filePath cStringUsingEncoding:NSASCIIStringEncoding], "a+", stdout);
-//    freopen([filePath cStringUsingEncoding:NSASCIIStringEncoding], "a+", stderr);
-
-    
-//    [LJExceptionManager startCaught];
     return YES;
 }
 
